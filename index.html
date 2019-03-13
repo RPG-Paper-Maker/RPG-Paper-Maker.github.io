@@ -9,7 +9,7 @@
         
         <link rel="shortcut icon" href="./img/favicon.ico">
 
-	<title>My Docs</title>
+	<title>RPG Paper Maker</title>
 
         <link href="./css/bootstrap-custom.min.css" rel="stylesheet">
         <link href="./css/font-awesome-4.0.3.css" rel="stylesheet">
@@ -33,13 +33,59 @@
         <!-- Collapsed navigation -->
         <div class="navbar-header">
             
+            <!-- Expander button -->
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            
 
             <!-- Main title -->
-            <a class="navbar-brand" href=".">My Docs</a>
+            <a class="navbar-brand" href=".">RPG Paper Maker</a>
         </div>
 
         <!-- Expanded navigation -->
         <div class="navbar-collapse collapse">
+            
+                <!-- Main navigation -->
+                <ul class="nav navbar-nav">
+                
+                
+                    <li class="active">
+                        <a href=".">Getting started</a>
+                    </li>
+                
+                
+                
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Basics <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                        
+                            
+<li >
+    <a href="basics/map-editor-basics/">Map editor basics</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="basics/manage-your-ressources/">Manage your ressources</a>
+</li>
+
+                        
+                        </ul>
+                    </li>
+                
+                
+                
+                    <li >
+                        <a href="advanced/">Advanced</a>
+                    </li>
+                
+                
+                </ul>
             
 
             <ul class="nav navbar-nav navbar-right">
@@ -49,6 +95,26 @@
                     </a>
                 </li>
                 
+                    <li class="disabled">
+                        <a rel="next" >
+                            <i class="fa fa-arrow-left"></i> Previous
+                        </a>
+                    </li>
+                    <li >
+                        <a rel="prev" href="basics/map-editor-basics/">
+                            Next <i class="fa fa-arrow-right"></i>
+                        </a>
+                    </li>
+                
+                
+                    <li>
+                        <a href="https://github.com/RPG-Paper-Maker/RPG-Paper-Maker">
+                            
+                                <i class="fa fa-github"></i>
+                            
+                            GitHub
+                        </a>
+                    </li>
                 
             </ul>
         </div>
@@ -60,37 +126,56 @@
                 <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
     <ul class="nav bs-sidenav">
     
-        <li class="main active"><a href="#welcome-to-mkdocs">Welcome to MkDocs</a></li>
+        <li class="main active"><a href="#getting-started">Getting started</a></li>
         
-            <li><a href="#commands">Commands</a></li>
+            <li><a href="#license">License</a></li>
         
-            <li><a href="#project-layout">Project layout</a></li>
+            <li><a href="#community-and-support">Community and support</a></li>
+        
+            <li><a href="#installation">Installation</a></li>
+        
+            <li><a href="#create-a-new-project">Create a new project</a></li>
+        
+            <li><a href="#open-an-existing-project">Open an existing project</a></li>
         
     
     </ul>
 </div></div>
                 <div class="col-md-9" role="main">
 
-<h1 id="welcome-to-mkdocs">Welcome to MkDocs</h1>
-<p>For full documentation visit <a href="http://mkdocs.org">mkdocs.org</a>.</p>
-<h2 id="commands">Commands</h2>
-<ul>
-<li><code>mkdocs new [dir-name]</code> - Create a new project.</li>
-<li><code>mkdocs serve</code> - Start the live-reloading docs server.</li>
-<li><code>mkdocs build</code> - Build the documentation site.</li>
-<li><code>mkdocs help</code> - Print this help message.</li>
-</ul>
-<h2 id="project-layout">Project layout</h2>
-<pre><code>mkdocs.yml    # The configuration file.
-docs/
-    index.md  # The documentation homepage.
-    ...       # Other markdown pages, images and other files.
-</code></pre></div>
+<h1 id="getting-started">Getting started</h1>
+<p>Welcome to this guide! You will find here all what you need to be a pro Paper Maker!</p>
+<h2 id="license">License</h2>
+<p>First, you should know that RPG Paper Maker is an Open Source project under GNU General Public License v3.0. Feel free to contribute to the github repository <a href="https://github.com/RPG-Paper-Maker/RPG-Paper-Maker">here</a> if you have any skills in programming, project management, etc.</p>
+<p><strong>RPG Paper Maker is free for non-commercial use</strong> so you don't have to pay for it if you only want to share your games freely and have fun! However, if you want to sell your games made with the engine you will have to pay for the license. More details <a href="http://rpg-paper-maker.com/index.php/downloads#content">here</a>. If you want to support us, check out our <a href="https://www.patreon.com/rpgpapermaker/overview">Patreon</a>!</p>
+<p><strong>The commercial license is not released yet. This is comming out soon.</strong></p>
+<h2 id="community-and-support">Community and support</h2>
+<p>If you are experiencing any issue on RPG Paper Maker, feel free to ask for some help in the <a href="http://rpg-paper-maker.com/index.php/forum">website forums</a>. You can also share your creations and propose your wanted <a href="https://feathub.com/RPG-Paper-Maker/RPG-Paper-Maker">next features</a>.</p>
+<h2 id="installation">Installation</h2>
+<p>Go to the <a href="http://rpg-paper-maker.com/index.php/downloads#content">Download section</a> from the official website and download the installer according to your system. Extract the file.</p>
+<h3 id="windows">Windows</h3>
+<p>Run <code>RPG Paper Maker.exe</code>. This will ask you for downloading the latest version of RPG Paper Maker. Wait for the downloading to be finished.</p>
+<h3 id="linux">Linux</h3>
+<p>Check out the <code>README</code> instructions in the root of the folder. After running the last instruction (<code>./run.sh</code>), this will ask you for downloading the latest version of RPG Paper Maker. Wait for the downloading to be finished.</p>
+<h3 id="macosx">MacOSX</h3>
+<p><em>Coming soon.</em></p>
+<h2 id="create-a-new-project">Create a new project</h2>
+<p>You can create a new project by clicking here on the main toolbar:</p>
+<p><img alt="Screenshot" src="./img/new-project.png" /></p>
+<p>You can also use <code>CTRL+N</code> or go to <code>File &gt; New project...</code>.</p>
+<p><img alt="Screenshot" src="./img/new-project-window.png" /></p>
+<p>You can choose here the <code>Project name</code> corresponding to your game's name. This will auto generate a folder name (you can disable the option <code>auto-generate</code> if you want to customize your folder name). And finally, choose the <code>location</code> of your project folder. By default, it will be on a freshly created <code>RPG Paper Maker Games</code> folder.</p>
+<h2 id="open-an-existing-project">Open an existing project</h2>
+<p>You can open an existing project by clicking here on the main toolbar:</p>
+<p><img alt="Screenshot" src="./img/open-project.png" /></p>
+<p>You can also use <code>CTRL+O</code> or go to <code>File &gt; Open project &gt; Browse...</code>.</p></div>
             
         </div>
 
         <footer class="col-md-12">
             <hr>
+            
+                <p>RPG Paper Maker Copyright (C) 2017-2019 Marie Laporte</p>
             
             <p>Documentation built with <a href="http://www.mkdocs.org/">MkDocs</a>.</p>
         </footer>
@@ -132,5 +217,5 @@ docs/
 
 <!--
 MkDocs version : 0.14.0
-Build Date UTC : 2019-03-13 10:07:07.918756
+Build Date UTC : 2019-03-13 15:08:06.956695
 -->

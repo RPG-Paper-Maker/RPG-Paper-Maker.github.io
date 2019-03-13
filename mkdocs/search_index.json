@@ -2,23 +2,63 @@
     "docs": [
         {
             "location": "/",
-            "text": "Welcome to MkDocs\n\n\nFor full documentation visit \nmkdocs.org\n.\n\n\nCommands\n\n\n\n\nmkdocs new [dir-name]\n - Create a new project.\n\n\nmkdocs serve\n - Start the live-reloading docs server.\n\n\nmkdocs build\n - Build the documentation site.\n\n\nmkdocs help\n - Print this help message.\n\n\n\n\nProject layout\n\n\nmkdocs.yml    # The configuration file.\ndocs/\n    index.md  # The documentation homepage.\n    ...       # Other markdown pages, images and other files.",
-            "title": "Home"
+            "text": "Getting started\n\n\nWelcome to this guide! You will find here all what you need to be a pro Paper Maker!\n\n\nLicense\n\n\nFirst, you should know that RPG Paper Maker is an Open Source project under GNU General Public License v3.0. Feel free to contribute to the github repository \nhere\n if you have any skills in programming, project management, etc.\n\n\nRPG Paper Maker is free for non-commercial use\n so you don't have to pay for it if you only want to share your games freely and have fun! However, if you want to sell your games made with the engine you will have to pay for the license. More details \nhere\n. If you want to support us, check out our \nPatreon\n!\n\n\nThe commercial license is not released yet. This is comming out soon.\n\n\nCommunity and support\n\n\nIf you are experiencing any issue on RPG Paper Maker, feel free to ask for some help in the \nwebsite forums\n. You can also share your creations and propose your wanted \nnext features\n.\n\n\nInstallation\n\n\nGo to the \nDownload section\n from the official website and download the installer according to your system. Extract the file.\n\n\nWindows\n\n\nRun \nRPG Paper Maker.exe\n. This will ask you for downloading the latest version of RPG Paper Maker. Wait for the downloading to be finished.\n\n\nLinux\n\n\nCheck out the \nREADME\n instructions in the root of the folder. After running the last instruction (\n./run.sh\n), this will ask you for downloading the latest version of RPG Paper Maker. Wait for the downloading to be finished.\n\n\nMacOSX\n\n\nComing soon.\n\n\nCreate a new project\n\n\nYou can create a new project by clicking here on the main toolbar:\n\n\n\n\nYou can also use \nCTRL+N\n or go to \nFile > New project...\n.\n\n\n\n\nYou can choose here the \nProject name\n\u00a0corresponding to your game's name. This will auto generate a folder name (you can disable the option \nauto-generate\n if you want to customize your folder name). And finally, choose the \nlocation\n of your project folder. By default, it will be on a freshly created \nRPG Paper Maker Games\n folder.\n\n\nOpen an existing project\n\n\nYou can open an existing project by clicking here on the main toolbar:\n\n\n\n\nYou can also use \nCTRL+O\n or go to \nFile > Open project > Browse...\n.",
+            "title": "Getting started"
         },
         {
-            "location": "/#welcome-to-mkdocs",
-            "text": "For full documentation visit  mkdocs.org .",
-            "title": "Welcome to MkDocs"
+            "location": "/#getting-started",
+            "text": "Welcome to this guide! You will find here all what you need to be a pro Paper Maker!",
+            "title": "Getting started"
         },
         {
-            "location": "/#commands",
-            "text": "mkdocs new [dir-name]  - Create a new project.  mkdocs serve  - Start the live-reloading docs server.  mkdocs build  - Build the documentation site.  mkdocs help  - Print this help message.",
-            "title": "Commands"
+            "location": "/#license",
+            "text": "First, you should know that RPG Paper Maker is an Open Source project under GNU General Public License v3.0. Feel free to contribute to the github repository  here  if you have any skills in programming, project management, etc.  RPG Paper Maker is free for non-commercial use  so you don't have to pay for it if you only want to share your games freely and have fun! However, if you want to sell your games made with the engine you will have to pay for the license. More details  here . If you want to support us, check out our  Patreon !  The commercial license is not released yet. This is comming out soon.",
+            "title": "License"
         },
         {
-            "location": "/#project-layout",
-            "text": "mkdocs.yml    # The configuration file.\ndocs/\n    index.md  # The documentation homepage.\n    ...       # Other markdown pages, images and other files.",
-            "title": "Project layout"
+            "location": "/#community-and-support",
+            "text": "If you are experiencing any issue on RPG Paper Maker, feel free to ask for some help in the  website forums . You can also share your creations and propose your wanted  next features .",
+            "title": "Community and support"
+        },
+        {
+            "location": "/#installation",
+            "text": "Go to the  Download section  from the official website and download the installer according to your system. Extract the file.  Windows  Run  RPG Paper Maker.exe . This will ask you for downloading the latest version of RPG Paper Maker. Wait for the downloading to be finished.  Linux  Check out the  README  instructions in the root of the folder. After running the last instruction ( ./run.sh ), this will ask you for downloading the latest version of RPG Paper Maker. Wait for the downloading to be finished.  MacOSX  Coming soon.",
+            "title": "Installation"
+        },
+        {
+            "location": "/#create-a-new-project",
+            "text": "You can create a new project by clicking here on the main toolbar:   You can also use  CTRL+N  or go to  File > New project... .   You can choose here the  Project name \u00a0corresponding to your game's name. This will auto generate a folder name (you can disable the option  auto-generate  if you want to customize your folder name). And finally, choose the  location  of your project folder. By default, it will be on a freshly created  RPG Paper Maker Games  folder.",
+            "title": "Create a new project"
+        },
+        {
+            "location": "/#open-an-existing-project",
+            "text": "You can open an existing project by clicking here on the main toolbar:   You can also use  CTRL+O  or go to  File > Open project > Browse... .",
+            "title": "Open an existing project"
+        },
+        {
+            "location": "/basics/map-editor-basics/",
+            "text": "Map editor basics\n\n\nAfter opening a project, you should have this view:\n\n\n\n\nMap selector\n\n\nTake a look on the map selector \n(1)\n. You can add, edit, remove, copy, and paste folders or maps here. We recommand you to use folders to sort your maps for each zones of your game. By default, there's also a \nBattle maps\n folder that you can use to put all the maps that you will use for battle backgrounds. It is not required to put these maps into this specific folder. Clicking on a map will load this one on the map editor \n(5)\n. \nRight clicking\n will open this context menu:",
+            "title": "Map editor basics"
+        },
+        {
+            "location": "/basics/map-editor-basics/#map-editor-basics",
+            "text": "After opening a project, you should have this view:",
+            "title": "Map editor basics"
+        },
+        {
+            "location": "/basics/map-editor-basics/#map-selector",
+            "text": "Take a look on the map selector  (1) . You can add, edit, remove, copy, and paste folders or maps here. We recommand you to use folders to sort your maps for each zones of your game. By default, there's also a  Battle maps  folder that you can use to put all the maps that you will use for battle backgrounds. It is not required to put these maps into this specific folder. Clicking on a map will load this one on the map editor  (5) .  Right clicking  will open this context menu:",
+            "title": "Map selector"
+        },
+        {
+            "location": "/basics/manage-your-ressources/",
+            "text": "",
+            "title": "Manage your ressources"
+        },
+        {
+            "location": "/advanced/",
+            "text": "aaa",
+            "title": "Advanced"
         }
     ]
 }
