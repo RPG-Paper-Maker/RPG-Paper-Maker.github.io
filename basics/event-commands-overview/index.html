@@ -1,0 +1,700 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Event commands overview - RPG Paper Maker</title>
+  
+
+  <link rel="shortcut icon" href="../../img/favicon.ico">
+
+  
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
+
+  <link rel="stylesheet" href="../../css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../css/theme_extra.css" type="text/css" />
+  <link rel="stylesheet" href="../../css/highlight.css">
+
+  
+  <script>
+    // Current page data
+    var mkdocs_page_name = "Event commands overview";
+  </script>
+  
+  <script src="../../js/jquery-2.1.1.min.js"></script>
+  <script src="../../js/modernizr-2.8.3.min.js"></script>
+  <script type="text/javascript" src="../../js/highlight.pack.js"></script>
+  <script src="../../js/theme.js"></script> 
+
+  
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+      <div class="wy-side-nav-search">
+        <a href="../.." class="icon icon-home"> RPG Paper Maker</a>
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+        <ul class="current">
+          
+            <li>
+    <li class="toctree-l1 ">
+        <a class="" href="../..">Getting started</a>
+        
+    </li>
+<li>
+          
+            <li>
+    <ul class="subnav">
+    <li><span>Basics</span></li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../map-editor-basics/">Map editor basics</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../manage-your-resources/">Manage your resources</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../tilesets-and-collisions/">Tilesets & Collisions</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../variables-overview/">Variables overview</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../objects-and-events/">Objects & Events</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 current">
+        <a class="current" href="./">Event commands overview</a>
+        
+            <ul>
+            
+                <li class="toctree-l3"><a href="#event-commands-overview">Event commands overview</a></li>
+                
+                    <li><a class="toctree-l4" href="#show-text">Show text</a></li>
+                
+                    <li><a class="toctree-l4" href="#display-a-choice">Display a choice</a></li>
+                
+                    <li><a class="toctree-l4" href="#input-number">Input number</a></li>
+                
+                    <li><a class="toctree-l4" href="#set-dialog-box-options">Set dialog box options</a></li>
+                
+                    <li><a class="toctree-l4" href="#wait">Wait</a></li>
+                
+                    <li><a class="toctree-l4" href="#change-chronometer">Change chronometer</a></li>
+                
+                    <li><a class="toctree-l4" href="#display-a-picture">Display a picture</a></li>
+                
+                    <li><a class="toctree-l4" href="#set-move-turn-a-picture">Set / Move / Turn a picture</a></li>
+                
+                    <li><a class="toctree-l4" href="#remove-a-picture">Remove a picture</a></li>
+                
+                    <li><a class="toctree-l4" href="#play-a-video">Play a video</a></li>
+                
+                    <li><a class="toctree-l4" href="#condition">Condition</a></li>
+                
+                    <li><a class="toctree-l4" href="#loop">Loop</a></li>
+                
+                    <li><a class="toctree-l4" href="#break-loop">Break loop</a></li>
+                
+                    <li><a class="toctree-l4" href="#label">Label</a></li>
+                
+                    <li><a class="toctree-l4" href="#jump-to-label">Jump to label</a></li>
+                
+                    <li><a class="toctree-l4" href="#stop-the-reaction">Stop the reaction</a></li>
+                
+                    <li><a class="toctree-l4" href="#comment">Comment</a></li>
+                
+                    <li><a class="toctree-l4" href="#call-a-common-reaction">Call a common reaction</a></li>
+                
+                    <li><a class="toctree-l4" href="#send-event">Send event</a></li>
+                
+                    <li><a class="toctree-l4" href="#change-state">Change state</a></li>
+                
+                    <li><a class="toctree-l4" href="#change-properties">Change properties</a></li>
+                
+                    <li><a class="toctree-l4" href="#change-graphic">Change graphic</a></li>
+                
+                    <li><a class="toctree-l4" href="#teleport-object">Teleport object</a></li>
+                
+                    <li><a class="toctree-l4" href="#move-object">Move object</a></li>
+                
+                    <li><a class="toctree-l4" href="#display-an-animation">Display an animation</a></li>
+                
+                    <li><a class="toctree-l4" href="#move-camera">Move camera</a></li>
+                
+                    <li><a class="toctree-l4" href="#reset-camera">Reset camera</a></li>
+                
+                    <li><a class="toctree-l4" href="#create-object-in-map">Create object in map</a></li>
+                
+                    <li><a class="toctree-l4" href="#remove-object-from-map">Remove object from map</a></li>
+                
+                    <li><a class="toctree-l4" href="#change-screen-tone">Change screen tone</a></li>
+                
+                    <li><a class="toctree-l4" href="#shake-screen">Shake screen</a></li>
+                
+                    <li><a class="toctree-l4" href="#flash-screen">Flash screen</a></li>
+                
+                    <li><a class="toctree-l4" href="#change-meteo">Change meteo</a></li>
+                
+                    <li><a class="toctree-l4" href="#change-map-properties">Change map properties</a></li>
+                
+                    <li><a class="toctree-l4" href="#change-variables">Change variables</a></li>
+                
+                    <li><a class="toctree-l4" href="#change-a-statistic">Change a statistic</a></li>
+                
+                    <li><a class="toctree-l4" href="#change-experience-curve">Change experience curve</a></li>
+                
+                    <li><a class="toctree-l4" href="#change-status">Change status</a></li>
+                
+                    <li><a class="toctree-l4" href="#change-a-skill">Change a skill</a></li>
+                
+                    <li><a class="toctree-l4" href="#change-name">Change name</a></li>
+                
+                    <li><a class="toctree-l4" href="#change-class">Change class</a></li>
+                
+                    <li><a class="toctree-l4" href="#change-equipment">Change equipment</a></li>
+                
+                    <li><a class="toctree-l4" href="#change-money">Change money</a></li>
+                
+                    <li><a class="toctree-l4" href="#modify-inventory">Modify inventory</a></li>
+                
+                    <li><a class="toctree-l4" href="#modify-team">Modify team</a></li>
+                
+                    <li><a class="toctree-l4" href="#start-a-battle">Start a battle</a></li>
+                
+                    <li><a class="toctree-l4" href="#display-hide-enemy">Display / Hide enemy</a></li>
+                
+                    <li><a class="toctree-l4" href="#force-an-action">Force an action</a></li>
+                
+                    <li><a class="toctree-l4" href="#end-battle">End battle</a></li>
+                
+                    <li><a class="toctree-l4" href="#start-shop">Start shop</a></li>
+                
+                    <li><a class="toctree-l4" href="#enter-a-name">Enter a name</a></li>
+                
+                    <li><a class="toctree-l4" href="#open-main-menu">Open main menu</a></li>
+                
+                    <li><a class="toctree-l4" href="#open-saves-menu">Open saves menu</a></li>
+                
+                    <li><a class="toctree-l4" href="#title-screen">Title screen</a></li>
+                
+                    <li><a class="toctree-l4" href="#game-over">Game over</a></li>
+                
+                    <li><a class="toctree-l4" href="#script">Script</a></li>
+                
+                    <li><a class="toctree-l4" href="#change-windowskin">Change windowskin</a></li>
+                
+                    <li><a class="toctree-l4" href="#allow-forbid-saves">Allow / Forbid saves</a></li>
+                
+                    <li><a class="toctree-l4" href="#allow-forbid-main-menu">Allow / Forbid main menu</a></li>
+                
+                    <li><a class="toctree-l4" href="#change-general-options">Change general options</a></li>
+                
+                    <li><a class="toctree-l4" href="#play-a-music">Play a music</a></li>
+                
+                    <li><a class="toctree-l4" href="#stop-music">Stop music</a></li>
+                
+                    <li><a class="toctree-l4" href="#play-a-background-sound">Play a background sound</a></li>
+                
+                    <li><a class="toctree-l4" href="#stop-background-sound">Stop background sound</a></li>
+                
+                    <li><a class="toctree-l4" href="#play-a-sound">Play a sound</a></li>
+                
+                    <li><a class="toctree-l4" href="#play-a-music-effect">Play a music effect</a></li>
+                
+                    <li><a class="toctree-l4" href="#change-battle-music">Change battle music</a></li>
+                
+                    <li><a class="toctree-l4" href="#change-victory-music">Change victory music</a></li>
+                
+            
+            </ul>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../control-the-camera/">Control the camera</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../battle-system/">Battle system</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../window-skins/">Window skins</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../title-screen-and-game-over/">Title Screen & Game Over</a>
+        
+    </li>
+
+        
+    </ul>
+<li>
+          
+            <li>
+    <li class="toctree-l1 ">
+        <a class="" href="../../advanced/">Advanced</a>
+        
+    </li>
+<li>
+          
+            <li>
+    <li class="toctree-l1 ">
+        <a class="" href="../../experts/">Experts</a>
+        
+    </li>
+<li>
+          
+            <li>
+    <li class="toctree-l1 ">
+        <a class="" href="../../faq/">FAQ</a>
+        
+    </li>
+<li>
+          
+        </ul>
+      </div>
+      &nbsp;
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="../..">RPG Paper Maker</a>
+      </nav>
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../..">Docs</a> &raquo;</li>
+    
+      
+        
+          <li>Basics &raquo;</li>
+        
+      
+    
+    <li>Event commands overview</li>
+    <li class="wy-breadcrumbs-aside">
+      
+        
+          <a href="https://github.com/RPG-Paper-Maker/RPG-Paper-Maker" class="icon icon-github"> Edit on GitHub</a>
+        
+      
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main">
+            <div class="section">
+              
+                <h1 id="event-commands-overview">Event commands overview</h1>
+<p>Now that you are a pro for objects and event, let's see all the event commands that are possible to use.</p>
+<h2 id="show-text">Show text</h2>
+<p><img alt="Screenshot" src="../img/command-show-text.png" /></p>
+<p>Displays a text with the current dialog box options.</p>
+<ul>
+<li><code>Message</code>: message to display on screen.</li>
+</ul>
+<p>Render in game:</p>
+<p><img alt="Screenshot" src="../img/render-hello-world.png" /></p>
+<h2 id="display-a-choice">Display a choice</h2>
+<p><em>Not available yet.</em></p>
+<h2 id="input-number">Input number</h2>
+<p><em>Not available yet.</em></p>
+<h2 id="set-dialog-box-options">Set dialog box options</h2>
+<p><em>Not available yet.</em></p>
+<h2 id="wait">Wait</h2>
+<p><img alt="Screenshot" src="../img/command-wait.png" /></p>
+<p>Wait during a specific time.</p>
+<ul>
+<li><code>Time</code>: Time to wait in seconds.</li>
+</ul>
+<h2 id="change-chronometer">Change chronometer</h2>
+<p><em>Not available yet.</em></p>
+<h2 id="display-a-picture">Display a picture</h2>
+<p><em>Not available yet.</em></p>
+<h2 id="set-move-turn-a-picture">Set / Move / Turn a picture</h2>
+<p><em>Not available yet.</em></p>
+<h2 id="remove-a-picture">Remove a picture</h2>
+<p><em>Not available yet.</em></p>
+<h2 id="play-a-video">Play a video</h2>
+<p><em>Not available yet.</em></p>
+<h2 id="condition">Condition</h2>
+<p><img alt="Screenshot" src="../img/command-conditions.png" /></p>
+<p>Create a container for commands that will be executed only if the indicated condition is true.</p>
+<ul>
+<li>
+<p><code>Add "else" when conditions do not apply</code>: Create another container for commands that will be executed only if the indicated condition is false.</p>
+</li>
+<li>
+<p><strong>Variables</strong>:</p>
+<ul>
+<li><code>Variable</code>: The variable that will be compared by value.</li>
+</ul>
+</li>
+</ul>
+<h2 id="loop">Loop</h2>
+<p>Create a container for commands that will be executed on a loop.</p>
+<h2 id="break-loop">Break loop</h2>
+<p>If inside a loop container, this will go out of the loop and go to the next command after the loop.</p>
+<h2 id="label">Label</h2>
+<p><em>Not available yet.</em></p>
+<h2 id="jump-to-label">Jump to label</h2>
+<p><em>Not available yet.</em></p>
+<h2 id="stop-the-reaction">Stop the reaction</h2>
+<p><em>Not available yet.</em></p>
+<h2 id="comment">Comment</h2>
+<p><em>Not available yet.</em></p>
+<h2 id="call-a-common-reaction">Call a common reaction</h2>
+<p><em>Not available yet.</em></p>
+<h2 id="send-event">Send event</h2>
+<p><img alt="Screenshot" src="../img/command-send-event.png" /></p>
+<p>This will send an event to the selected target.</p>
+<ul>
+<li><strong>Target</strong>:<ul>
+<li><code>All</code>: <em>Not available yet.</em></li>
+<li><code>Detection</code>: Depends on a detection data. <em>Actually it just sends an event to objects in front of the object.</em></li>
+<li><code>Object</code>: <em>Not available yet.</em></li>
+<li><code>Sender</code>: <em>Not available yet.</em></li>
+<li><code>The hero</code>: Simply send to the defined hero.</li>
+</ul>
+</li>
+<li><strong>Event</strong>:<ul>
+<li><code>Event system</code>: Select a system event (events sent by the game system itself).</li>
+<li><code>Event user</code>: Select a user event (custom events sent by the map objects).</li>
+<li><code>Parameters values</code>: Select the event parameters values. You can keep the default value.</li>
+</ul>
+</li>
+</ul>
+<h2 id="change-state">Change state</h2>
+<p><img alt="Screenshot" src="../img/command-change-state.png" /></p>
+<p>This will change the state of the current object. An object can have several states at the same time.</p>
+<ul>
+<li><strong>Selection</strong>:<ul>
+<li><code>State's ID</code>: The new state ID.</li>
+</ul>
+</li>
+<li><strong>Operation</strong>:<ul>
+<li><code>Replace</code>: Remove all the current states of the object and add the new state.</li>
+<li><code>Add</code>: Only add the new state.</li>
+<li><code>Remove</code>: Remove the object state having this ID.</li>
+</ul>
+</li>
+</ul>
+<h2 id="change-properties">Change properties</h2>
+<p><em>Not available yet.</em></p>
+<h2 id="change-graphic">Change graphic</h2>
+<p><em>Not available yet.</em></p>
+<h2 id="teleport-object">Teleport object</h2>
+<p><img alt="Screenshot" src="../img/command-teleport-object.png" /></p>
+<p>This will teleport an object on an existing map with a new position.</p>
+<ul>
+<li><code>Object ID</code>: The object ID to teleport.</li>
+<li><strong>Position</strong>:<ul>
+<li><code>Select...</code>: Choose map and position thanks to a map previewer.</li>
+<li><code>ID map</code>, <code>X</code>, <code>Y</code>, <code>Y plus</code>, <code>Z</code>: Choose map ID an position to go manually.</li>
+<li><code>Object (ID)</code>: Choose an object to teleport on.</li>
+</ul>
+</li>
+<li><strong>Options</strong>: <em>Not available yet.</em></li>
+</ul>
+<h2 id="move-object">Move object</h2>
+<p><img alt="Screenshot" src="../img/command-move-object.png" /></p>
+<p>This will move an object in the current map with a specific route. You can also temporary change some properties linked to the object state.</p>
+<ul>
+<li><code>Object ID</code>: The object ID to move.</li>
+<li><code>Ignore if impossible</code>: If checked, the moves that can't be executed (example: a wall blocking the route) would be ignored. If not checked, this will try the impossible move as long as it become possible (example: use for NPCs moving).</li>
+<li><code>Wait the end of moves</code>: If checked, the command would end only when all the moves are executed. If not, the command would end immediately (moves executed in parallel).</li>
+<li><code>With camera orientation</code>: If checked, the direction moves (north, south, west, east) would take account of the camera orientation. If not, the direction moves would not take account of the camera orientation.</li>
+<li><strong>Step / square moves</strong>:<ul>
+<li><code>Square</code>: Change all the direction moves unit to square.</li>
+<li><code>Step</code>: Change all the direction moves unit to step.</li>
+<li><code>1 to North / South / West / East / North-West / North-East / South-West / South-East</code>: Move the object to 1 square / step in the selected direction.</li>
+<li><code>1 to random</code>: <em>(not available yet)</em> Move the object to 1 square / step in a random direction.</li>
+<li><code>1 to the hero</code>: <em>(not available yet)</em> Move the object to 1 square / step in the hero direction.</li>
+<li><code>1 opposite to the hero</code>: <em>(not available yet)</em> Move the object to 1 square / step in the opposite of the hero direction.</li>
+<li><code>1 in front</code>: <em>(not available yet)</em> Move the object to 1 square / step in front.</li>
+<li><code>1 back</code>: <em>(not available yet)</em> Move the object to 1 square / step back.</li>
+</ul>
+</li>
+<li><strong>Change direction</strong>: <em>Not available yet.</em></li>
+<li><strong>Change object properties</strong>: <em>Not available yet.</em></li>
+</ul>
+<h2 id="display-an-animation">Display an animation</h2>
+<p><em>Not available yet.</em></p>
+<h2 id="move-camera">Move camera</h2>
+<p>Check out the camera guide <a href="../control-the-camera/">here</a>.</p>
+<h2 id="reset-camera">Reset camera</h2>
+<p><em>Not available yet.</em></p>
+<h2 id="create-object-in-map">Create object in map</h2>
+<p><em>Not available yet.</em></p>
+<h2 id="remove-object-from-map">Remove object from map</h2>
+<p><em>Not available yet.</em></p>
+<h2 id="change-screen-tone">Change screen tone</h2>
+<p><em>Not available yet.</em></p>
+<h2 id="shake-screen">Shake screen</h2>
+<p><em>Not available yet.</em></p>
+<h2 id="flash-screen">Flash screen</h2>
+<p><em>Not available yet.</em></p>
+<h2 id="change-meteo">Change meteo</h2>
+<p><em>Not available yet.</em></p>
+<h2 id="change-map-properties">Change map properties</h2>
+<p><em>Not available yet.</em></p>
+<h2 id="change-variables">Change variables</h2>
+<p><img alt="Screenshot" src="../img/command-change-variables.png" /></p>
+<p>This will change one or several variable(s) value.</p>
+<ul>
+<li><strong>Selection</strong>:<ul>
+<li><code>One variable</code>: The unique variable to change.</li>
+<li><code>Range</code>: The range of variables IDs to change.</li>
+</ul>
+</li>
+<li><strong>Operation</strong>: The operation to use according to the current variable(s) value.</li>
+<li><strong>Value</strong>:<ul>
+<li><code>Number</code>: A simple number.</li>
+<li><code>Random</code>: A random number between two selected values.</li>
+<li><code>Number of ... in inventory</code>: <em>Not available yet.</em></li>
+<li><code>Total currency ... with ID</code>: <em>Not available yet.</em></li>
+<li><code>An ... with instance ID ... statistic ID</code>: <em>Not available yet.</em></li>
+<li><code>An object in the map ... characteristic</code>: <em>Not available yet.</em></li>
+<li><code>Other characteristics</code>: <em>Not available yet.</em></li>
+</ul>
+</li>
+</ul>
+<h2 id="change-a-statistic">Change a statistic</h2>
+<p><em>Not available yet.</em></p>
+<h2 id="change-experience-curve">Change experience curve</h2>
+<p><em>Not available yet.</em></p>
+<h2 id="change-status">Change status</h2>
+<p><em>Not available yet.</em></p>
+<h2 id="change-a-skill">Change a skill</h2>
+<p><em>Not available yet.</em></p>
+<h2 id="change-name">Change name</h2>
+<p><em>Not available yet.</em></p>
+<h2 id="change-class">Change class</h2>
+<p><em>Not available yet.</em></p>
+<h2 id="change-equipment">Change equipment</h2>
+<p><em>Not available yet.</em></p>
+<h2 id="change-money">Change money</h2>
+<p><em>Not available yet.</em></p>
+<h2 id="modify-inventory">Modify inventory</h2>
+<p><img alt="Screenshot" src="../img/command-modify-inventory.png" /></p>
+<p>This will update inventory containing. You can for example add items to it.</p>
+<ul>
+<li><strong>Selection</strong>:<ul>
+<li><code>Item</code>: An item to select.</li>
+<li><code>Weapon</code>: A weapon to select.</li>
+<li><code>Armor</code>: An armor to select.</li>
+</ul>
+</li>
+<li><strong>Operation</strong>: The operation to use according to the current number of the selection in the inventory.</li>
+<li><strong>Number</strong>: The value to use for updating the selection number.</li>
+</ul>
+<h2 id="modify-team">Modify team</h2>
+<p><img alt="Screenshot" src="../img/command-modify-team.png" /></p>
+<p>This will update team organization.</p>
+<ul>
+<li><code>Create new instance with level ... in team / reserve / hidden of</code>: Create a new instance of a hero or monster in team, reserve, or hidden.<ul>
+<li><code>Stock instance ID in</code>: Choose a variable where you want to stock the instance ID. This can be useful to move or remove characters in team.</li>
+</ul>
+</li>
+<li><code>Move / Remove the character with ID ... in team / reserve / hidden</code>: <em>Not available yet.</em></li>
+</ul>
+<h2 id="start-a-battle">Start a battle</h2>
+<p><img alt="Screenshot" src="../img/command-start-battle.png" /></p>
+<p>This will start a battle with your team against a troop (group of monsters).</p>
+<ul>
+<li><strong>Troop's ID</strong>:<ul>
+<li><code>ID</code>: Fix troop ID.</li>
+<li><code>Random (in map property)</code>: Random ID indicated in map property window.</li>
+</ul>
+</li>
+<li><strong>Battle map</strong>:<ul>
+<li><code>ID</code>: Fix battle map ID.</li>
+<li><code>Select...</code>: Choose battle map and position thanks to a map previewer.</li>
+<li><code>ID map</code>, <code>X</code>, <code>Y</code>, <code>Y plus</code>, <code>Z</code>: Choose battle map ID and position to go manually.</li>
+</ul>
+</li>
+<li><strong>Options</strong>:<ul>
+<li><code>Allow escape</code>: If checked, it would be possible to use battle command <code>Escape</code> in this battle.</li>
+<li><code>Defeat causes Game Over</code>: If checked, losing in this battle will automatically direct to game over. If not checked, there will be two commands container : one for the winning state, and the second for the losing state.</li>
+</ul>
+</li>
+<li><strong>Transition</strong>:<ul>
+<li><code>Start / End</code>: Start / End type of transition:<ul>
+<li><code>None</code>: Immediate transition.</li>
+<li><code>Fade in / out</code>: Transition on a color.</li>
+<li><code>Zoom in / out</code>: Transition by zooming in / out.</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h2 id="display-hide-enemy">Display / Hide enemy</h2>
+<p><em>Not available yet.</em></p>
+<h2 id="force-an-action">Force an action</h2>
+<p><em>Not available yet.</em></p>
+<h2 id="end-battle">End battle</h2>
+<p><em>Not available yet.</em></p>
+<h2 id="start-shop">Start shop</h2>
+<p><em>Not available yet.</em></p>
+<h2 id="enter-a-name">Enter a name</h2>
+<p><em>Not available yet.</em></p>
+<h2 id="open-main-menu">Open main menu</h2>
+<p>This will open the main menu.</p>
+<p>Render in game:</p>
+<p><img alt="Screenshot" src="../img/render-main-menu.png" /></p>
+<h2 id="open-saves-menu">Open saves menu</h2>
+<p>This will open the saves menu.</p>
+<p>Render in game:</p>
+<p><img alt="Screenshot" src="../img/render-saves-menu.png" /></p>
+<h2 id="title-screen">Title screen</h2>
+<p><em>Not available yet.</em></p>
+<h2 id="game-over">Game over</h2>
+<p>This will go to the game over screen.</p>
+<p><em>/!\ Today, there is no game over screen, it's only closing the game window.</em></p>
+<h2 id="script">Script</h2>
+<p><em>Not available yet.</em></p>
+<h2 id="change-windowskin">Change windowskin</h2>
+<p><em>Not available yet.</em></p>
+<h2 id="allow-forbid-saves">Allow / Forbid saves</h2>
+<p><em>Not available yet.</em></p>
+<h2 id="allow-forbid-main-menu">Allow / Forbid main menu</h2>
+<p><em>Not available yet.</em></p>
+<h2 id="change-general-options">Change general options</h2>
+<p><em>Not available yet.</em></p>
+<h2 id="play-a-music">Play a music</h2>
+<p><img alt="Screenshot" src="../img/command-play-music.png" /></p>
+<p>This will play a music on the current map.</p>
+<ul>
+<li><code>Select song by ID</code>: Instead of using the left list, you can select by ID values.</li>
+<li><strong>Options</strong>:<ul>
+<li><code>Volume</code>: The music volume (in %).</li>
+<li><code>Start</code>: The beginning time of the music in seconds.</li>
+<li><code>End</code>: The end time of the music in seconds.</li>
+</ul>
+</li>
+</ul>
+<h2 id="stop-music">Stop music</h2>
+<p><img alt="Screenshot" src="../img/command-stop-music.png" /></p>
+<p>This will stop the music played in the current map.</p>
+<ul>
+<li><code>Disappear with time</code>: Number of seconds for music played for disappearing.</li>
+</ul>
+<h2 id="play-a-background-sound">Play a background sound</h2>
+<p>This will play a background sound on top of the current music.</p>
+<p>Check out the play music command <a href="../event-commands-overview/#play-a-music">here</a> that is similar.</p>
+<h2 id="stop-background-sound">Stop background sound</h2>
+<p>This will stop the background sound played in the current map.</p>
+<p>Check out the stop music command <a href="../event-commands-overview/#stop-music">here</a> that is similar.</p>
+<h2 id="play-a-sound">Play a sound</h2>
+<p>This will play a sound on top of all the songs.</p>
+<p>Check out the play music command <a href="../event-commands-overview/#play-a-music">here</a> that is similar.</p>
+<h2 id="play-a-music-effect">Play a music effect</h2>
+<p>This will play a music by pausing the current played music. When the music effect is finished the previously played music is unpaused.</p>
+<p>Check out the play music command <a href="../event-commands-overview/#play-a-music">here</a> that is similar.</p>
+<h2 id="change-battle-music">Change battle music</h2>
+<p><em>Not available yet.</em></p>
+<h2 id="change-victory-music">Change victory music</h2>
+<p><em>Not available yet.</em></p>
+              
+            </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../control-the-camera/" class="btn btn-neutral float-right" title="Control the camera"/>Next <span class="icon icon-circle-arrow-right"></span></a>
+      
+      
+        <a href="../objects-and-events/" class="btn btn-neutral" title="Objects & Events"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+    
+      <p>RPG Paper Maker Copyright (C) 2017-2019 Marie Laporte</p>
+    
+  </div>
+
+  Built with <a href="http://www.mkdocs.org">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+	  
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+<div class="rst-versions" role="note" style="cursor: pointer">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+      
+          <a class="icon icon-github" style="float: left; color: #fcfcfc"> GitHub</a>
+      
+      
+        <span><a href="../objects-and-events/" style="color: #fcfcfc;">&laquo; Previous</a></span>
+      
+      
+        <span style="margin-left: 15px"><a href="../control-the-camera/" style="color: #fcfcfc">Next &raquo;</a></span>
+      
+    </span>
+</div>
+
+</body>
+</html>

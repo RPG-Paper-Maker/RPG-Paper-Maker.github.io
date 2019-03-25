@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Objects & Events - RPG Paper Maker</title>
+  
+
+  <link rel="shortcut icon" href="../../img/favicon.ico">
+
+  
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
+
+  <link rel="stylesheet" href="../../css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../css/theme_extra.css" type="text/css" />
+  <link rel="stylesheet" href="../../css/highlight.css">
+
+  
+  <script>
+    // Current page data
+    var mkdocs_page_name = "Objects & Events";
+  </script>
+  
+  <script src="../../js/jquery-2.1.1.min.js"></script>
+  <script src="../../js/modernizr-2.8.3.min.js"></script>
+  <script type="text/javascript" src="../../js/highlight.pack.js"></script>
+  <script src="../../js/theme.js"></script> 
+
+  
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+      <div class="wy-side-nav-search">
+        <a href="../.." class="icon icon-home"> RPG Paper Maker</a>
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+        <ul class="current">
+          
+            <li>
+    <li class="toctree-l1 ">
+        <a class="" href="../..">Getting started</a>
+        
+    </li>
+<li>
+          
+            <li>
+    <ul class="subnav">
+    <li><span>Basics</span></li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../map-editor-basics/">Map editor basics</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../manage-your-resources/">Manage your resources</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../tilesets-and-collisions/">Tilesets & Collisions</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../variables-overview/">Variables overview</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 current">
+        <a class="current" href="./">Objects & Events</a>
+        
+            <ul>
+            
+                <li class="toctree-l3"><a href="#objects-events">Objects & Events</a></li>
+                
+                    <li><a class="toctree-l4" href="#events">Events</a></li>
+                
+                    <li><a class="toctree-l4" href="#reactions">Reactions</a></li>
+                
+                    <li><a class="toctree-l4" href="#common-reactions">Common reactions</a></li>
+                
+                    <li><a class="toctree-l4" href="#objects">Objects</a></li>
+                
+                    <li><a class="toctree-l4" href="#example-create-a-chest">Example: create a chest</a></li>
+                
+                    <li><a class="toctree-l4" href="#edit-copy-paste-delete-an-existing-object">Edit / Copy / Paste / Delete an existing object</a></li>
+                
+                    <li><a class="toctree-l4" href="#models">Models</a></li>
+                
+            
+            </ul>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../event-commands-overview/">Event commands overview</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../control-the-camera/">Control the camera</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../battle-system/">Battle system</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../window-skins/">Window skins</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../title-screen-and-game-over/">Title Screen & Game Over</a>
+        
+    </li>
+
+        
+    </ul>
+<li>
+          
+            <li>
+    <li class="toctree-l1 ">
+        <a class="" href="../../advanced/">Advanced</a>
+        
+    </li>
+<li>
+          
+            <li>
+    <li class="toctree-l1 ">
+        <a class="" href="../../experts/">Experts</a>
+        
+    </li>
+<li>
+          
+            <li>
+    <li class="toctree-l1 ">
+        <a class="" href="../../faq/">FAQ</a>
+        
+    </li>
+<li>
+          
+        </ul>
+      </div>
+      &nbsp;
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="../..">RPG Paper Maker</a>
+      </nav>
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../..">Docs</a> &raquo;</li>
+    
+      
+        
+          <li>Basics &raquo;</li>
+        
+      
+    
+    <li>Objects & Events</li>
+    <li class="wy-breadcrumbs-aside">
+      
+        
+          <a href="https://github.com/RPG-Paper-Maker/RPG-Paper-Maker" class="icon icon-github"> Edit on GitHub</a>
+        
+      
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main">
+            <div class="section">
+              
+                <h1 id="objects-events">Objects &amp; Events</h1>
+<p>You know how to create beautiful maps, but you want to make it be alive by adding NPCs, treasures, etc. These elements are called <code>objects</code>. These objects will also react to <code>events</code> (hero action, chronometer, attack, etc.). Objects and events are here to galvanize your maps and create your game stories!</p>
+<h2 id="events">Events</h2>
+<p><strong>/!\ Events in RPG Paper Maker are a different notion than in RM classic series.</strong></p>
+<p>You can access to events in <code>Systems manager &gt; Events / States</code>.</p>
+<p><img alt="Screenshot" src="../img/event-states.png" /></p>
+<p>Events represent the fact that something important just happened and the objects in the map can react or not to it. An event can be for example the fact that your hero pressed the action button, or even the fact that a rain tempest just started. These events are sent to objects by other objects. There are two types of events:</p>
+<ul>
+<li><strong>System events</strong> (time, keyboard pressure, etc.) that are not sent by objects in the map, but by the game system itself.</li>
+<li><strong>User events</strong> (quest completed, sword hit) that you can be created by yourself and sent thanks to local objects.</li>
+</ul>
+<p>An event also takes some <code>parameters</code>. For example, if you want to play a sound each three seconds in the background, you can use the time event with the parameter time = 3000 (milliseconds) and repeat = ON. Imagine such amazing things you can do with parameters (a sword hit event taking a power parameter for example). You can choose the default value of a parameter when editing parameters of an event.</p>
+<p><strong>/!\ Don't confuse physics and events. You should not use events for wind animations or gravity, etc.</strong></p>
+<h2 id="reactions">Reactions</h2>
+<p>Reactions are a tree of commands that will be executed one by one. For example a command can be to display text on screen or to move specific objects in the map. Here is an example of reaction:</p>
+<p><img alt="Screenshot" src="../img/example-reaction.png" /></p>
+<p>This reaction will check if the variable myValue is equal to 2. If it's OK, this will display the message "It's OK!". If not, this will display the message "Go back later.".</p>
+<p>To edit / add a new command in a reaction, <code>Double click</code> on a corresponding node. This will open this window containing a large list of commands:</p>
+<p><img alt="Screenshot" src="../img/event-commands.png" /></p>
+<p>We will see later all these commands details one by one.</p>
+<p>You can also copy / paste / delete by <code>Right-clicking</code> on the corresponding command node.</p>
+<h2 id="common-reactions">Common reactions</h2>
+<p>If you see that you are often copying the same set of commands a lot of time maybe you should consider creating a common reaction. You can access to these in <code>Systems manager &gt; Common reactions</code>.</p>
+<p><img alt="Screenshot" src="../img/common-reactions.png" /></p>
+<p>This way you will be able to call this common reaction instead of always copying it. It's even taking parameters if you have some variations in your reaction.</p>
+<ul>
+<li><code>Blocking hero</code>: If checked, the hero will not be able to move until the reaction is finished.</li>
+</ul>
+<h2 id="objects">Objects</h2>
+<p>An object is something that can move or/and react to some events in a map. So basically a tree is not an object (except if you can cut it so it would have a reaction to an axe hit) but only a static element. It can be a NPC, a monster, or anything else. Note that your hero is an object itself so you can perfectly program its reactions.</p>
+<p>To add an object in a map, select the <code>Object</code> map editor section. Point on a map square and <code>Double click</code> or press <code>Enter</code> after clicking on the square. This will open a new window.</p>
+<p><img alt="Screenshot" src="../img/object-map.png" /></p>
+<ul>
+<li><code>Name</code>: Choose a name for your objects. This can help later if you want to execute actions on this object externally.</li>
+<li><code>Model</code>: Choose a model for this object. We will see later how to configure models.</li>
+</ul>
+<h3 id="events_1">Events</h3>
+<p>You can configure which event the object can react to in the <code>Events</code> section. <code>Double click</code> on a node:</p>
+<p><img alt="Screenshot" src="../img/event.png" /></p>
+<p>You can select if you want a user or system event and change parameters value:</p>
+<p><img alt="Screenshot" src="../img/event-parameters.png" /></p>
+<p>System events are the following:</p>
+<ul>
+<li><code>Time</code>: Event sent when time interval is cleared.<ul>
+<li><strong>Interval</strong> (default: 0): Time to wait in milliseconds.</li>
+<li><strong>Repeat</strong> (default: ON): Send the event after each interval or once.</li>
+</ul>
+</li>
+<li><code>Chronometer</code>: <em>Not available yet.</em></li>
+<li><code>KeyPress</code>: Event sent when pressing a key on keyboard.<ul>
+<li><strong>ID</strong> (default: anything): The ID of the key.</li>
+<li><strong>Repeat</strong> (default: OFF): If ON, this event will be sent as long as you press the key with a small offset at the first pressure.</li>
+<li><strong>Immediate repeat</strong> (default: OFF): If ON, this event will be sent as long as you press the key without any offset.</li>
+</ul>
+</li>
+<li><code>KeyRelease</code>: Event sent when releasing a key on keyboard.<ul>
+<li><strong>ID</strong> (default: anything): The ID of the key.</li>
+</ul>
+</li>
+</ul>
+<h3 id="states">States</h3>
+<p>An object has a set of <code>States</code>. For example, the hero can be in a normal state, or poisoned / vulnerable. Note that an object can be in several states at the same time. </p>
+<p><img alt="Screenshot" src="../img/object-state-second.png" /></p>
+<p>For each state, you have to choose different reactions to specific events. You can copy / paste reactions through states by using <code>Copy reaction</code> and <code>Paste reaction</code> buttons. These different options are also available for each state:</p>
+<ul>
+<li><code>Graphics</code>: Select the object graphics here (character picture). Choose below the kind of element (Sprite etc.).</li>
+<li><code>Moving</code>: <em>(not available yet)</em> Options linked to the object moves.</li>
+<li><code>Move animation</code>: If checked, all the frames of the character will be drawn for move animation. If not, this will only draw the first frame of the character animation.</li>
+<li><code>Stop animation</code>: <em>(not available yet)</em> If checked, all the frames of the character will be drawn for stopped animation. If not, this will only draw the first frame of the character animation.</li>
+<li><code>Climb animation</code>: <em>(not available yet)</em> If checked, all the frames of the character will be drawn for climbing animation. If not, this will only draw the first frame of the character animation.</li>
+<li><code>Direction fix</code>: <em>(not available yet)</em> If checked, the graphics will not change direction to look at the hero. If not, it will look at the hero.</li>
+<li><code>Set with camera</code>: If checked, the graphics will update orientation according to the camera orientation. If not, the camera orientation changes nothing.</li>
+<li><code>Pixel offset</code>: If checked, the move animation will go 1px down after two frames. This adds an interesting effect.</li>
+<li><code>Keep position</code>: <em>(not available yet)</em> If checked, the object always keep its position after moving, even after loading save or changing map. If not, the object position is reinitialized after loading save or changing map.</li>
+</ul>
+<h3 id="properties">Properties</h3>
+<p><em>Not available yet.</em></p>
+<p>The object also has a set of properties. It can be HPs, age, gender, etc. It all depends on what you need and your type of game.</p>
+<h2 id="example-create-a-chest">Example: create a chest</h2>
+<p>Here is a simple way to produce a chest:</p>
+<ul>
+<li>Be sure to have a state for the chest in the systems manager when it is opened:</li>
+</ul>
+<p><img alt="Screenshot" src="../img/states-opened.png" /></p>
+<ul>
+<li>Complete reactions for each state and don't forget to replace state at the end of the normal state:</li>
+</ul>
+<p><img alt="Screenshot" src="../img/state-1.png" />
+<img alt="Screenshot" src="../img/state-2.png" /></p>
+<h2 id="edit-copy-paste-delete-an-existing-object">Edit / Copy / Paste / Delete an existing object</h2>
+<p>You can open a context menu by <code>Right clicking</code> on an object:</p>
+<p><img alt="Screenshot" src="../img/object-context-menu.png" /></p>
+<h2 id="models">Models</h2>
+<p>Models are objects that can be commonly used. You can have models list in <code>Systems manager &gt; Models</code>.</p>
+<p><img alt="Screenshot" src="../img/object-hero.png" /></p>
+<p>For example, if you want to add flowers that can be picked in your maps, you can create a model "Flower", and use this model for an empty object in your map:</p>
+<ul>
+<li>Create model:</li>
+</ul>
+<p><img alt="Screenshot" src="../img/model-flower.png" /></p>
+<ul>
+<li>Use model flower for a map object:</li>
+</ul>
+<p><img alt="Screenshot" src="../img/object-model-flower.png" /></p>
+<h3 id="default-model">Default model</h3>
+<p>The model with ID 1 is the default model when you create a new object. You can change here the default informations to have in an object creation.</p>
+<h3 id="hero-model">Hero model</h3>
+<p>The hero is also an object and reacts to a lot of systems events:</p>
+<ul>
+<li><code>KeyPress &gt; Up, Down, Left, Right Hero</code>: Move the object hero to the pressed directions thanks to move object command.</li>
+<li><code>KeyPress &gt; Left, Right Camera</code>: Change the camera orientation thanks to move camera command.</li>
+<li><code>KeyPress &gt; Action</code>: Send the custom event <code>HeroAction</code> to the facing square objects thanks to the send event command.</li>
+<li><code>KeyPress &gt; MainMenu</code>: Open the main menu thanks to the open main menu command.</li>
+</ul>
+<h3 id="inheritance">Inheritance</h3>
+<p>If an object uses a model but also has content, this new content will replace some of the model content. Models themselves can have models.</p>
+<ul>
+<li><strong>State</strong>: If there is a state with the same ID, the model reactions for this state ID will be replaced by the current content.</li>
+<li><strong>Property</strong>: If there is a property with the same name, the model reactions for this property name will be replaced by the current content.</li>
+<li><strong>Event</strong>: This has no influence.</li>
+</ul>
+              
+            </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../event-commands-overview/" class="btn btn-neutral float-right" title="Event commands overview"/>Next <span class="icon icon-circle-arrow-right"></span></a>
+      
+      
+        <a href="../variables-overview/" class="btn btn-neutral" title="Variables overview"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+    
+      <p>RPG Paper Maker Copyright (C) 2017-2019 Marie Laporte</p>
+    
+  </div>
+
+  Built with <a href="http://www.mkdocs.org">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+	  
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+<div class="rst-versions" role="note" style="cursor: pointer">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+      
+          <a class="icon icon-github" style="float: left; color: #fcfcfc"> GitHub</a>
+      
+      
+        <span><a href="../variables-overview/" style="color: #fcfcfc;">&laquo; Previous</a></span>
+      
+      
+        <span style="margin-left: 15px"><a href="../event-commands-overview/" style="color: #fcfcfc">Next &raquo;</a></span>
+      
+    </span>
+</div>
+
+</body>
+</html>

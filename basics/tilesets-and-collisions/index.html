@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Tilesets & Collisions - RPG Paper Maker</title>
+  
+
+  <link rel="shortcut icon" href="../../img/favicon.ico">
+
+  
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
+
+  <link rel="stylesheet" href="../../css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../css/theme_extra.css" type="text/css" />
+  <link rel="stylesheet" href="../../css/highlight.css">
+
+  
+  <script>
+    // Current page data
+    var mkdocs_page_name = "Tilesets & Collisions";
+  </script>
+  
+  <script src="../../js/jquery-2.1.1.min.js"></script>
+  <script src="../../js/modernizr-2.8.3.min.js"></script>
+  <script type="text/javascript" src="../../js/highlight.pack.js"></script>
+  <script src="../../js/theme.js"></script> 
+
+  
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+      <div class="wy-side-nav-search">
+        <a href="../.." class="icon icon-home"> RPG Paper Maker</a>
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+        <ul class="current">
+          
+            <li>
+    <li class="toctree-l1 ">
+        <a class="" href="../..">Getting started</a>
+        
+    </li>
+<li>
+          
+            <li>
+    <ul class="subnav">
+    <li><span>Basics</span></li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../map-editor-basics/">Map editor basics</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../manage-your-resources/">Manage your resources</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 current">
+        <a class="current" href="./">Tilesets & Collisions</a>
+        
+            <ul>
+            
+                <li class="toctree-l3"><a href="#tilesets-collisions">Tilesets & Collisions</a></li>
+                
+                    <li><a class="toctree-l4" href="#tilesets">Tilesets</a></li>
+                
+                    <li><a class="toctree-l4" href="#collisions">Collisions</a></li>
+                
+                    <li><a class="toctree-l4" href="#bounding-boxes">Bounding boxes</a></li>
+                
+                    <li><a class="toctree-l4" href="#simple-boxes-and-oriented-boxes">Simple boxes and Oriented boxes</a></li>
+                
+                    <li><a class="toctree-l4" href="#how-can-i-change-collisions">How can I change collisions?</a></li>
+                
+                    <li><a class="toctree-l4" href="#praticable">Praticable</a></li>
+                
+                    <li><a class="toctree-l4" href="#directions-only-for-floors">Directions (only for floors)</a></li>
+                
+                    <li><a class="toctree-l4" href="#characters">Characters</a></li>
+                
+                    <li><a class="toctree-l4" href="#autotiles">Autotiles</a></li>
+                
+                    <li><a class="toctree-l4" href="#animated-autotiles">Animated autotiles</a></li>
+                
+                    <li><a class="toctree-l4" href="#sprites-walls">Sprites walls</a></li>
+                
+                    <li><a class="toctree-l4" href="#3d-objects">3D objects</a></li>
+                
+                    <li><a class="toctree-l4" href="#reliefs">Reliefs</a></li>
+                
+            
+            </ul>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../variables-overview/">Variables overview</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../objects-and-events/">Objects & Events</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../event-commands-overview/">Event commands overview</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../control-the-camera/">Control the camera</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../battle-system/">Battle system</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../window-skins/">Window skins</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../title-screen-and-game-over/">Title Screen & Game Over</a>
+        
+    </li>
+
+        
+    </ul>
+<li>
+          
+            <li>
+    <li class="toctree-l1 ">
+        <a class="" href="../../advanced/">Advanced</a>
+        
+    </li>
+<li>
+          
+            <li>
+    <li class="toctree-l1 ">
+        <a class="" href="../../experts/">Experts</a>
+        
+    </li>
+<li>
+          
+            <li>
+    <li class="toctree-l1 ">
+        <a class="" href="../../faq/">FAQ</a>
+        
+    </li>
+<li>
+          
+        </ul>
+      </div>
+      &nbsp;
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="../..">RPG Paper Maker</a>
+      </nav>
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../..">Docs</a> &raquo;</li>
+    
+      
+        
+          <li>Basics &raquo;</li>
+        
+      
+    
+    <li>Tilesets & Collisions</li>
+    <li class="wy-breadcrumbs-aside">
+      
+        
+          <a href="https://github.com/RPG-Paper-Maker/RPG-Paper-Maker" class="icon icon-github"> Edit on GitHub</a>
+        
+      
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main">
+            <div class="section">
+              
+                <h1 id="tilesets-collisions">Tilesets &amp; Collisions</h1>
+<p>We've previously seen that the map properties had an option <code>Tileset</code> selection. We will now see what it is.</p>
+<h2 id="tilesets">Tilesets</h2>
+<p>A tileset corresponds to a set of informations linked to the map textures and collisions. Open the datas manager by clicking here on the main toolbar and select the <code>Tilesets</code> tab:</p>
+<p><img alt="Screenshot" src="../img/tileset-manager.png" /></p>
+<p>If you want to add / remove tileset(s), you can use the <code>Change maximum...</code> button. You can change the <code>Picture</code> by clicking on the following widget that will open a reduced picture manager (containing only one kind of picture). That picture will correspond to the static textures that you will use for your maps having this tileset.</p>
+<p>You can also change special textures (autotiles, walls, etc.) linked to the tileset.</p>
+<h2 id="collisions">Collisions</h2>
+<p>Collisions are important in video games. You need to manage if the moving objects are colliding with other objects or any other map elements.</p>
+<h2 id="bounding-boxes">Bounding boxes</h2>
+<p>Bounding box are simple geometries that are used for checking intersections. Each object has a corresponding bounding box, after each move the engine will check if the object bounding box intersect with another bounding box in the map.</p>
+<p>There is a way to see the bounding boxes for debugging (if you encounter any strange behavior). Check the following option:</p>
+<p><img alt="Screenshot" src="../img/collision-debug.png" /></p>
+<h2 id="simple-boxes-and-oriented-boxes">Simple boxes and Oriented boxes</h2>
+<p>Depending on which sprite you are using, bounding boxes can be oriented like this:</p>
+<p><img alt="Screenshot" src="../img/collision-boxes.png" /></p>
+<p>Fix sprites are flat, so they don't need to be oriented. However, face, double, and quadra sprites are voluminous and their bounding box could be a cylinder. A cylinder collision is over killed so we are using oriented boxes that are reasonable to manage collisions with great performances.</p>
+<h2 id="how-can-i-change-collisions">How can I change collisions?</h2>
+<p>For tileset, you can edit it directly in the picture preview on the <code>Tilesets</code> tab of datas manager. Another way is to open the collisions manager merging all the possible collisions. Open the collisions manager by clicking here on the main toolbar:</p>
+<p><img alt="Screenshot" src="../img/collision-manager.png" /></p>
+<h2 id="praticable">Praticable</h2>
+<p>You can for example change the tileset collision by re-sizing it for each square. This will affect the size of the bounding boxes. You can res-ize it with your <code>mouse</code> or <code>Right click</code> and click on <code>Edit</code> in order to open a window for selecting the rectangle values.</p>
+<p><img alt="Screenshot" src="../img/collision-praticable.png" /></p>
+<h2 id="directions-only-for-floors">Directions (only for floors)</h2>
+<p>You can indicate in which direction there will be a collision.</p>
+<p><img alt="Screenshot" src="../img/collision-direction.png" /></p>
+<h2 id="characters">Characters</h2>
+<p>Characters are animated and you can handle different collisions for different frames. But, if you want to have the same collisions for all the frames, check the <code>Repeat</code> option.</p>
+<p><img alt="Screenshot" src="../img/collision-character.png" /></p>
+<h2 id="autotiles">Autotiles</h2>
+<p>You can manage the autotiles list by clicking here on the main toolbar:</p>
+<p><img alt="Screenshot" src="../img/autotiles-list.png" /></p>
+<p>You can manage picture and collisions for each autotiles here. Autotiles are dynamic floors. This will have borders with automatic changing according to the neighbor squares. Here is an example of an autotile picture:</p>
+<p><img alt="Screenshot" src="../img/autotile-general.png" /></p>
+<p>Rendering in map:</p>
+<p><img alt="Screenshot" src="../img/autotiles-preview.png" /></p>
+<p>Don't forget to add your autotiles in the tileset:</p>
+<p><img alt="Screenshot" src="../img/autotiles-tileset.png" /></p>
+<h2 id="animated-autotiles">Animated autotiles</h2>
+<p><em>Not available yet.</em></p>
+<h2 id="sprites-walls">Sprites walls</h2>
+<p>You can manage the walls the same way you did for autotiles in:</p>
+<ul>
+<li>Collisions manager</li>
+<li><code>Tilesets</code> tab in datas manager:</li>
+</ul>
+<p><img alt="Screenshot" src="../img/walls-tileset.png" /></p>
+<h2 id="3d-objects">3D objects</h2>
+<p><em>Not available yet.</em></p>
+<h2 id="reliefs">Reliefs</h2>
+<p><em>Not available yet.</em></p>
+              
+            </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../variables-overview/" class="btn btn-neutral float-right" title="Variables overview"/>Next <span class="icon icon-circle-arrow-right"></span></a>
+      
+      
+        <a href="../manage-your-resources/" class="btn btn-neutral" title="Manage your resources"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+    
+      <p>RPG Paper Maker Copyright (C) 2017-2019 Marie Laporte</p>
+    
+  </div>
+
+  Built with <a href="http://www.mkdocs.org">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+	  
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+<div class="rst-versions" role="note" style="cursor: pointer">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+      
+          <a class="icon icon-github" style="float: left; color: #fcfcfc"> GitHub</a>
+      
+      
+        <span><a href="../manage-your-resources/" style="color: #fcfcfc;">&laquo; Previous</a></span>
+      
+      
+        <span style="margin-left: 15px"><a href="../variables-overview/" style="color: #fcfcfc">Next &raquo;</a></span>
+      
+    </span>
+</div>
+
+</body>
+</html>

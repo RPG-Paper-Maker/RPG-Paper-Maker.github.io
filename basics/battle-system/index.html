@@ -1,0 +1,553 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Battle system - RPG Paper Maker</title>
+  
+
+  <link rel="shortcut icon" href="../../img/favicon.ico">
+
+  
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
+
+  <link rel="stylesheet" href="../../css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../css/theme_extra.css" type="text/css" />
+  <link rel="stylesheet" href="../../css/highlight.css">
+
+  
+  <script>
+    // Current page data
+    var mkdocs_page_name = "Battle system";
+  </script>
+  
+  <script src="../../js/jquery-2.1.1.min.js"></script>
+  <script src="../../js/modernizr-2.8.3.min.js"></script>
+  <script type="text/javascript" src="../../js/highlight.pack.js"></script>
+  <script src="../../js/theme.js"></script> 
+
+  
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+      <div class="wy-side-nav-search">
+        <a href="../.." class="icon icon-home"> RPG Paper Maker</a>
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+        <ul class="current">
+          
+            <li>
+    <li class="toctree-l1 ">
+        <a class="" href="../..">Getting started</a>
+        
+    </li>
+<li>
+          
+            <li>
+    <ul class="subnav">
+    <li><span>Basics</span></li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../map-editor-basics/">Map editor basics</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../manage-your-resources/">Manage your resources</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../tilesets-and-collisions/">Tilesets & Collisions</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../variables-overview/">Variables overview</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../objects-and-events/">Objects & Events</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../event-commands-overview/">Event commands overview</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../control-the-camera/">Control the camera</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 current">
+        <a class="current" href="./">Battle system</a>
+        
+            <ul>
+            
+                <li class="toctree-l3"><a href="#battle-system">Battle system</a></li>
+                
+                    <li><a class="toctree-l4" href="#battle-system-datas">Battle system datas</a></li>
+                
+                    <li><a class="toctree-l4" href="#elements">Elements</a></li>
+                
+                    <li><a class="toctree-l4" href="#common-statistics">Common statistics</a></li>
+                
+                    <li><a class="toctree-l4" href="#common-battle-commands">Common battle commands</a></li>
+                
+                    <li><a class="toctree-l4" href="#common-equipment">Common equipment</a></li>
+                
+                    <li><a class="toctree-l4" href="#weapons-armors-kind">Weapons / Armors kind</a></li>
+                
+                    <li><a class="toctree-l4" href="#battle-maps">Battle maps</a></li>
+                
+                    <li><a class="toctree-l4" href="#statistics-associations">Statistics associations</a></li>
+                
+                    <li><a class="toctree-l4" href="#formulas">Formulas</a></li>
+                
+                    <li><a class="toctree-l4" href="#battle-musics">Battle musics</a></li>
+                
+                    <li><a class="toctree-l4" href="#currencies">Currencies</a></li>
+                
+                    <li><a class="toctree-l4" href="#skills-items-weapons-armors">Skills / Items / Weapons / Armors</a></li>
+                
+                    <li><a class="toctree-l4" href="#costs">Costs</a></li>
+                
+                    <li><a class="toctree-l4" href="#effects">Effects</a></li>
+                
+                    <li><a class="toctree-l4" href="#characteristics">Characteristics</a></li>
+                
+                    <li><a class="toctree-l4" href="#classes">Classes</a></li>
+                
+                    <li><a class="toctree-l4" href="#heroes">Heroes</a></li>
+                
+                    <li><a class="toctree-l4" href="#monsters">Monsters</a></li>
+                
+                    <li><a class="toctree-l4" href="#troops">Troops</a></li>
+                
+                    <li><a class="toctree-l4" href="#status">Status</a></li>
+                
+                    <li><a class="toctree-l4" href="#animations">Animations</a></li>
+                
+            
+            </ul>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../window-skins/">Window skins</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../title-screen-and-game-over/">Title Screen & Game Over</a>
+        
+    </li>
+
+        
+    </ul>
+<li>
+          
+            <li>
+    <li class="toctree-l1 ">
+        <a class="" href="../../advanced/">Advanced</a>
+        
+    </li>
+<li>
+          
+            <li>
+    <li class="toctree-l1 ">
+        <a class="" href="../../experts/">Experts</a>
+        
+    </li>
+<li>
+          
+            <li>
+    <li class="toctree-l1 ">
+        <a class="" href="../../faq/">FAQ</a>
+        
+    </li>
+<li>
+          
+        </ul>
+      </div>
+      &nbsp;
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="../..">RPG Paper Maker</a>
+      </nav>
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../..">Docs</a> &raquo;</li>
+    
+      
+        
+          <li>Basics &raquo;</li>
+        
+      
+    
+    <li>Battle system</li>
+    <li class="wy-breadcrumbs-aside">
+      
+        
+          <a href="https://github.com/RPG-Paper-Maker/RPG-Paper-Maker" class="icon icon-github"> Edit on GitHub</a>
+        
+      
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main">
+            <div class="section">
+              
+                <h1 id="battle-system">Battle system</h1>
+<p>If you want to create to create a RPG, you may need a battle system. Here, we will see all the features linked to the battle implementation.</p>
+<p><img alt="Screenshot" src="../img/battle-demo.gif" /></p>
+<p><em>Note: if you want to do an action RPG (battles directly on maps), you can do it through object &amp; events</em></p>
+<h2 id="battle-system-datas">Battle system datas</h2>
+<p>A lot of battle system datas can be found in <code>Systems Manager &gt; Battle System</code>.</p>
+<p><img alt="Screenshot" src="../img/battle-system.png" /></p>
+<h2 id="elements">Elements</h2>
+<p><em>Not available yet.</em></p>
+<h2 id="common-statistics">Common statistics</h2>
+<p><img alt="Screenshot" src="../img/battle-statistic.png" /></p>
+<p>You can manage here all the statistics that you want to have in your game for influencing your battles (HPs, lvl, strength, etc.).</p>
+<ul>
+<li><code>Name</code>: Name displayed in game UI.</li>
+<li><code>Script abbreviation</code>: Choose here an abbreviation. This will be used for game scripts, choose something without capital letter if possible.</li>
+<li><strong>Properties</strong>:<ul>
+<li><code>Fix</code>: If checked, this statistic would be a fix value (not a bar).</li>
+<li><code>Bar</code>: If checked, this statistic would be a bar value (an actual value + max value).</li>
+</ul>
+</li>
+</ul>
+<h2 id="common-battle-commands">Common battle commands</h2>
+<p><img alt="Screenshot" src="../img/battle-commands.png" /></p>
+<p>Choose which battle commands you want to have after selecting a hero to do something.</p>
+<ul>
+<li><code>Skill</code>: Choose the corresponding skill.</li>
+</ul>
+<p>Render in game: </p>
+<p><img alt="Screenshot" src="../img/battle-commands-preview.png" /></p>
+<h2 id="common-equipment">Common equipment</h2>
+<p>Choose the name of common equipment so you will be able to equip weapons / armors on these equipment slots.</p>
+<h2 id="weapons-armors-kind">Weapons / Armors kind</h2>
+<p><img alt="Screenshot" src="../img/battle-weapon-armor-kind.png" /></p>
+<p>Create a weapon / armor kind and also choose on which equipment you can assign it.</p>
+<ul>
+<li><code>Name</code>: Name for this kind of weapon / armor.</li>
+<li>Selection of equipment you can assign.</li>
+</ul>
+<h2 id="battle-maps">Battle maps</h2>
+<p><img alt="Screenshot" src="../img/battle-maps.png" /></p>
+<p>Battle maps are in fact maps associated with a specific position (representing the center point of the battle). Select a map (by default in the <code>Battle Maps</code> folder in the map selector) and a position to add a new battle map.</p>
+<h2 id="statistics-associations">Statistics associations</h2>
+<ul>
+<li><code>Statistic associated to level</code>: Choose one of your fix statistic to associate with level. Level is a statistic that is increasing for the character evolution: leveling up will increase other statistics.</li>
+<li><code>Statistic associated to exp</code>: Choose one of your bar statistic to associate with experience. Experience is something earned generally after finishing a battle. Once experience goes to its maximum value, the character is leveling up and the map experience bar increases too.</li>
+</ul>
+<h2 id="formulas">Formulas</h2>
+<ul>
+<li><code>Is dead</code>: Formula in JavaScript defining conditions to consider that a character is dead. <code>u</code> corresponds to the character.</li>
+<li><code>Critical influence</code>: Formula in JavaScript defining the new damages value after having a critical hit. <code>damage</code> corresponds to the damages done without critical influence.</li>
+</ul>
+<h2 id="battle-musics">Battle musics</h2>
+<ul>
+<li><code>Battle</code>: Battle music used during the battle.</li>
+<li><code>Level up</code>: Sound used when a hero is leveling up.</li>
+<li><code>Victory</code>: Music used during the victory end battle phase.</li>
+</ul>
+<h2 id="currencies">Currencies</h2>
+<p>Go to <code>Systems Manager &gt; System</code>.</p>
+<p><img alt="Screenshot" src="../img/currencies.png" /></p>
+<p>Currencies can be used in the game for trading with NPCs or any other way.</p>
+<ul>
+<li><code>Name</code>: Name of the currency.</li>
+<li><code>Icon</code>: Icon associated with the currency.</li>
+</ul>
+<h2 id="skills-items-weapons-armors">Skills / Items / Weapons / Armors</h2>
+<p>Go to <code>Datas Manager</code>.</p>
+<p>In <code>Skills</code> tab:</p>
+<p><img alt="Screenshot" src="../img/battle-skills.png" /></p>
+<p>In <code>Items</code> tab:</p>
+<p><img alt="Screenshot" src="../img/battle-items.png" /></p>
+<p>In <code>Weapons</code> tab:</p>
+<p><img alt="Screenshot" src="../img/battle-weapons.png" /></p>
+<p>In <code>Armors</code> tab:</p>
+<p><img alt="Screenshot" src="../img/battle-armors.png" /></p>
+<p>These four data have common properties:</p>
+<ul>
+<li><code>Name</code>: Name of the data.</li>
+<li><code>Type</code>: Select the type of item / armor / weapon.</li>
+<li><code>Consumable</code>: If checked, the data will disappear after using the data.</li>
+<li><code>One hand</code>: <em>Not available yet.</em></li>
+<li><code>Icon</code>: Icon associated with the data.</li>
+<li><code>Description</code>: Description of the data that will be displayed in game.</li>
+<li><code>Conditions formula</code>: <em>Not available yet.</em></li>
+<li><code>Target</code>: Target for applying associated effects.<ul>
+<li><code>None</code>: No target selection.</li>
+<li><code>The user</code>: Select the user only.</li>
+<li><code>An enemy</code>: Only select one ennemy.</li>
+<li><code>An ally</code>: Only select one ally.</li>
+<li><code>All enemies</code>: Select all enemies.</li>
+<li><code>All allies</code>: Select all allies.</li>
+</ul>
+</li>
+<li><code>Target conditions formula</code>: <em>Not available yet.</em></li>
+<li><code>Available</code>: Available kind of the data.<ul>
+<li><code>Battle only</code>: The data can be used only in battle.</li>
+<li><code>Main menu only</code>: The data can be used only in main menu.</li>
+<li><code>Always</code>: The data can be used in battle and main menu.</li>
+<li><code>Never</code>: The data can never be used.</li>
+</ul>
+</li>
+<li><code>Sound (main menu)</code>: <em>Not available yet.</em></li>
+<li><code>User animation ID</code>: <em>Not available yet.</em></li>
+<li><code>Target animation ID</code>: <em>Not available yet.</em></li>
+<li><code>Price</code>: Price of the data when it can be bought / sold in a shop menu.</li>
+</ul>
+<p>There also are three more common properties that can be listed: <code>Costs</code>, <code>Effects</code>, and <code>Caracteristics</code>.</p>
+<h2 id="costs">Costs</h2>
+<p><img alt="Screenshot" src="../img/battle-costs.png" /></p>
+<p>Choose the cost of using a skill. This is generally used for HP, MP, and TP statistic. A character will not be able to use a skill if he doesn't have enough for the use cost.</p>
+<ul>
+<li><code>Apply cost on</code>: Select which data will be influenced after using the skill. It can be a <code>statistic</code>, a <code>currency</code>, or a <code>variable</code>.<ul>
+<li><code>with value</code>: Select the value required for the selected data.</li>
+</ul>
+</li>
+</ul>
+<h2 id="effects">Effects</h2>
+<p><img alt="Screenshot" src="../img/battle-effects.png" /></p>
+<p>Choose the effects done for the target(s) data.</p>
+<ul>
+<li><code>Damages on</code>: Select which data will be damaged. It can be a <code>statistic</code>, a <code>currency</code>, or a <code>variable</code>.<ul>
+<li><code>with formula</code>: Select the value damage for the selected data.</li>
+<li><code>Element ID</code>: <em>Not available yet.</em></li>
+<li><code>Variance</code>: The variance damages in percent. This adds random on your damages. For example, if you choose 20% variance, your damages range would be : [damage - (20 * damage / 100) | damage + (20 * damage / 100)]. If not checked, there is no variance (= 0).</li>
+<li><code>Critical</code>: The critical hit chance in percent. If not checked, there is no chance to do critical hit (= 0).</li>
+<li><code>Precision</code>: The precision hit in percent. If not checked, you have 100% chance to hit.</li>
+</ul>
+</li>
+<li><code>Status Add / Remove</code>: <em>Not available yet.</em></li>
+<li><code>Skill Add / Remove</code>: <em>Not available yet.</em></li>
+<li><code>Perform skill</code>: <em>Not available yet.</em></li>
+<li><code>Call common reaction</code>: <em>Not available yet.</em></li>
+<li><code>Special action</code>: Execute one of the following special actions:<ul>
+<li><code>Apply weapon(s) effects and properties</code>: This will use all the effects of the currently equipped weapon. If the is no weapon equipped, this will apply the next effects following this one.</li>
+<li><code>Open skills choice</code>: Open the skills choice for battle command.</li>
+<li><code>Open items choice</code>: Open the items choice for battle command.</li>
+<li><code>Escape</code>: Escape from the battel.</li>
+<li><code>End turn</code>: End the team turn.</li>
+</ul>
+</li>
+<li><code>Script</code>: <em>Not available yet.</em></li>
+</ul>
+<h2 id="characteristics">Characteristics</h2>
+<p>Choose the characteristics added to the character when equipped.</p>
+<p><img alt="Screenshot" src="../img/battle-caracteristics-buff.png" /></p>
+<ul>
+<li>
+<p><code>Buff increase / decrease</code>: Select which data will be influenced. This can be:</p>
+<ul>
+<li><code>Statistic value</code>: Select a statistic. If bar statistic, this will increase the max value.</li>
+<li><code>Element resistance</code>: <em>Not available yet.</em></li>
+<li><code>Status resistance</code>: <em>Not available yet.</em></li>
+<li><code>Experience gain</code>: <em>Not available yet.</em></li>
+<li><code>Currency gain</code>: <em>Not available yet.</em></li>
+<li><code>Skill cost</code>: <em>Not available yet.</em></li>
+<li><code>Variable</code>: <em>Not available yet.</em></li>
+</ul>
+<p>After selecting the data influence, you can choose how this is influenced according to the base value:</p>
+<ul>
+<li><code>* / +</code>: Choose operation by multiplying by or adding a value.</li>
+<li><code>% / Fix</code>: Choose unit value.</li>
+</ul>
+</li>
+</ul>
+<p><img alt="Screenshot" src="../img/battle-caracteristics-character.png" /></p>
+<p><em>Not available yet.</em></p>
+<p><img alt="Screenshot" src="../img/battle-caracteristics-other.png" /></p>
+<p><em>Not available yet.</em></p>
+<h2 id="classes">Classes</h2>
+<p><img alt="Screenshot" src="../img/battle-classes.png" /></p>
+<p>Each character has a class. The class defines a lot of attributes that a character can have.</p>
+<ul>
+<li><strong>Experience</strong>: Define experience progression according to level. Note that you can edit the experience column manually by <code>double clicking</code> on the cell.<ul>
+<li><code>To next level</code>: The table indicates the number of experience to gain for going to the next level.</li>
+<li><code>Total</code>: The table indicates the total number of experience that should be accumulated for going to the next level.</li>
+<li><code>Initial level</code>: The initial level possible.</li>
+<li><code>Max level</code>: The maximum level possible.</li>
+<li><code>Base</code>: The number of experience to have at initial level.</li>
+<li><code>Inflation</code>: Inflation value changing experience progression according to base and level.</li>
+<li><code>Reset</code>: Reset to default values.</li>
+</ul>
+</li>
+<li><strong>Statistics progression</strong>: Change the statistics progression for level ups.<ul>
+<li><strong>Informations</strong>:<ul>
+<li><code>Statistic</code>: Select one of the system statistic.</li>
+<li><code>Maximum value</code>: The maximum possible value. This doesn't always corresponds to the final value because items could add bonus values.</li>
+</ul>
+</li>
+<li><strong>Fix</strong>:<ul>
+<li><code>Initial value</code>: The initial value at initial level.</li>
+<li><code>Final value</code>: The final value at max level.</li>
+<li><code>Slider progression</code>:<ul>
+<li><code>Slow</code>: The experience increases slowly at the begining and increase faster at te end.</li>
+<li><code>Linear</code>: The experience increases constantly.</li>
+<li><code>Fast</code>: The experience increases fast at the begining and increase slowly at te end.</li>
+</ul>
+</li>
+<li><code>Random variation</code>: The variance applied on the progression function. Note that this will always lead to the max value.</li>
+</ul>
+</li>
+<li><strong>Formula</strong>: Use a formula to define the value. <code>u</code> corresponds to the character.</li>
+</ul>
+</li>
+<li><strong>Caracteristics</strong>: <em>Not available yet.</em></li>
+<li><strong>Skills to learn</strong>: Defines the list of skills that can be learned according to levels.<ul>
+<li><code>Skill</code>: The corresponding skill to learn.</li>
+<li><code>Level</code>: The level for learning this skill.</li>
+</ul>
+</li>
+</ul>
+<h2 id="heroes">Heroes</h2>
+<p><img alt="Screenshot" src="../img/battle-heroes.png" /></p>
+<ul>
+<li><code>Class</code>: Select an existing class.</li>
+<li><code>Faceset</code>: Select a faceset for battles.</li>
+<li><code>Battler</code>: Select a battler for battles.</li>
+</ul>
+<p>All the other properties inherites from the class properties. For <code>Experience</code>, the values by default are the class values. The <code>Set to class values</code> button updates the values to the class values. For <code>Statistics progression</code> list, you can add additional progressions. If the statistic already existed, the progression would be replaced. For <code>Skills to learn</code> list, you can add additional skills to learn. If the skill already existed, the level would be replaced.</p>
+<h2 id="monsters">Monsters</h2>
+<p><img alt="Screenshot" src="../img/battle-monsters.png" /></p>
+<p>Monsters are exactly like heroes but with extra information for battles:</p>
+<ul>
+<li>
+<p><strong>Rewards</strong>:</p>
+<p><img alt="Screenshot" src="../img/battle-monsters-rewards.png" /></p>
+<ul>
+<li><code>Experience</code>: Choose experience progression that your team can get at the end of a battle.</li>
+<li><code>Currencies</code>: Choose currencies progression that your team can get at the end of a battle.</li>
+<li><code>Loots</code>: The loots that your team can get at the end of a battle.<ul>
+<li><code>Number</code>: The number of items to loot.</li>
+<li><code>Probability</code>: The probability to loot.</li>
+<li><code>Level between</code>: Choose range level of loot availability.</li>
+<li><code>Loot</code>: Select <code>Item</code>, <code>Weapon</code>, and <code>Armor</code>.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>Actions</strong>:</p>
+</li>
+</ul>
+<p><em>Not available yet.</em></p>
+<h2 id="troops">Troops</h2>
+<p><img alt="Screenshot" src="../img/battle-troops.png" /></p>
+<p>Troops correspond to a monsters group and some states with reactions.</p>
+<ul>
+<li><strong>Monsters list</strong>:<ul>
+<li><code>Monster</code>: The monster in the group.</li>
+<li><code>Level</code>: The level of the monster.</li>
+</ul>
+</li>
+<li><strong>States</strong>: <em>Not available yet.</em></li>
+</ul>
+<h2 id="status">Status</h2>
+<p><em>Not available yet.</em></p>
+<h2 id="animations">Animations</h2>
+<p><em>Not available yet.</em></p>
+              
+            </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../window-skins/" class="btn btn-neutral float-right" title="Window skins"/>Next <span class="icon icon-circle-arrow-right"></span></a>
+      
+      
+        <a href="../control-the-camera/" class="btn btn-neutral" title="Control the camera"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+    
+      <p>RPG Paper Maker Copyright (C) 2017-2019 Marie Laporte</p>
+    
+  </div>
+
+  Built with <a href="http://www.mkdocs.org">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+	  
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+<div class="rst-versions" role="note" style="cursor: pointer">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+      
+          <a class="icon icon-github" style="float: left; color: #fcfcfc"> GitHub</a>
+      
+      
+        <span><a href="../control-the-camera/" style="color: #fcfcfc;">&laquo; Previous</a></span>
+      
+      
+        <span style="margin-left: 15px"><a href="../window-skins/" style="color: #fcfcfc">Next &raquo;</a></span>
+      
+    </span>
+</div>
+
+</body>
+</html>

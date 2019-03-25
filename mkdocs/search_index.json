@@ -2,7 +2,7 @@
     "docs": [
         {
             "location": "/",
-            "text": "Getting started\n\n\nWelcome to this guide! You will find here all what you need to be a pro Paper Maker!\n\n\nLicense\n\n\nFirst, you should know that RPG Paper Maker is an Open Source project under GNU General Public License v3.0. Feel free to contribute to the github repository \nhere\n if you have any skills in programming, project management, etc.\n\n\nRPG Paper Maker is free for non-commercial use\n so you don't have to pay for it if you only want to share your games freely and have fun! However, if you want to sell your games made with the engine you will have to pay for the license. More details \nhere\n. If you want to support us, check out our \nPatreon\n!\n\n\nThe commercial license is not released yet. This is comming out soon.\n\n\nCommunity and support\n\n\nIf you are experiencing any issue on RPG Paper Maker, feel free to ask for some help in the \nwebsite forums\n. You can also share your creations and propose your wanted \nnext features\n.\n\n\nInstallation\n\n\nGo to the \nDownload section\n from the official website and download the installer according to your system. Extract the file.\n\n\nWindows\n\n\nRun \nRPG Paper Maker.exe\n. This will ask you for downloading the latest version of RPG Paper Maker. Wait for the downloading to be finished.\n\n\nLinux\n\n\nCheck out the \nREADME\n instructions in the root of the folder. After running the last instruction (\n./run.sh\n), this will ask you for downloading the latest version of RPG Paper Maker. Wait for the downloading to be finished.\n\n\nMacOSX\n\n\nComing soon.\n\n\nCreate a new project\n\n\nYou can create a new project by clicking here on the main toolbar:\n\n\n\n\nYou can also use \nCTRL+N\n or go to \nFile > New project...\n.\n\n\n\n\nYou can choose here the \nProject name\n\u00a0corresponding to your game's name. This will auto generate a folder name (you can disable the option \nauto-generate\n if you want to customize your folder name). And finally, choose the \nlocation\n of your project folder. By default, it will be on a freshly created \nRPG Paper Maker Games\n folder.\n\n\nOpen an existing project\n\n\nYou can open an existing project by clicking here on the main toolbar:\n\n\n\n\nYou can also use \nCTRL+O\n or go to \nFile > Open project > Browse...\n.",
+            "text": "Getting started\n\n\nWelcome to this guide! You will find here all what you need to be a pro Paper Maker!\n\n\nLicense\n\n\nFirst, you should know that RPG Paper Maker is an Open Source project under GNU General Public License v3.0. Feel free to contribute to the github repository \nhere\n if you have any skills in programming, project management, etc.\n\n\nRPG Paper Maker is free for non-commercial use\n so you don't have to pay for it if you only want to share your games freely and have fun! However, if you want to sell your games made with the engine you will have to pay for the license. More details \nhere\n. If you want to support us, check out our \nPatreon\n!\n\n\nThe commercial license is not released yet. This is comming out soon.\n\n\nCommunity and support\n\n\nIf you are experiencing any issue on RPG Paper Maker, feel free to ask for some help in the \nwebsite forums\n. You can also share your creations and propose your wanted \nnext features\n.\n\n\nInstallation\n\n\nGo to the \nDownload section\n from the official website and download the installer according to your system. Extract the file.\n\n\nWindows\n\n\nRun \nRPG Paper Maker.exe\n. This will ask you for downloading the latest version of RPG Paper Maker. Wait for the downloading to be finished.\n\n\nLinux\n\n\nCheck out the \nREADME\n instructions in the root of the folder. After running the last instruction (\n./run.sh\n), this will ask you for downloading the latest version of RPG Paper Maker. Wait for the downloading to be finished.\n\n\nMacOSX\n\n\nComing soon.\n\n\nChange theme\n\n\nThere actually are two different themes: \nDark\n and \nWhite\n. If you want to change it, go to \nOptions > General options...\n.\n\n\n\n\nCreate a new project\n\n\nYou can create a new project by clicking here on the main toolbar:\n\n\n\n\nYou can also use \nCTRL+N\n or go to \nFile > New project...\n.\n\n\n\n\nYou can choose here the \nProject name\n\u00a0corresponding to your game's name. This will auto generate a folder name (you can disable the option \nauto-generate\n if you want to customize your folder name). And finally, choose the \nlocation\n of your project folder. By default, it will be on a freshly created \nRPG Paper Maker Games\n folder.\n\n\nOpen an existing project\n\n\nYou can open an existing project by clicking here on the main toolbar:\n\n\n\n\nYou can also use \nCTRL+O\n or go to \nFile > Open project > Browse...\n.\n\n\nChange general game settings\n\n\nA lot of options are available in the \nSystems manager\n. Click here on the main toolbar and go to the \nSystem\n tab:\n\n\n\n\n\n\nGame name\n: \n(not available yet)\n Change the name of your game.\n\n\nGame native resolution\n: \n(not available yet)\n Change width / height resolution and also choose if you want a Window or Fullscreen display. \nDisplay console\n option is for programing debugging.\n\n\nSquare size (in px)\n: choose here the size (in pixel) of a square in your maps. You should adapt your textures after any change here.\n\n\nRay portions to show\n: \n(not available yet)\n The map is separated into several portions (16x16 squares). You can change here the number of portions to display.\n\n\nRelief block height (in px)\n: \n(not available yet)\n The height considered for blocking the hero so the hero can go up blocks that are in inferior height value.\n\n\nMax number of save slots\n: \n(not available yet)\n Change the max number of save slots available for the players.\n\n\nPrice of sold item\n: \n(not available yet)\n Change the percent value of the original price of an item when you want to sell it in a shop.\n\n\n\n\nUpdate keyboard controls\n\n\nYou can change the engine and game keyboard controls in the keyboard manager by clicking on the main toolbar:\n\n\n\n\nFor engine:\n\n\n\n\nCursorUp\n, \nCursorDown\n, \nCursorLeft\n, \nCursorRight\n: The cursor directions in map editor.\n\n\n\n\nFor Game:\n\n\n\n\nUpHero\n, \nDownHero\n, \nLeftHero\n, \nRightHero\n: The hero directions in map.\n\n\nUpMenu\n, \nDownMenu\n, \nLeftMenu\n, \nRightMenu\n: The directions in menus.\n\n\nLeftCamera\n, \nRightCamera\n: Turn the camera.\n\n\nAction\n: Hero action in map.\n\n\nCancel\n: Cancel in menus.\n\n\nMain menu\n: Open / Close main menu.\n\n\n\n\nSelect the corresponding system menus controls: \nAction\n, \nCancel\n, \nUp\n, \nDown\n, \nLeft\n, \nRight\n. You can add as much keys as possbile.\n\n\nWhen adding / editing a key:\n\n\n\n\nAbbreviation\n: Name used for JavaScript use (for programers).\n\n\nDescription\n: Will be displayed ingame for the keyboard settings menu.\n\n\nShortcut\n: Change the shortcut here. Press the corresponding shortcut thanks to \nChange...\n button. You can have several shortcuts for one action (separated with \n|\n symbol) and also several keys for one shortcut (separated with \n+\n symbol).\n\n\nRemove last\n: Remove the last shortcut (on the right).\n\n\nRemove all\n: Remove all the entered shortcuts.\n\n\n\n\n\n\n\n\nUpdate general colors\n\n\nGo to the \nSystems manager > System\n and take a look on the \nColors\n box:\n\n\n\n\nTest your game\n\n\nYou can test your opened project by clicking here on the main toolbar:\n\n\n\n\nDeploy your game\n\n\nIf you want to publish your game (share your game without any need for players to have RPG Paper Maker installed) you have to go to \nFile > Export standalone...\n.\n\n\n\n\n\n\nLocation\n: The location of the standalone folder that you want to create. The name of this folder will be \nyourGameName{OS}\n.\n\n\nDeploy a desktop application\n: Choose here to deploy your game as a desktop application (choose the OS in options: Windows, Linux, or Mac).\n\n\nDeploy for web browser\n: \n(not available yet)\n Choose here to deploy your game as a web application. This will generate an \nindex.html\n page and other files.",
             "title": "Getting started"
         },
         {
@@ -26,6 +26,11 @@
             "title": "Installation"
         },
         {
+            "location": "/#change-theme",
+            "text": "There actually are two different themes:  Dark  and  White . If you want to change it, go to  Options > General options... .",
+            "title": "Change theme"
+        },
+        {
             "location": "/#create-a-new-project",
             "text": "You can create a new project by clicking here on the main toolbar:   You can also use  CTRL+N  or go to  File > New project... .   You can choose here the  Project name \u00a0corresponding to your game's name. This will auto generate a folder name (you can disable the option  auto-generate  if you want to customize your folder name). And finally, choose the  location  of your project folder. By default, it will be on a freshly created  RPG Paper Maker Games  folder.",
             "title": "Create a new project"
@@ -36,8 +41,33 @@
             "title": "Open an existing project"
         },
         {
+            "location": "/#change-general-game-settings",
+            "text": "A lot of options are available in the  Systems manager . Click here on the main toolbar and go to the  System  tab:    Game name :  (not available yet)  Change the name of your game.  Game native resolution :  (not available yet)  Change width / height resolution and also choose if you want a Window or Fullscreen display.  Display console  option is for programing debugging.  Square size (in px) : choose here the size (in pixel) of a square in your maps. You should adapt your textures after any change here.  Ray portions to show :  (not available yet)  The map is separated into several portions (16x16 squares). You can change here the number of portions to display.  Relief block height (in px) :  (not available yet)  The height considered for blocking the hero so the hero can go up blocks that are in inferior height value.  Max number of save slots :  (not available yet)  Change the max number of save slots available for the players.  Price of sold item :  (not available yet)  Change the percent value of the original price of an item when you want to sell it in a shop.",
+            "title": "Change general game settings"
+        },
+        {
+            "location": "/#update-keyboard-controls",
+            "text": "You can change the engine and game keyboard controls in the keyboard manager by clicking on the main toolbar:   For engine:   CursorUp ,  CursorDown ,  CursorLeft ,  CursorRight : The cursor directions in map editor.   For Game:   UpHero ,  DownHero ,  LeftHero ,  RightHero : The hero directions in map.  UpMenu ,  DownMenu ,  LeftMenu ,  RightMenu : The directions in menus.  LeftCamera ,  RightCamera : Turn the camera.  Action : Hero action in map.  Cancel : Cancel in menus.  Main menu : Open / Close main menu.   Select the corresponding system menus controls:  Action ,  Cancel ,  Up ,  Down ,  Left ,  Right . You can add as much keys as possbile.  When adding / editing a key:   Abbreviation : Name used for JavaScript use (for programers).  Description : Will be displayed ingame for the keyboard settings menu.  Shortcut : Change the shortcut here. Press the corresponding shortcut thanks to  Change...  button. You can have several shortcuts for one action (separated with  |  symbol) and also several keys for one shortcut (separated with  +  symbol).  Remove last : Remove the last shortcut (on the right).  Remove all : Remove all the entered shortcuts.",
+            "title": "Update keyboard controls"
+        },
+        {
+            "location": "/#update-general-colors",
+            "text": "Go to the  Systems manager > System  and take a look on the  Colors  box:",
+            "title": "Update general colors"
+        },
+        {
+            "location": "/#test-your-game",
+            "text": "You can test your opened project by clicking here on the main toolbar:",
+            "title": "Test your game"
+        },
+        {
+            "location": "/#deploy-your-game",
+            "text": "If you want to publish your game (share your game without any need for players to have RPG Paper Maker installed) you have to go to  File > Export standalone... .    Location : The location of the standalone folder that you want to create. The name of this folder will be  yourGameName{OS} .  Deploy a desktop application : Choose here to deploy your game as a desktop application (choose the OS in options: Windows, Linux, or Mac).  Deploy for web browser :  (not available yet)  Choose here to deploy your game as a web application. This will generate an  index.html  page and other files.",
+            "title": "Deploy your game"
+        },
+        {
             "location": "/basics/map-editor-basics/",
-            "text": "Map editor basics\n\n\nAfter opening a project, you should have this view:\n\n\n\n\nMap selector\n\n\nTake a look on the map selector \n(1)\n. You can add, edit, remove, copy, and paste folders or maps here. We recommand you to use folders to sort your maps for each zones of your game. By default, there's also a \nBattle maps\n folder that you can use to put all the maps that you will use for battle backgrounds. It is not required to put these maps into this specific folder. Clicking on a map will load this one on the map editor \n(5)\n. \nRight clicking\n will open this context menu:",
+            "text": "Map editor basics\n\n\nAfter opening a project, you should have this view:\n\n\n\n\nManage maps\n\n\nTake a look at the map selector \n(1)\n. You can add, edit, remove, copy, and paste folders or maps here. We recommend that you use folders to sort your maps for each zones of your game. By default, there's also a \nBattle maps\n folder that you can use to put all the maps that you will use for battle backgrounds. It is not required to put these maps into this specific folder. Clicking on a map will load this one on the map editor \n(5)\n. \nRight clicking\n will open this context menu:\n\n\n\n\nIf you want to create / edit a map, you will get this window:\n\n\n\n\n\n\nName\n: The map name.\n\n\nTileset\n: A tileset represents a lot of information applied on a specific set of textures (collisions, dynamic textures,...). We will see how to configure it in a next chapter.\n\n\nLength\n: The map length number of squares (X axe).\n\n\nWidth\n: The map width number of squares (Z axe).\n\n\nHeight\n: The map height number of squares (Y axe > 0).\n\n\nDepth\n: The map depth number of squares (Y axe < 0).\n\n\nMusic\n: The music that is played in the background when entering the map.\n\n\nBackground sound\n: The background that is played in the background with the music. This can be wind, rain, etc.\n\n\nSky color\n: The color used for the sky.\n\n\n\n\nMove camera\n\n\nThe camera is always looking at the following cursor:\n\n\n\n\nYou can move it by pressing \nQWSD\n on keyboard. You can also teleport the cursor on the pointed square by using \nCTRL + Left click\n.\n\n\nTo move the camera position, press the \nmouse wheel\n and move the mouse in the direction you want:\n\n\n\n\nPlace / Remove elements\n\n\nThe map element selection portion \n(3)\n allows you to select kind of element to place in the map (lands, sprites, objects, reliefs, etc.). You can add or remove something in a specific square by clicking left or right.\n\n\nFor example with a floor:\n\n\n\n\nUndo / Redo\n\n\nYou can go back / after a change in each map. Press \nCTRL+Z\n for undo and \nCTRL+Y\n for redo.\n\n\nSave changes\n\n\nTo save your map editor changes, you can use these shortcuts in the toolbar:\n\n\n\n\n\n\nSave\n: Save the changes on the current opened map.\n\n\nAll\n: Save the changes on all the modified maps. A map has been changed when you see a \n*\n after its name:\n\n\n\n\n\n\nShow / Hide some UI details\n\n\n\n\nG\n: Show / Hide grid\n\n\nI\n: Show / Hide information about the pointed square:\n\n\n\n\n\n\nChange paint mode\n\n\nHere are the different paint mode \n(4)\n for drawing your elements in the map:\n\n\n\n\n\n\nPencil\n: Draw squares one by one.\n\n\nRectangle\n: Draw squares after tracing a rectangle \n(not available yet)\n.\n\n\nPin of paint\n: Fill squares with the same texture as the one pointed.\n\n\n\n\nLayers options\n\n\nYou can choose here if you want to be on layer mode or not here:\n\n\n\n\n\n\nNo layer\n: Replace the selected square by a new one.\n\n\nLayer\n: Add a new square on top of the selected one. There is no limit.\n\n\n\n\nExample of layers used with walls:\n\n\n\n\nLands\n\n\nHere are the possible lands to place:\n\n\n\n\nFloors\n\n\nThe texture selector \n(2)\n allows you to select a rectangle for a texture. After selecting a rectangle, place your mouse on a square of your map to place your floor.\n\n\n\n\nAutotiles\n\n\nAutotiles are dynamic floors. This will have borders with automatic changing according to the neighbor squares:\n\n\n\n\nIn the texture selector \n(2)\n, you just have to select a square:\n\n\n\n\nAnimated autotiles\n\n\nNot available yet.\n\n\nSprites\n\n\n\n\nSprites are vertical planes that can be used to simulate a \"paper\" world. Here are the different types of sprites:\n\n\n\n\n\n\nFace Sprite\n: A sprite that is always facing the camera on the X / Y axe.\n\n\nFix Sprite\n: A flat sprite. \n\n\nDouble Sprite\n: Two crossing flat sprites.\n\n\nQuadra Sprite\n: four crossing flat sprites.\n\n\n\n\nAnother kind of sprites are \nWalls Sprite\n that are dynamic (such as autotiles).\n\n\n\n\nObjects\n\n\nAll the previous elements were static (it doesn't move). There are objects in order to add some life on your map. This can be NPCs, chests, etc.\n\n\n\n\nWe will see later how to manage it because this is one of the biggest topics of the engine.\n\n\nThe hero\n\n\nTo define where the game should start, you have to define who is the hero in one of your maps. When you create a new project, the hero is the character at the center of the first map. If you want to change it:\n\n\n\n\nCreate a new object (\nDouble click\n on a square)\n\n\nRemove all the states and events from the lists (by using \nDel\n on keyboard) and choose \nHero\n as model in the combo box. You can name it \"Hero\" if you want. You should have something like this:\n\n\n\n\n\n\n\n\nClick on \nOK\n. \nRight click\n on your object, and choose \nDefine as Hero\n.\n\n\n\n\n\n\nThat's it! You will understand later why we are using an object and why this will open a lot of opportunities for customizing your games!",
             "title": "Map editor basics"
         },
         {
@@ -46,19 +76,809 @@
             "title": "Map editor basics"
         },
         {
-            "location": "/basics/map-editor-basics/#map-selector",
-            "text": "Take a look on the map selector  (1) . You can add, edit, remove, copy, and paste folders or maps here. We recommand you to use folders to sort your maps for each zones of your game. By default, there's also a  Battle maps  folder that you can use to put all the maps that you will use for battle backgrounds. It is not required to put these maps into this specific folder. Clicking on a map will load this one on the map editor  (5) .  Right clicking  will open this context menu:",
-            "title": "Map selector"
+            "location": "/basics/map-editor-basics/#manage-maps",
+            "text": "Take a look at the map selector  (1) . You can add, edit, remove, copy, and paste folders or maps here. We recommend that you use folders to sort your maps for each zones of your game. By default, there's also a  Battle maps  folder that you can use to put all the maps that you will use for battle backgrounds. It is not required to put these maps into this specific folder. Clicking on a map will load this one on the map editor  (5) .  Right clicking  will open this context menu:   If you want to create / edit a map, you will get this window:    Name : The map name.  Tileset : A tileset represents a lot of information applied on a specific set of textures (collisions, dynamic textures,...). We will see how to configure it in a next chapter.  Length : The map length number of squares (X axe).  Width : The map width number of squares (Z axe).  Height : The map height number of squares (Y axe > 0).  Depth : The map depth number of squares (Y axe < 0).  Music : The music that is played in the background when entering the map.  Background sound : The background that is played in the background with the music. This can be wind, rain, etc.  Sky color : The color used for the sky.",
+            "title": "Manage maps"
         },
         {
-            "location": "/basics/manage-your-ressources/",
-            "text": "",
-            "title": "Manage your ressources"
+            "location": "/basics/map-editor-basics/#move-camera",
+            "text": "The camera is always looking at the following cursor:   You can move it by pressing  QWSD  on keyboard. You can also teleport the cursor on the pointed square by using  CTRL + Left click .  To move the camera position, press the  mouse wheel  and move the mouse in the direction you want:",
+            "title": "Move camera"
+        },
+        {
+            "location": "/basics/map-editor-basics/#place-remove-elements",
+            "text": "The map element selection portion  (3)  allows you to select kind of element to place in the map (lands, sprites, objects, reliefs, etc.). You can add or remove something in a specific square by clicking left or right.  For example with a floor:",
+            "title": "Place / Remove elements"
+        },
+        {
+            "location": "/basics/map-editor-basics/#undo-redo",
+            "text": "You can go back / after a change in each map. Press  CTRL+Z  for undo and  CTRL+Y  for redo.",
+            "title": "Undo / Redo"
+        },
+        {
+            "location": "/basics/map-editor-basics/#save-changes",
+            "text": "To save your map editor changes, you can use these shortcuts in the toolbar:    Save : Save the changes on the current opened map.  All : Save the changes on all the modified maps. A map has been changed when you see a  *  after its name:",
+            "title": "Save changes"
+        },
+        {
+            "location": "/basics/map-editor-basics/#show-hide-some-ui-details",
+            "text": "G : Show / Hide grid  I : Show / Hide information about the pointed square:",
+            "title": "Show / Hide some UI details"
+        },
+        {
+            "location": "/basics/map-editor-basics/#change-paint-mode",
+            "text": "Here are the different paint mode  (4)  for drawing your elements in the map:    Pencil : Draw squares one by one.  Rectangle : Draw squares after tracing a rectangle  (not available yet) .  Pin of paint : Fill squares with the same texture as the one pointed.",
+            "title": "Change paint mode"
+        },
+        {
+            "location": "/basics/map-editor-basics/#layers-options",
+            "text": "You can choose here if you want to be on layer mode or not here:    No layer : Replace the selected square by a new one.  Layer : Add a new square on top of the selected one. There is no limit.   Example of layers used with walls:",
+            "title": "Layers options"
+        },
+        {
+            "location": "/basics/map-editor-basics/#lands",
+            "text": "Here are the possible lands to place:",
+            "title": "Lands"
+        },
+        {
+            "location": "/basics/map-editor-basics/#floors",
+            "text": "The texture selector  (2)  allows you to select a rectangle for a texture. After selecting a rectangle, place your mouse on a square of your map to place your floor.",
+            "title": "Floors"
+        },
+        {
+            "location": "/basics/map-editor-basics/#autotiles",
+            "text": "Autotiles are dynamic floors. This will have borders with automatic changing according to the neighbor squares:   In the texture selector  (2) , you just have to select a square:",
+            "title": "Autotiles"
+        },
+        {
+            "location": "/basics/map-editor-basics/#animated-autotiles",
+            "text": "Not available yet.",
+            "title": "Animated autotiles"
+        },
+        {
+            "location": "/basics/map-editor-basics/#sprites",
+            "text": "Sprites are vertical planes that can be used to simulate a \"paper\" world. Here are the different types of sprites:    Face Sprite : A sprite that is always facing the camera on the X / Y axe.  Fix Sprite : A flat sprite.   Double Sprite : Two crossing flat sprites.  Quadra Sprite : four crossing flat sprites.   Another kind of sprites are  Walls Sprite  that are dynamic (such as autotiles).",
+            "title": "Sprites"
+        },
+        {
+            "location": "/basics/map-editor-basics/#objects",
+            "text": "All the previous elements were static (it doesn't move). There are objects in order to add some life on your map. This can be NPCs, chests, etc.   We will see later how to manage it because this is one of the biggest topics of the engine.",
+            "title": "Objects"
+        },
+        {
+            "location": "/basics/map-editor-basics/#the-hero",
+            "text": "To define where the game should start, you have to define who is the hero in one of your maps. When you create a new project, the hero is the character at the center of the first map. If you want to change it:   Create a new object ( Double click  on a square)  Remove all the states and events from the lists (by using  Del  on keyboard) and choose  Hero  as model in the combo box. You can name it \"Hero\" if you want. You should have something like this:     Click on  OK .  Right click  on your object, and choose  Define as Hero .    That's it! You will understand later why we are using an object and why this will open a lot of opportunities for customizing your games!",
+            "title": "The hero"
+        },
+        {
+            "location": "/basics/manage-your-resources/",
+            "text": "Manage your resources\n\n\nWhen you are editing your maps, you are using textures that are proposed by default. You also have, music, interfaces, etc. All this stuff is called \nBR (Basic Resources)\n. It's located to the install folder. You can find the folder location here:\n\n\n\n\nManage pictures\n\n\nOpen the pictures manager by clicking here on the main toolbar:\n\n\n\n\nOn the left, you have a tree containing all the pictures kind available in your project:\n\n\n\n\nBars\n: All the graphic bars for specific statistics.\n\n\nFaceset\n: All the face images used in battles when targeting a character.\n\n\nIcons\n: All the icons used in the game.\n\n\nWindowSkins\n: All the information used for windows, arrows, texts, etc.\n\n\nTitleScreen\n: All the graphics for title screen.\n\n\nAutotiles\n: All the autotiles textures.\n\n\nBattlers\n: All the battlers used for battles corresponding to different sprites states.\n\n\nCharacter\n: All the character sprites with walk animations.\n\n\nReliefs\n: \nNot available yet.\n\n\nTilesets\n: All the tilesets used for map textures.\n\n\nWalls\n: All the walls textures.\n\n\n\n\nThe second list corresponds to all the pictures that you are using in your game (according to the kind of pictures you selected). Each picture has an \nID\n and a \nname\n. This system is in place in order to:\n\n\n\n\nAvoid having useless textures to be loaded\n\n\nBeing able to change the names of your ressources without problem\n\n\n\n\nIf you check the option \nShow available content of ...\n, this will show the available pictures that are located in the Basic Resources folder.\n\n\nAdd / Remove pictures\n\n\nTo add pictures in your game list: select a picture in the available content list, and press on the \nleft arrow\n button below (or \ndouble click\n). To remove a picture in your game list, select one of your used picture and press \nDel\n on you keyboard.\n\n\nUse my custom pictures\n\n\nClick on the \n+\n button and select one or several pictures. This will add your custom pictures in the available content list. Not that you can distinguish BR and non BR pictures thanks to the bullets colors:\n\n\n Custom\n\n BR\n\n\nIf you added your pictures manually inside the project folder, you will need to use the \nRefresh\n button in order to see your changes in the list.\n\n\nNow add your pictures to your game project the same way you did for BR pictures!\n\n\nManage songs\n\n\nSongs are also a resource proposed in the BR. Open the songs manager by clicking here on the main toolbar:\n\n\n\n\nYou can manage your songs exactly like pictures. You can also test music options on the right:\n\n\n\n\nVolume\n: The song volume (in %).\n\n\nStart\n: The beginning time of the song in seconds.\n\n\nEnd\n: The end time of the song in seconds.\n\n\n\n\nAlso note that there are four sorts of songs:\n\n\n\n\nMusic\n: Music that are looping (used for maps themes, battle musics, etc.).\n\n\nBackground sounds\n: Sounds that are looping on top of the current played music (used for rain, wind, etc.).\n\n\nSounds\n: Sound played one (used for cursor, attacks sounds, etc.).\n\n\nMusic effects\n: Short music stopping the currently played music. After the end of this music, the previously played music goes back (used for object found music, level up music, etc.).",
+            "title": "Manage your resources"
+        },
+        {
+            "location": "/basics/manage-your-resources/#manage-your-resources",
+            "text": "When you are editing your maps, you are using textures that are proposed by default. You also have, music, interfaces, etc. All this stuff is called  BR (Basic Resources) . It's located to the install folder. You can find the folder location here:",
+            "title": "Manage your resources"
+        },
+        {
+            "location": "/basics/manage-your-resources/#manage-pictures",
+            "text": "Open the pictures manager by clicking here on the main toolbar:   On the left, you have a tree containing all the pictures kind available in your project:   Bars : All the graphic bars for specific statistics.  Faceset : All the face images used in battles when targeting a character.  Icons : All the icons used in the game.  WindowSkins : All the information used for windows, arrows, texts, etc.  TitleScreen : All the graphics for title screen.  Autotiles : All the autotiles textures.  Battlers : All the battlers used for battles corresponding to different sprites states.  Character : All the character sprites with walk animations.  Reliefs :  Not available yet.  Tilesets : All the tilesets used for map textures.  Walls : All the walls textures.   The second list corresponds to all the pictures that you are using in your game (according to the kind of pictures you selected). Each picture has an  ID  and a  name . This system is in place in order to:   Avoid having useless textures to be loaded  Being able to change the names of your ressources without problem   If you check the option  Show available content of ... , this will show the available pictures that are located in the Basic Resources folder.",
+            "title": "Manage pictures"
+        },
+        {
+            "location": "/basics/manage-your-resources/#add-remove-pictures",
+            "text": "To add pictures in your game list: select a picture in the available content list, and press on the  left arrow  button below (or  double click ). To remove a picture in your game list, select one of your used picture and press  Del  on you keyboard.",
+            "title": "Add / Remove pictures"
+        },
+        {
+            "location": "/basics/manage-your-resources/#use-my-custom-pictures",
+            "text": "Click on the  +  button and select one or several pictures. This will add your custom pictures in the available content list. Not that you can distinguish BR and non BR pictures thanks to the bullets colors:   Custom  BR  If you added your pictures manually inside the project folder, you will need to use the  Refresh  button in order to see your changes in the list.  Now add your pictures to your game project the same way you did for BR pictures!",
+            "title": "Use my custom pictures"
+        },
+        {
+            "location": "/basics/manage-your-resources/#manage-songs",
+            "text": "Songs are also a resource proposed in the BR. Open the songs manager by clicking here on the main toolbar:   You can manage your songs exactly like pictures. You can also test music options on the right:   Volume : The song volume (in %).  Start : The beginning time of the song in seconds.  End : The end time of the song in seconds.   Also note that there are four sorts of songs:   Music : Music that are looping (used for maps themes, battle musics, etc.).  Background sounds : Sounds that are looping on top of the current played music (used for rain, wind, etc.).  Sounds : Sound played one (used for cursor, attacks sounds, etc.).  Music effects : Short music stopping the currently played music. After the end of this music, the previously played music goes back (used for object found music, level up music, etc.).",
+            "title": "Manage songs"
+        },
+        {
+            "location": "/basics/tilesets-and-collisions/",
+            "text": "Tilesets & Collisions\n\n\nWe've previously seen that the map properties had an option \nTileset\n selection. We will now see what it is.\n\n\nTilesets\n\n\nA tileset corresponds to a set of informations linked to the map textures and collisions. Open the datas manager by clicking here on the main toolbar and select the \nTilesets\n tab:\n\n\n\n\nIf you want to add / remove tileset(s), you can use the \nChange maximum...\n button. You can change the \nPicture\n by clicking on the following widget that will open a reduced picture manager (containing only one kind of picture). That picture will correspond to the static textures that you will use for your maps having this tileset.\n\n\nYou can also change special textures (autotiles, walls, etc.) linked to the tileset.\n\n\nCollisions\n\n\nCollisions are important in video games. You need to manage if the moving objects are colliding with other objects or any other map elements.\n\n\nBounding boxes\n\n\nBounding box are simple geometries that are used for checking intersections. Each object has a corresponding bounding box, after each move the engine will check if the object bounding box intersect with another bounding box in the map.\n\n\nThere is a way to see the bounding boxes for debugging (if you encounter any strange behavior). Check the following option:\n\n\n\n\nSimple boxes and Oriented boxes\n\n\nDepending on which sprite you are using, bounding boxes can be oriented like this:\n\n\n\n\nFix sprites are flat, so they don't need to be oriented. However, face, double, and quadra sprites are voluminous and their bounding box could be a cylinder. A cylinder collision is over killed so we are using oriented boxes that are reasonable to manage collisions with great performances.\n\n\nHow can I change collisions?\n\n\nFor tileset, you can edit it directly in the picture preview on the \nTilesets\n tab of datas manager. Another way is to open the collisions manager merging all the possible collisions. Open the collisions manager by clicking here on the main toolbar:\n\n\n\n\nPraticable\n\n\nYou can for example change the tileset collision by re-sizing it for each square. This will affect the size of the bounding boxes. You can res-ize it with your \nmouse\n or \nRight click\n and click on \nEdit\n in order to open a window for selecting the rectangle values.\n\n\n\n\nDirections (only for floors)\n\n\nYou can indicate in which direction there will be a collision.\n\n\n\n\nCharacters\n\n\nCharacters are animated and you can handle different collisions for different frames. But, if you want to have the same collisions for all the frames, check the \nRepeat\n option.\n\n\n\n\nAutotiles\n\n\nYou can manage the autotiles list by clicking here on the main toolbar:\n\n\n\n\nYou can manage picture and collisions for each autotiles here. Autotiles are dynamic floors. This will have borders with automatic changing according to the neighbor squares. Here is an example of an autotile picture:\n\n\n\n\nRendering in map:\n\n\n\n\nDon't forget to add your autotiles in the tileset:\n\n\n\n\nAnimated autotiles\n\n\nNot available yet.\n\n\nSprites walls\n\n\nYou can manage the walls the same way you did for autotiles in:\n\n\n\n\nCollisions manager\n\n\nTilesets\n\u00a0tab in datas manager:\n\n\n\n\n\n\n3D objects\n\n\nNot available yet.\n\n\nReliefs\n\n\nNot available yet.",
+            "title": "Tilesets & Collisions"
+        },
+        {
+            "location": "/basics/tilesets-and-collisions/#tilesets-collisions",
+            "text": "We've previously seen that the map properties had an option  Tileset  selection. We will now see what it is.",
+            "title": "Tilesets & Collisions"
+        },
+        {
+            "location": "/basics/tilesets-and-collisions/#tilesets",
+            "text": "A tileset corresponds to a set of informations linked to the map textures and collisions. Open the datas manager by clicking here on the main toolbar and select the  Tilesets  tab:   If you want to add / remove tileset(s), you can use the  Change maximum...  button. You can change the  Picture  by clicking on the following widget that will open a reduced picture manager (containing only one kind of picture). That picture will correspond to the static textures that you will use for your maps having this tileset.  You can also change special textures (autotiles, walls, etc.) linked to the tileset.",
+            "title": "Tilesets"
+        },
+        {
+            "location": "/basics/tilesets-and-collisions/#collisions",
+            "text": "Collisions are important in video games. You need to manage if the moving objects are colliding with other objects or any other map elements.",
+            "title": "Collisions"
+        },
+        {
+            "location": "/basics/tilesets-and-collisions/#bounding-boxes",
+            "text": "Bounding box are simple geometries that are used for checking intersections. Each object has a corresponding bounding box, after each move the engine will check if the object bounding box intersect with another bounding box in the map.  There is a way to see the bounding boxes for debugging (if you encounter any strange behavior). Check the following option:",
+            "title": "Bounding boxes"
+        },
+        {
+            "location": "/basics/tilesets-and-collisions/#simple-boxes-and-oriented-boxes",
+            "text": "Depending on which sprite you are using, bounding boxes can be oriented like this:   Fix sprites are flat, so they don't need to be oriented. However, face, double, and quadra sprites are voluminous and their bounding box could be a cylinder. A cylinder collision is over killed so we are using oriented boxes that are reasonable to manage collisions with great performances.",
+            "title": "Simple boxes and Oriented boxes"
+        },
+        {
+            "location": "/basics/tilesets-and-collisions/#how-can-i-change-collisions",
+            "text": "For tileset, you can edit it directly in the picture preview on the  Tilesets  tab of datas manager. Another way is to open the collisions manager merging all the possible collisions. Open the collisions manager by clicking here on the main toolbar:",
+            "title": "How can I change collisions?"
+        },
+        {
+            "location": "/basics/tilesets-and-collisions/#praticable",
+            "text": "You can for example change the tileset collision by re-sizing it for each square. This will affect the size of the bounding boxes. You can res-ize it with your  mouse  or  Right click  and click on  Edit  in order to open a window for selecting the rectangle values.",
+            "title": "Praticable"
+        },
+        {
+            "location": "/basics/tilesets-and-collisions/#directions-only-for-floors",
+            "text": "You can indicate in which direction there will be a collision.",
+            "title": "Directions (only for floors)"
+        },
+        {
+            "location": "/basics/tilesets-and-collisions/#characters",
+            "text": "Characters are animated and you can handle different collisions for different frames. But, if you want to have the same collisions for all the frames, check the  Repeat  option.",
+            "title": "Characters"
+        },
+        {
+            "location": "/basics/tilesets-and-collisions/#autotiles",
+            "text": "You can manage the autotiles list by clicking here on the main toolbar:   You can manage picture and collisions for each autotiles here. Autotiles are dynamic floors. This will have borders with automatic changing according to the neighbor squares. Here is an example of an autotile picture:   Rendering in map:   Don't forget to add your autotiles in the tileset:",
+            "title": "Autotiles"
+        },
+        {
+            "location": "/basics/tilesets-and-collisions/#animated-autotiles",
+            "text": "Not available yet.",
+            "title": "Animated autotiles"
+        },
+        {
+            "location": "/basics/tilesets-and-collisions/#sprites-walls",
+            "text": "You can manage the walls the same way you did for autotiles in:   Collisions manager  Tilesets \u00a0tab in datas manager:",
+            "title": "Sprites walls"
+        },
+        {
+            "location": "/basics/tilesets-and-collisions/#3d-objects",
+            "text": "Not available yet.",
+            "title": "3D objects"
+        },
+        {
+            "location": "/basics/tilesets-and-collisions/#reliefs",
+            "text": "Not available yet.",
+            "title": "Reliefs"
+        },
+        {
+            "location": "/basics/variables-overview/",
+            "text": "Variables overview\n\n\nVariables are important to understand if you want to have a dynamic game. Here is an overview on the subject.\n\n\nWhat is a variable ?\n\n\nA variable is a value that can change when you are playing in your game. There are three possible type of variables:\n\n\n\n\nNumbers\n: number with or without decimals.\n\n\nSwitches\n: ON or OFF.\n\n\nMessages\n: Any type of message.\n\n\n\n\nYou have access to a large number of variables. By default, when you launch a new game all the variables are equals to \n0\n.\n\n\nVariables manager\n\n\nOpen the variables manager by clicking here on the main toolbar:\n\n\n\n\nYou can only manage the number and names of variables here. You cannot change the values. We will see later how to modify the values ingame.\n\n\nUsing example\n\n\nImagine that you want to create a feature that allows the player to change the music volume. You can use variables here! The engine propose to use fix numbers or variables:",
+            "title": "Variables overview"
+        },
+        {
+            "location": "/basics/variables-overview/#variables-overview",
+            "text": "Variables are important to understand if you want to have a dynamic game. Here is an overview on the subject.",
+            "title": "Variables overview"
+        },
+        {
+            "location": "/basics/variables-overview/#what-is-a-variable",
+            "text": "A variable is a value that can change when you are playing in your game. There are three possible type of variables:   Numbers : number with or without decimals.  Switches : ON or OFF.  Messages : Any type of message.   You have access to a large number of variables. By default, when you launch a new game all the variables are equals to  0 .",
+            "title": "What is a variable ?"
+        },
+        {
+            "location": "/basics/variables-overview/#variables-manager",
+            "text": "Open the variables manager by clicking here on the main toolbar:   You can only manage the number and names of variables here. You cannot change the values. We will see later how to modify the values ingame.",
+            "title": "Variables manager"
+        },
+        {
+            "location": "/basics/variables-overview/#using-example",
+            "text": "Imagine that you want to create a feature that allows the player to change the music volume. You can use variables here! The engine propose to use fix numbers or variables:",
+            "title": "Using example"
+        },
+        {
+            "location": "/basics/objects-and-events/",
+            "text": "Objects & Events\n\n\nYou know how to create beautiful maps, but you want to make it be alive by adding NPCs, treasures, etc. These elements are called \nobjects\n. These objects will also react to \nevents\n (hero action, chronometer, attack, etc.). Objects and events are here to galvanize your maps and create your game stories!\n\n\nEvents\n\n\n/!\\ Events in RPG Paper Maker are a different notion than in RM classic series.\n\n\nYou can access to events in \nSystems manager > Events / States\n.\n\n\n\n\nEvents represent the fact that something important just happened and the objects in the map can react or not to it. An event can be for example the fact that your hero pressed the action button, or even the fact that a rain tempest just started. These events are sent to objects by other objects. There are two types of events:\n\n\n\n\nSystem events\n (time, keyboard pressure, etc.) that are not sent by objects in the map, but by the game system itself.\n\n\nUser events\n (quest completed, sword hit) that you can be created by yourself and sent thanks to local objects.\n\n\n\n\nAn event also takes some \nparameters\n. For example, if you want to play a sound each three seconds in the background, you can use the time event with the parameter time = 3000 (milliseconds) and repeat = ON. Imagine such amazing things you can do with parameters (a sword hit event taking a power parameter for example). You can choose the default value of a parameter when editing parameters of an event.\n\n\n/!\\ Don't confuse physics and events. You should not use events for wind animations or gravity, etc.\n\n\nReactions\n\n\nReactions are a tree of commands that will be executed one by one. For example a command can be to display text on screen or to move specific objects in the map. Here is an example of reaction:\n\n\n\n\nThis reaction will check if the variable myValue is equal to 2. If it's OK, this will display the message \"It's OK!\". If not, this will display the message \"Go back later.\".\n\n\nTo edit / add a new command in a reaction, \nDouble click\n on a corresponding node. This will open this window containing a large list of commands:\n\n\n\n\nWe will see later all these commands details one by one.\n\n\nYou can also copy / paste / delete by \nRight-clicking\n on the corresponding command node.\n\n\nCommon reactions\n\n\nIf you see that you are often copying the same set of commands a lot of time maybe you should consider creating a common reaction. You can access to these in \nSystems manager > Common reactions\n.\n\n\n\n\nThis way you will be able to call this common reaction instead of always copying it. It's even taking parameters if you have some variations in your reaction.\n\n\n\n\nBlocking hero\n: If checked, the hero will not be able to move until the reaction is finished.\n\n\n\n\nObjects\n\n\nAn object is something that can move or/and react to some events in a map. So basically a tree is not an object (except if you can cut it so it would have a reaction to an axe hit) but only a static element. It can be a NPC, a monster, or anything else. Note that your hero is an object itself so you can perfectly program its reactions.\n\n\nTo add an object in a map, select the \nObject\n map editor section. Point on a map square and \nDouble click\n or press \nEnter\n after clicking on the square. This will open a new window.\n\n\n\n\n\n\nName\n: Choose a name for your objects. This can help later if you want to execute actions on this object externally.\n\n\nModel\n: Choose a model for this object. We will see later how to configure models.\n\n\n\n\nEvents\n\n\nYou can configure which event the object can react to in the \nEvents\n section. \nDouble click\n on a node:\n\n\n\n\nYou can select if you want a user or system event and change parameters value:\n\n\n\n\nSystem events are the following:\n\n\n\n\nTime\n: Event sent when time interval is cleared.\n\n\nInterval\n (default: 0): Time to wait in milliseconds.\n\n\nRepeat\n (default: ON): Send the event after each interval or once.\n\n\n\n\n\n\nChronometer\n: \nNot available yet.\n\n\nKeyPress\n: Event sent when pressing a key on keyboard.\n\n\nID\n (default: anything): The ID of the key.\n\n\nRepeat\n (default: OFF): If ON, this event will be sent as long as you press the key with a small offset at the first pressure.\n\n\nImmediate repeat\n (default: OFF): If ON, this event will be sent as long as you press the key without any offset.\n\n\n\n\n\n\nKeyRelease\n: Event sent when releasing a key on keyboard.\n\n\nID\n (default: anything): The ID of the key.\n\n\n\n\n\n\n\n\nStates\n\n\nAn object has a set of \nStates\n. For example, the hero can be in a normal state, or poisoned / vulnerable. Note that an object can be in several states at the same time. \n\n\n\n\nFor each state, you have to choose different reactions to specific events. You can copy / paste reactions through states by using \nCopy reaction\n and \nPaste reaction\n buttons. These different options are also available for each state:\n\n\n\n\nGraphics\n: Select the object graphics here (character picture). Choose below the kind of element (Sprite etc.).\n\n\nMoving\n: \n(not available yet)\n Options linked to the object moves.\n\n\nMove animation\n: If checked, all the frames of the character will be drawn for move animation. If not, this will only draw the first frame of the character animation.\n\n\nStop animation\n: \n(not available yet)\n If checked, all the frames of the character will be drawn for stopped animation. If not, this will only draw the first frame of the character animation.\n\n\nClimb animation\n: \n(not available yet)\n If checked, all the frames of the character will be drawn for climbing animation. If not, this will only draw the first frame of the character animation.\n\n\nDirection fix\n: \n(not available yet)\n If checked, the graphics will not change direction to look at the hero. If not, it will look at the hero.\n\n\nSet with camera\n: If checked, the graphics will update orientation according to the camera orientation. If not, the camera orientation changes nothing.\n\n\nPixel offset\n: If checked, the move animation will go 1px down after two frames. This adds an interesting effect.\n\n\nKeep position\n: \n(not available yet)\n If checked, the object always keep its position after moving, even after loading save or changing map. If not, the object position is reinitialized after loading save or changing map.\n\n\n\n\nProperties\n\n\nNot available yet.\n\n\nThe object also has a set of properties. It can be HPs, age, gender, etc. It all depends on what you need and your type of game.\n\n\nExample: create a chest\n\n\nHere is a simple way to produce a chest:\n\n\n\n\nBe sure to have a state for the chest in the systems manager when it is opened:\n\n\n\n\n\n\n\n\nComplete reactions for each state and don't forget to replace state at the end of the normal state:\n\n\n\n\n\n\n\n\nEdit / Copy / Paste / Delete an existing object\n\n\nYou can open a context menu by \nRight clicking\n on an object:\n\n\n\n\nModels\n\n\nModels are objects that can be commonly used. You can have models list in \nSystems manager > Models\n.\n\n\n\n\nFor example, if you want to add flowers that can be picked in your maps, you can create a model \"Flower\", and use this model for an empty object in your map:\n\n\n\n\nCreate model:\n\n\n\n\n\n\n\n\nUse model flower for a map object:\n\n\n\n\n\n\nDefault model\n\n\nThe model with ID 1 is the default model when you create a new object. You can change here the default informations to have in an object creation.\n\n\nHero model\n\n\nThe hero is also an object and reacts to a lot of systems events:\n\n\n\n\nKeyPress > Up, Down, Left, Right Hero\n: Move the object hero to the pressed directions thanks to move object command.\n\n\nKeyPress > Left, Right Camera\n: Change the camera orientation thanks to move camera command.\n\n\nKeyPress > Action\n: Send the custom event \nHeroAction\n to the facing square objects thanks to the send event command.\n\n\nKeyPress > MainMenu\n: Open the main menu thanks to the open main menu command.\n\n\n\n\nInheritance\n\n\nIf an object uses a model but also has content, this new content will replace some of the model content. Models themselves can have models.\n\n\n\n\nState\n: If there is a state with the same ID, the model reactions for this state ID will be replaced by the current content.\n\n\nProperty\n: If there is a property with the same name, the model reactions for this property name will be replaced by the current content.\n\n\nEvent\n: This has no influence.",
+            "title": "Objects & Events"
+        },
+        {
+            "location": "/basics/objects-and-events/#objects-events",
+            "text": "You know how to create beautiful maps, but you want to make it be alive by adding NPCs, treasures, etc. These elements are called  objects . These objects will also react to  events  (hero action, chronometer, attack, etc.). Objects and events are here to galvanize your maps and create your game stories!",
+            "title": "Objects & Events"
+        },
+        {
+            "location": "/basics/objects-and-events/#events",
+            "text": "/!\\ Events in RPG Paper Maker are a different notion than in RM classic series.  You can access to events in  Systems manager > Events / States .   Events represent the fact that something important just happened and the objects in the map can react or not to it. An event can be for example the fact that your hero pressed the action button, or even the fact that a rain tempest just started. These events are sent to objects by other objects. There are two types of events:   System events  (time, keyboard pressure, etc.) that are not sent by objects in the map, but by the game system itself.  User events  (quest completed, sword hit) that you can be created by yourself and sent thanks to local objects.   An event also takes some  parameters . For example, if you want to play a sound each three seconds in the background, you can use the time event with the parameter time = 3000 (milliseconds) and repeat = ON. Imagine such amazing things you can do with parameters (a sword hit event taking a power parameter for example). You can choose the default value of a parameter when editing parameters of an event.  /!\\ Don't confuse physics and events. You should not use events for wind animations or gravity, etc.",
+            "title": "Events"
+        },
+        {
+            "location": "/basics/objects-and-events/#reactions",
+            "text": "Reactions are a tree of commands that will be executed one by one. For example a command can be to display text on screen or to move specific objects in the map. Here is an example of reaction:   This reaction will check if the variable myValue is equal to 2. If it's OK, this will display the message \"It's OK!\". If not, this will display the message \"Go back later.\".  To edit / add a new command in a reaction,  Double click  on a corresponding node. This will open this window containing a large list of commands:   We will see later all these commands details one by one.  You can also copy / paste / delete by  Right-clicking  on the corresponding command node.",
+            "title": "Reactions"
+        },
+        {
+            "location": "/basics/objects-and-events/#common-reactions",
+            "text": "If you see that you are often copying the same set of commands a lot of time maybe you should consider creating a common reaction. You can access to these in  Systems manager > Common reactions .   This way you will be able to call this common reaction instead of always copying it. It's even taking parameters if you have some variations in your reaction.   Blocking hero : If checked, the hero will not be able to move until the reaction is finished.",
+            "title": "Common reactions"
+        },
+        {
+            "location": "/basics/objects-and-events/#objects",
+            "text": "An object is something that can move or/and react to some events in a map. So basically a tree is not an object (except if you can cut it so it would have a reaction to an axe hit) but only a static element. It can be a NPC, a monster, or anything else. Note that your hero is an object itself so you can perfectly program its reactions.  To add an object in a map, select the  Object  map editor section. Point on a map square and  Double click  or press  Enter  after clicking on the square. This will open a new window.    Name : Choose a name for your objects. This can help later if you want to execute actions on this object externally.  Model : Choose a model for this object. We will see later how to configure models.   Events  You can configure which event the object can react to in the  Events  section.  Double click  on a node:   You can select if you want a user or system event and change parameters value:   System events are the following:   Time : Event sent when time interval is cleared.  Interval  (default: 0): Time to wait in milliseconds.  Repeat  (default: ON): Send the event after each interval or once.    Chronometer :  Not available yet.  KeyPress : Event sent when pressing a key on keyboard.  ID  (default: anything): The ID of the key.  Repeat  (default: OFF): If ON, this event will be sent as long as you press the key with a small offset at the first pressure.  Immediate repeat  (default: OFF): If ON, this event will be sent as long as you press the key without any offset.    KeyRelease : Event sent when releasing a key on keyboard.  ID  (default: anything): The ID of the key.     States  An object has a set of  States . For example, the hero can be in a normal state, or poisoned / vulnerable. Note that an object can be in several states at the same time.    For each state, you have to choose different reactions to specific events. You can copy / paste reactions through states by using  Copy reaction  and  Paste reaction  buttons. These different options are also available for each state:   Graphics : Select the object graphics here (character picture). Choose below the kind of element (Sprite etc.).  Moving :  (not available yet)  Options linked to the object moves.  Move animation : If checked, all the frames of the character will be drawn for move animation. If not, this will only draw the first frame of the character animation.  Stop animation :  (not available yet)  If checked, all the frames of the character will be drawn for stopped animation. If not, this will only draw the first frame of the character animation.  Climb animation :  (not available yet)  If checked, all the frames of the character will be drawn for climbing animation. If not, this will only draw the first frame of the character animation.  Direction fix :  (not available yet)  If checked, the graphics will not change direction to look at the hero. If not, it will look at the hero.  Set with camera : If checked, the graphics will update orientation according to the camera orientation. If not, the camera orientation changes nothing.  Pixel offset : If checked, the move animation will go 1px down after two frames. This adds an interesting effect.  Keep position :  (not available yet)  If checked, the object always keep its position after moving, even after loading save or changing map. If not, the object position is reinitialized after loading save or changing map.   Properties  Not available yet.  The object also has a set of properties. It can be HPs, age, gender, etc. It all depends on what you need and your type of game.",
+            "title": "Objects"
+        },
+        {
+            "location": "/basics/objects-and-events/#example-create-a-chest",
+            "text": "Here is a simple way to produce a chest:   Be sure to have a state for the chest in the systems manager when it is opened:     Complete reactions for each state and don't forget to replace state at the end of the normal state:",
+            "title": "Example: create a chest"
+        },
+        {
+            "location": "/basics/objects-and-events/#edit-copy-paste-delete-an-existing-object",
+            "text": "You can open a context menu by  Right clicking  on an object:",
+            "title": "Edit / Copy / Paste / Delete an existing object"
+        },
+        {
+            "location": "/basics/objects-and-events/#models",
+            "text": "Models are objects that can be commonly used. You can have models list in  Systems manager > Models .   For example, if you want to add flowers that can be picked in your maps, you can create a model \"Flower\", and use this model for an empty object in your map:   Create model:     Use model flower for a map object:    Default model  The model with ID 1 is the default model when you create a new object. You can change here the default informations to have in an object creation.  Hero model  The hero is also an object and reacts to a lot of systems events:   KeyPress > Up, Down, Left, Right Hero : Move the object hero to the pressed directions thanks to move object command.  KeyPress > Left, Right Camera : Change the camera orientation thanks to move camera command.  KeyPress > Action : Send the custom event  HeroAction  to the facing square objects thanks to the send event command.  KeyPress > MainMenu : Open the main menu thanks to the open main menu command.   Inheritance  If an object uses a model but also has content, this new content will replace some of the model content. Models themselves can have models.   State : If there is a state with the same ID, the model reactions for this state ID will be replaced by the current content.  Property : If there is a property with the same name, the model reactions for this property name will be replaced by the current content.  Event : This has no influence.",
+            "title": "Models"
+        },
+        {
+            "location": "/basics/event-commands-overview/",
+            "text": "Event commands overview\n\n\nNow that you are a pro for objects and event, let's see all the event commands that are possible to use.\n\n\nShow text\n\n\n\n\nDisplays a text with the current dialog box options.\n\n\n\n\nMessage\n: message to display on screen.\n\n\n\n\nRender in game:\n\n\n\n\nDisplay a choice\n\n\nNot available yet.\n\n\nInput number\n\n\nNot available yet.\n\n\nSet dialog box options\n\n\nNot available yet.\n\n\nWait\n\n\n\n\nWait during a specific time.\n\n\n\n\nTime\n: Time to wait in seconds.\n\n\n\n\nChange chronometer\n\n\nNot available yet.\n\n\nDisplay a picture\n\n\nNot available yet.\n\n\nSet / Move / Turn a picture\n\n\nNot available yet.\n\n\nRemove a picture\n\n\nNot available yet.\n\n\nPlay a video\n\n\nNot available yet.\n\n\nCondition\n\n\n\n\nCreate a container for commands that will be executed only if the indicated condition is true.\n\n\n\n\n\n\nAdd \"else\" when conditions do not apply\n: Create another container for commands that will be executed only if the indicated condition is false.\n\n\n\n\n\n\nVariables\n:\n\n\n\n\nVariable\n: The variable that will be compared by value.\n\n\n\n\n\n\n\n\nLoop\n\n\nCreate a container for commands that will be executed on a loop.\n\n\nBreak loop\n\n\nIf inside a loop container, this will go out of the loop and go to the next command after the loop.\n\n\nLabel\n\n\nNot available yet.\n\n\nJump to label\n\n\nNot available yet.\n\n\nStop the reaction\n\n\nNot available yet.\n\n\nComment\n\n\nNot available yet.\n\n\nCall a common reaction\n\n\nNot available yet.\n\n\nSend event\n\n\n\n\nThis will send an event to the selected target.\n\n\n\n\nTarget\n:\n\n\nAll\n: \nNot available yet.\n\n\nDetection\n: Depends on a detection data. \nActually it just sends an event to objects in front of the object.\n\n\nObject\n: \nNot available yet.\n\n\nSender\n: \nNot available yet.\n\n\nThe hero\n: Simply send to the defined hero.\n\n\n\n\n\n\nEvent\n:\n\n\nEvent system\n: Select a system event (events sent by the game system itself).\n\n\nEvent user\n: Select a user event (custom events sent by the map objects).\n\n\nParameters values\n: Select the event parameters values. You can keep the default value.\n\n\n\n\n\n\n\n\nChange state\n\n\n\n\nThis will change the state of the current object. An object can have several states at the same time.\n\n\n\n\nSelection\n:\n\n\nState's ID\n: The new state ID.\n\n\n\n\n\n\nOperation\n:\n\n\nReplace\n: Remove all the current states of the object and add the new state.\n\n\nAdd\n: Only add the new state.\n\n\nRemove\n: Remove the object state having this ID.\n\n\n\n\n\n\n\n\nChange properties\n\n\nNot available yet.\n\n\nChange graphic\n\n\nNot available yet.\n\n\nTeleport object\n\n\n\n\nThis will teleport an object on an existing map with a new position.\n\n\n\n\nObject ID\n: The object ID to teleport.\n\n\nPosition\n:\n\n\nSelect...\n: Choose map and position thanks to a map previewer.\n\n\nID map\n, \nX\n, \nY\n, \nY plus\n, \nZ\n: Choose map ID an position to go manually.\n\n\nObject (ID)\n: Choose an object to teleport on.\n\n\n\n\n\n\nOptions\n: \nNot available yet.\n\n\n\n\nMove object\n\n\n\n\nThis will move an object in the current map with a specific route. You can also temporary change some properties linked to the object state.\n\n\n\n\nObject ID\n: The object ID to move.\n\n\nIgnore if impossible\n: If checked, the moves that can't be executed (example: a wall blocking the route) would be ignored. If not checked, this will try the impossible move as long as it become possible (example: use for NPCs moving).\n\n\nWait the end of moves\n: If checked, the command would end only when all the moves are executed. If not, the command would end immediately (moves executed in parallel).\n\n\nWith camera orientation\n: If checked, the direction moves (north, south, west, east) would take account of the camera orientation. If not, the direction moves would not take account of the camera orientation.\n\n\nStep / square moves\n:\n\n\nSquare\n: Change all the direction moves unit to square.\n\n\nStep\n: Change all the direction moves unit to step.\n\n\n1 to North / South / West / East / North-West / North-East / South-West / South-East\n: Move the object to 1 square / step in the selected direction.\n\n\n1 to random\n: \n(not available yet)\n Move the object to 1 square / step in a random direction.\n\n\n1 to the hero\n: \n(not available yet)\n Move the object to 1 square / step in the hero direction.\n\n\n1 opposite to the hero\n: \n(not available yet)\n Move the object to 1 square / step in the opposite of the hero direction.\n\n\n1 in front\n: \n(not available yet)\n Move the object to 1 square / step in front.\n\n\n1 back\n: \n(not available yet)\n Move the object to 1 square / step back.\n\n\n\n\n\n\nChange direction\n: \nNot available yet.\n\n\nChange object properties\n: \nNot available yet.\n\n\n\n\nDisplay an animation\n\n\nNot available yet.\n\n\nMove camera\n\n\nCheck out the camera guide \nhere\n.\n\n\nReset camera\n\n\nNot available yet.\n\n\nCreate object in map\n\n\nNot available yet.\n\n\nRemove object from map\n\n\nNot available yet.\n\n\nChange screen tone\n\n\nNot available yet.\n\n\nShake screen\n\n\nNot available yet.\n\n\nFlash screen\n\n\nNot available yet.\n\n\nChange meteo\n\n\nNot available yet.\n\n\nChange map properties\n\n\nNot available yet.\n\n\nChange variables\n\n\n\n\nThis will change one or several variable(s) value.\n\n\n\n\nSelection\n:\n\n\nOne variable\n: The unique variable to change.\n\n\nRange\n: The range of variables IDs to change.\n\n\n\n\n\n\nOperation\n: The operation to use according to the current variable(s) value.\n\n\nValue\n:\n\n\nNumber\n: A simple number.\n\n\nRandom\n: A random number between two selected values.\n\n\nNumber of ... in inventory\n: \nNot available yet.\n\n\nTotal currency ... with ID\n: \nNot available yet.\n\n\nAn ... with instance ID ... statistic ID\n: \nNot available yet.\n\n\nAn object in the map ... characteristic\n: \nNot available yet.\n\n\nOther characteristics\n: \nNot available yet.\n\n\n\n\n\n\n\n\nChange a statistic\n\n\nNot available yet.\n\n\nChange experience curve\n\n\nNot available yet.\n\n\nChange status\n\n\nNot available yet.\n\n\nChange a skill\n\n\nNot available yet.\n\n\nChange name\n\n\nNot available yet.\n\n\nChange class\n\n\nNot available yet.\n\n\nChange equipment\n\n\nNot available yet.\n\n\nChange money\n\n\nNot available yet.\n\n\nModify inventory\n\n\n\n\nThis will update inventory containing. You can for example add items to it.\n\n\n\n\nSelection\n:\n\n\nItem\n: An item to select.\n\n\nWeapon\n: A weapon to select.\n\n\nArmor\n: An armor to select.\n\n\n\n\n\n\nOperation\n: The operation to use according to the current number of the selection in the inventory.\n\n\nNumber\n: The value to use for updating the selection number.\n\n\n\n\nModify team\n\n\n\n\nThis will update team organization.\n\n\n\n\nCreate new instance with level ... in team / reserve / hidden of\n: Create a new instance of a hero or monster in team, reserve, or hidden.\n\n\nStock instance ID in\n: Choose a variable where you want to stock the instance ID. This can be useful to move or remove characters in team.\n\n\n\n\n\n\nMove / Remove the character with ID ... in team / reserve / hidden\n: \nNot available yet.\n\n\n\n\nStart a battle\n\n\n\n\nThis will start a battle with your team against a troop (group of monsters).\n\n\n\n\nTroop's ID\n:\n\n\nID\n: Fix troop ID.\n\n\nRandom (in map property)\n: Random ID indicated in map property window.\n\n\n\n\n\n\nBattle map\n:\n\n\nID\n: Fix battle map ID.\n\n\nSelect...\n: Choose battle map and position thanks to a map previewer.\n\n\nID map\n, \nX\n, \nY\n, \nY plus\n, \nZ\n: Choose battle map ID and position to go manually.\n\n\n\n\n\n\nOptions\n:\n\n\nAllow escape\n: If checked, it would be possible to use battle command \nEscape\n in this battle.\n\n\nDefeat causes Game Over\n: If checked, losing in this battle will automatically direct to game over. If not checked, there will be two commands container : one for the winning state, and the second for the losing state.\n\n\n\n\n\n\nTransition\n:\n\n\nStart / End\n: Start / End type of transition:\n\n\nNone\n: Immediate transition.\n\n\nFade in / out\n: Transition on a color.\n\n\nZoom in / out\n: Transition by zooming in / out.\n\n\n\n\n\n\n\n\n\n\n\n\nDisplay / Hide enemy\n\n\nNot available yet.\n\n\nForce an action\n\n\nNot available yet.\n\n\nEnd battle\n\n\nNot available yet.\n\n\nStart shop\n\n\nNot available yet.\n\n\nEnter a name\n\n\nNot available yet.\n\n\nOpen main menu\n\n\nThis will open the main menu.\n\n\nRender in game:\n\n\n\n\nOpen saves menu\n\n\nThis will open the saves menu.\n\n\nRender in game:\n\n\n\n\nTitle screen\n\n\nNot available yet.\n\n\nGame over\n\n\nThis will go to the game over screen.\n\n\n/!\\ Today, there is no game over screen, it's only closing the game window.\n\n\nScript\n\n\nNot available yet.\n\n\nChange windowskin\n\n\nNot available yet.\n\n\nAllow / Forbid saves\n\n\nNot available yet.\n\n\nAllow / Forbid main menu\n\n\nNot available yet.\n\n\nChange general options\n\n\nNot available yet.\n\n\nPlay a music\n\n\n\n\nThis will play a music on the current map.\n\n\n\n\nSelect song by ID\n: Instead of using the left list, you can select by ID values.\n\n\nOptions\n:\n\n\nVolume\n: The music volume (in %).\n\n\nStart\n: The beginning time of the music in seconds.\n\n\nEnd\n: The end time of the music in seconds.\n\n\n\n\n\n\n\n\nStop music\n\n\n\n\nThis will stop the music played in the current map.\n\n\n\n\nDisappear with time\n: Number of seconds for music played for disappearing.\n\n\n\n\nPlay a background sound\n\n\nThis will play a background sound on top of the current music.\n\n\nCheck out the play music command \nhere\n that is similar.\n\n\nStop background sound\n\n\nThis will stop the background sound played in the current map.\n\n\nCheck out the stop music command \nhere\n that is similar.\n\n\nPlay a sound\n\n\nThis will play a sound on top of all the songs.\n\n\nCheck out the play music command \nhere\n that is similar.\n\n\nPlay a music effect\n\n\nThis will play a music by pausing the current played music. When the music effect is finished the previously played music is unpaused.\n\n\nCheck out the play music command \nhere\n that is similar.\n\n\nChange battle music\n\n\nNot available yet.\n\n\nChange victory music\n\n\nNot available yet.",
+            "title": "Event commands overview"
+        },
+        {
+            "location": "/basics/event-commands-overview/#event-commands-overview",
+            "text": "Now that you are a pro for objects and event, let's see all the event commands that are possible to use.",
+            "title": "Event commands overview"
+        },
+        {
+            "location": "/basics/event-commands-overview/#show-text",
+            "text": "Displays a text with the current dialog box options.   Message : message to display on screen.   Render in game:",
+            "title": "Show text"
+        },
+        {
+            "location": "/basics/event-commands-overview/#display-a-choice",
+            "text": "Not available yet.",
+            "title": "Display a choice"
+        },
+        {
+            "location": "/basics/event-commands-overview/#input-number",
+            "text": "Not available yet.",
+            "title": "Input number"
+        },
+        {
+            "location": "/basics/event-commands-overview/#set-dialog-box-options",
+            "text": "Not available yet.",
+            "title": "Set dialog box options"
+        },
+        {
+            "location": "/basics/event-commands-overview/#wait",
+            "text": "Wait during a specific time.   Time : Time to wait in seconds.",
+            "title": "Wait"
+        },
+        {
+            "location": "/basics/event-commands-overview/#change-chronometer",
+            "text": "Not available yet.",
+            "title": "Change chronometer"
+        },
+        {
+            "location": "/basics/event-commands-overview/#display-a-picture",
+            "text": "Not available yet.",
+            "title": "Display a picture"
+        },
+        {
+            "location": "/basics/event-commands-overview/#set-move-turn-a-picture",
+            "text": "Not available yet.",
+            "title": "Set / Move / Turn a picture"
+        },
+        {
+            "location": "/basics/event-commands-overview/#remove-a-picture",
+            "text": "Not available yet.",
+            "title": "Remove a picture"
+        },
+        {
+            "location": "/basics/event-commands-overview/#play-a-video",
+            "text": "Not available yet.",
+            "title": "Play a video"
+        },
+        {
+            "location": "/basics/event-commands-overview/#condition",
+            "text": "Create a container for commands that will be executed only if the indicated condition is true.    Add \"else\" when conditions do not apply : Create another container for commands that will be executed only if the indicated condition is false.    Variables :   Variable : The variable that will be compared by value.",
+            "title": "Condition"
+        },
+        {
+            "location": "/basics/event-commands-overview/#loop",
+            "text": "Create a container for commands that will be executed on a loop.",
+            "title": "Loop"
+        },
+        {
+            "location": "/basics/event-commands-overview/#break-loop",
+            "text": "If inside a loop container, this will go out of the loop and go to the next command after the loop.",
+            "title": "Break loop"
+        },
+        {
+            "location": "/basics/event-commands-overview/#label",
+            "text": "Not available yet.",
+            "title": "Label"
+        },
+        {
+            "location": "/basics/event-commands-overview/#jump-to-label",
+            "text": "Not available yet.",
+            "title": "Jump to label"
+        },
+        {
+            "location": "/basics/event-commands-overview/#stop-the-reaction",
+            "text": "Not available yet.",
+            "title": "Stop the reaction"
+        },
+        {
+            "location": "/basics/event-commands-overview/#comment",
+            "text": "Not available yet.",
+            "title": "Comment"
+        },
+        {
+            "location": "/basics/event-commands-overview/#call-a-common-reaction",
+            "text": "Not available yet.",
+            "title": "Call a common reaction"
+        },
+        {
+            "location": "/basics/event-commands-overview/#send-event",
+            "text": "This will send an event to the selected target.   Target :  All :  Not available yet.  Detection : Depends on a detection data.  Actually it just sends an event to objects in front of the object.  Object :  Not available yet.  Sender :  Not available yet.  The hero : Simply send to the defined hero.    Event :  Event system : Select a system event (events sent by the game system itself).  Event user : Select a user event (custom events sent by the map objects).  Parameters values : Select the event parameters values. You can keep the default value.",
+            "title": "Send event"
+        },
+        {
+            "location": "/basics/event-commands-overview/#change-state",
+            "text": "This will change the state of the current object. An object can have several states at the same time.   Selection :  State's ID : The new state ID.    Operation :  Replace : Remove all the current states of the object and add the new state.  Add : Only add the new state.  Remove : Remove the object state having this ID.",
+            "title": "Change state"
+        },
+        {
+            "location": "/basics/event-commands-overview/#change-properties",
+            "text": "Not available yet.",
+            "title": "Change properties"
+        },
+        {
+            "location": "/basics/event-commands-overview/#change-graphic",
+            "text": "Not available yet.",
+            "title": "Change graphic"
+        },
+        {
+            "location": "/basics/event-commands-overview/#teleport-object",
+            "text": "This will teleport an object on an existing map with a new position.   Object ID : The object ID to teleport.  Position :  Select... : Choose map and position thanks to a map previewer.  ID map ,  X ,  Y ,  Y plus ,  Z : Choose map ID an position to go manually.  Object (ID) : Choose an object to teleport on.    Options :  Not available yet.",
+            "title": "Teleport object"
+        },
+        {
+            "location": "/basics/event-commands-overview/#move-object",
+            "text": "This will move an object in the current map with a specific route. You can also temporary change some properties linked to the object state.   Object ID : The object ID to move.  Ignore if impossible : If checked, the moves that can't be executed (example: a wall blocking the route) would be ignored. If not checked, this will try the impossible move as long as it become possible (example: use for NPCs moving).  Wait the end of moves : If checked, the command would end only when all the moves are executed. If not, the command would end immediately (moves executed in parallel).  With camera orientation : If checked, the direction moves (north, south, west, east) would take account of the camera orientation. If not, the direction moves would not take account of the camera orientation.  Step / square moves :  Square : Change all the direction moves unit to square.  Step : Change all the direction moves unit to step.  1 to North / South / West / East / North-West / North-East / South-West / South-East : Move the object to 1 square / step in the selected direction.  1 to random :  (not available yet)  Move the object to 1 square / step in a random direction.  1 to the hero :  (not available yet)  Move the object to 1 square / step in the hero direction.  1 opposite to the hero :  (not available yet)  Move the object to 1 square / step in the opposite of the hero direction.  1 in front :  (not available yet)  Move the object to 1 square / step in front.  1 back :  (not available yet)  Move the object to 1 square / step back.    Change direction :  Not available yet.  Change object properties :  Not available yet.",
+            "title": "Move object"
+        },
+        {
+            "location": "/basics/event-commands-overview/#display-an-animation",
+            "text": "Not available yet.",
+            "title": "Display an animation"
+        },
+        {
+            "location": "/basics/event-commands-overview/#move-camera",
+            "text": "Check out the camera guide  here .",
+            "title": "Move camera"
+        },
+        {
+            "location": "/basics/event-commands-overview/#reset-camera",
+            "text": "Not available yet.",
+            "title": "Reset camera"
+        },
+        {
+            "location": "/basics/event-commands-overview/#create-object-in-map",
+            "text": "Not available yet.",
+            "title": "Create object in map"
+        },
+        {
+            "location": "/basics/event-commands-overview/#remove-object-from-map",
+            "text": "Not available yet.",
+            "title": "Remove object from map"
+        },
+        {
+            "location": "/basics/event-commands-overview/#change-screen-tone",
+            "text": "Not available yet.",
+            "title": "Change screen tone"
+        },
+        {
+            "location": "/basics/event-commands-overview/#shake-screen",
+            "text": "Not available yet.",
+            "title": "Shake screen"
+        },
+        {
+            "location": "/basics/event-commands-overview/#flash-screen",
+            "text": "Not available yet.",
+            "title": "Flash screen"
+        },
+        {
+            "location": "/basics/event-commands-overview/#change-meteo",
+            "text": "Not available yet.",
+            "title": "Change meteo"
+        },
+        {
+            "location": "/basics/event-commands-overview/#change-map-properties",
+            "text": "Not available yet.",
+            "title": "Change map properties"
+        },
+        {
+            "location": "/basics/event-commands-overview/#change-variables",
+            "text": "This will change one or several variable(s) value.   Selection :  One variable : The unique variable to change.  Range : The range of variables IDs to change.    Operation : The operation to use according to the current variable(s) value.  Value :  Number : A simple number.  Random : A random number between two selected values.  Number of ... in inventory :  Not available yet.  Total currency ... with ID :  Not available yet.  An ... with instance ID ... statistic ID :  Not available yet.  An object in the map ... characteristic :  Not available yet.  Other characteristics :  Not available yet.",
+            "title": "Change variables"
+        },
+        {
+            "location": "/basics/event-commands-overview/#change-a-statistic",
+            "text": "Not available yet.",
+            "title": "Change a statistic"
+        },
+        {
+            "location": "/basics/event-commands-overview/#change-experience-curve",
+            "text": "Not available yet.",
+            "title": "Change experience curve"
+        },
+        {
+            "location": "/basics/event-commands-overview/#change-status",
+            "text": "Not available yet.",
+            "title": "Change status"
+        },
+        {
+            "location": "/basics/event-commands-overview/#change-a-skill",
+            "text": "Not available yet.",
+            "title": "Change a skill"
+        },
+        {
+            "location": "/basics/event-commands-overview/#change-name",
+            "text": "Not available yet.",
+            "title": "Change name"
+        },
+        {
+            "location": "/basics/event-commands-overview/#change-class",
+            "text": "Not available yet.",
+            "title": "Change class"
+        },
+        {
+            "location": "/basics/event-commands-overview/#change-equipment",
+            "text": "Not available yet.",
+            "title": "Change equipment"
+        },
+        {
+            "location": "/basics/event-commands-overview/#change-money",
+            "text": "Not available yet.",
+            "title": "Change money"
+        },
+        {
+            "location": "/basics/event-commands-overview/#modify-inventory",
+            "text": "This will update inventory containing. You can for example add items to it.   Selection :  Item : An item to select.  Weapon : A weapon to select.  Armor : An armor to select.    Operation : The operation to use according to the current number of the selection in the inventory.  Number : The value to use for updating the selection number.",
+            "title": "Modify inventory"
+        },
+        {
+            "location": "/basics/event-commands-overview/#modify-team",
+            "text": "This will update team organization.   Create new instance with level ... in team / reserve / hidden of : Create a new instance of a hero or monster in team, reserve, or hidden.  Stock instance ID in : Choose a variable where you want to stock the instance ID. This can be useful to move or remove characters in team.    Move / Remove the character with ID ... in team / reserve / hidden :  Not available yet.",
+            "title": "Modify team"
+        },
+        {
+            "location": "/basics/event-commands-overview/#start-a-battle",
+            "text": "This will start a battle with your team against a troop (group of monsters).   Troop's ID :  ID : Fix troop ID.  Random (in map property) : Random ID indicated in map property window.    Battle map :  ID : Fix battle map ID.  Select... : Choose battle map and position thanks to a map previewer.  ID map ,  X ,  Y ,  Y plus ,  Z : Choose battle map ID and position to go manually.    Options :  Allow escape : If checked, it would be possible to use battle command  Escape  in this battle.  Defeat causes Game Over : If checked, losing in this battle will automatically direct to game over. If not checked, there will be two commands container : one for the winning state, and the second for the losing state.    Transition :  Start / End : Start / End type of transition:  None : Immediate transition.  Fade in / out : Transition on a color.  Zoom in / out : Transition by zooming in / out.",
+            "title": "Start a battle"
+        },
+        {
+            "location": "/basics/event-commands-overview/#display-hide-enemy",
+            "text": "Not available yet.",
+            "title": "Display / Hide enemy"
+        },
+        {
+            "location": "/basics/event-commands-overview/#force-an-action",
+            "text": "Not available yet.",
+            "title": "Force an action"
+        },
+        {
+            "location": "/basics/event-commands-overview/#end-battle",
+            "text": "Not available yet.",
+            "title": "End battle"
+        },
+        {
+            "location": "/basics/event-commands-overview/#start-shop",
+            "text": "Not available yet.",
+            "title": "Start shop"
+        },
+        {
+            "location": "/basics/event-commands-overview/#enter-a-name",
+            "text": "Not available yet.",
+            "title": "Enter a name"
+        },
+        {
+            "location": "/basics/event-commands-overview/#open-main-menu",
+            "text": "This will open the main menu.  Render in game:",
+            "title": "Open main menu"
+        },
+        {
+            "location": "/basics/event-commands-overview/#open-saves-menu",
+            "text": "This will open the saves menu.  Render in game:",
+            "title": "Open saves menu"
+        },
+        {
+            "location": "/basics/event-commands-overview/#title-screen",
+            "text": "Not available yet.",
+            "title": "Title screen"
+        },
+        {
+            "location": "/basics/event-commands-overview/#game-over",
+            "text": "This will go to the game over screen.  /!\\ Today, there is no game over screen, it's only closing the game window.",
+            "title": "Game over"
+        },
+        {
+            "location": "/basics/event-commands-overview/#script",
+            "text": "Not available yet.",
+            "title": "Script"
+        },
+        {
+            "location": "/basics/event-commands-overview/#change-windowskin",
+            "text": "Not available yet.",
+            "title": "Change windowskin"
+        },
+        {
+            "location": "/basics/event-commands-overview/#allow-forbid-saves",
+            "text": "Not available yet.",
+            "title": "Allow / Forbid saves"
+        },
+        {
+            "location": "/basics/event-commands-overview/#allow-forbid-main-menu",
+            "text": "Not available yet.",
+            "title": "Allow / Forbid main menu"
+        },
+        {
+            "location": "/basics/event-commands-overview/#change-general-options",
+            "text": "Not available yet.",
+            "title": "Change general options"
+        },
+        {
+            "location": "/basics/event-commands-overview/#play-a-music",
+            "text": "This will play a music on the current map.   Select song by ID : Instead of using the left list, you can select by ID values.  Options :  Volume : The music volume (in %).  Start : The beginning time of the music in seconds.  End : The end time of the music in seconds.",
+            "title": "Play a music"
+        },
+        {
+            "location": "/basics/event-commands-overview/#stop-music",
+            "text": "This will stop the music played in the current map.   Disappear with time : Number of seconds for music played for disappearing.",
+            "title": "Stop music"
+        },
+        {
+            "location": "/basics/event-commands-overview/#play-a-background-sound",
+            "text": "This will play a background sound on top of the current music.  Check out the play music command  here  that is similar.",
+            "title": "Play a background sound"
+        },
+        {
+            "location": "/basics/event-commands-overview/#stop-background-sound",
+            "text": "This will stop the background sound played in the current map.  Check out the stop music command  here  that is similar.",
+            "title": "Stop background sound"
+        },
+        {
+            "location": "/basics/event-commands-overview/#play-a-sound",
+            "text": "This will play a sound on top of all the songs.  Check out the play music command  here  that is similar.",
+            "title": "Play a sound"
+        },
+        {
+            "location": "/basics/event-commands-overview/#play-a-music-effect",
+            "text": "This will play a music by pausing the current played music. When the music effect is finished the previously played music is unpaused.  Check out the play music command  here  that is similar.",
+            "title": "Play a music effect"
+        },
+        {
+            "location": "/basics/event-commands-overview/#change-battle-music",
+            "text": "Not available yet.",
+            "title": "Change battle music"
+        },
+        {
+            "location": "/basics/event-commands-overview/#change-victory-music",
+            "text": "Not available yet.",
+            "title": "Change victory music"
+        },
+        {
+            "location": "/basics/control-the-camera/",
+            "text": "Control the camera\n\n\nIn your 2D games, you are limited to screen moves for adding dynamism to your important scenes. A 3D camera offers a lot of opportunities for your scenes (moves, rotations, zooms...) and you need to know some easy basics to use it correctly.\n\n\n\n\nThe camera\n\n\nFirst, you should know what is a camera. Just imagine that you are a cameraman for a great movie. The first two things required for filming a scene are:\n\n\n\n\nThe camera position\n\n\nThe target position\n (= where the camera is looking at)\n\n\n\n\nThanks to the scripts, these two positions are always calculated thanks to algorithms. These positions will be calculated according to:\n\n\n\n\nThe \ntarget position\n and a potential \noffset\n\n\nThe \ndistance\n between the camera and the target\n\n\nThe \nhorizontal angle\n between the camera and the target\n\n\nThe \nvertical angle\n between the camera and the target\n\n\n\n\nThe distance\n\n\n\n\nThe distance is simply a positive value indicating the distance between the camera and the target. This should take account of the three axis. This will be used for zooms. The default value is 125.\n\n\nThe horizontal angle\n\n\n\n\nThe horizontal angle is only applied to the X and Z axis. For example, if you want to turn around your target horizontally, you will have to change this value. The default value is -90\u00b0.\n\n\nThe vertical angle\n\n\n\n\nSame as the vertical angle but only applied to the Y axis. For example, if you want to turn around your target vertically, you will have to change this value (to go down you have to increment the value, and to go up you have to decrease the value). The default value is 55\u00b0.\n\n\nThe move camera command\n\n\nHere we are, now that you know a bit more about the camera properties we can see how to dynamically move it. The Move Camera event command is here for it!\n\n\n\n\n\n\nCamera target\n: By default, the camera is always looking at the hero.\n\n\nUnchanged\n: Keep the current camera target.\n\n\nObject ID\n: \n(not available yet)\n If you are selecting a new object ID to focus, the camera will move to its position and will consider it as the new target after it.\n\n\n\n\n\n\nOperation\n: You can select here the kind of operation you want to apply to the modified values. For example, if you choose (+) and you set distance to 5, if the previous distance value was 125 it will become 125 + 5 = 130.\n\n\n\n\nMove\n: You can modify here the camera position on the three axis (you can choose squares by squares or pixel by pixel).\n\n\n\n\nTarget offset\n: if this option is checked, you will move the camera and the target offset positions at the same time. In 2D games, it's like if you only wanted to move the screen and ignore the hero position.\n\n\n\n\nMoving X+10 squares with target offset OFF:\n\n\n\n\nMoving X+10 squares with target offset ON:\n\n\n\n\n\n\nTake account of camera orientation\n: \n(not available yet)\n This is simply considering that the axis are modified according to the camera position (see the same option for \nMove Object command\n).\n\n\n\n\n\n\n\n\nRotation\n: You can here modify the horizontal and the vertical angle of the camera in order to apply rotations.\n\n\n\n\nTarget offset\n: Same as for moves. This time, the target will turn around the camera.\n\n\n\n\nAdding 360\u00b0 to the horizontal angle with target offset OFF:\n\n\n\n\nAdding 360\u00b0 to the horizontal angle with target offset ON:\n\n\n\n\nAdding 360\u00b0 to the vertical angle with target offset ON:\n\n\n\n\nAdding 360\u00b0 to the vertical angle with target offset ON:\n\n\n\n\n\n\n\n\nZoom\n: You can set the distance between the camera and the target to create a zoom effect.\n\n\n\n\nDistance\n: The distance to update in pixels.\n\n\n\n\nAdding -100 pixels to the distance:\n\n\n\n\n\n\n\n\nWait the end of the move before the next command\n: Wait the end of the move before the next command (same as for the \nmove object command\n). It can be used to execute commands while the camera is moving (display texts, sounds...).\n\n\n\n\nTime\n: Indicate here the time in seconds for the camera to move to its final position. If 0, the move will be immediate.",
+            "title": "Control the camera"
+        },
+        {
+            "location": "/basics/control-the-camera/#the-camera",
+            "text": "First, you should know what is a camera. Just imagine that you are a cameraman for a great movie. The first two things required for filming a scene are:   The camera position  The target position  (= where the camera is looking at)   Thanks to the scripts, these two positions are always calculated thanks to algorithms. These positions will be calculated according to:   The  target position  and a potential  offset  The  distance  between the camera and the target  The  horizontal angle  between the camera and the target  The  vertical angle  between the camera and the target",
+            "title": "The camera"
+        },
+        {
+            "location": "/basics/control-the-camera/#the-distance",
+            "text": "The distance is simply a positive value indicating the distance between the camera and the target. This should take account of the three axis. This will be used for zooms. The default value is 125.",
+            "title": "The distance"
+        },
+        {
+            "location": "/basics/control-the-camera/#the-horizontal-angle",
+            "text": "The horizontal angle is only applied to the X and Z axis. For example, if you want to turn around your target horizontally, you will have to change this value. The default value is -90\u00b0.",
+            "title": "The horizontal angle"
+        },
+        {
+            "location": "/basics/control-the-camera/#the-vertical-angle",
+            "text": "Same as the vertical angle but only applied to the Y axis. For example, if you want to turn around your target vertically, you will have to change this value (to go down you have to increment the value, and to go up you have to decrease the value). The default value is 55\u00b0.",
+            "title": "The vertical angle"
+        },
+        {
+            "location": "/basics/control-the-camera/#the-move-camera-command",
+            "text": "Here we are, now that you know a bit more about the camera properties we can see how to dynamically move it. The Move Camera event command is here for it!    Camera target : By default, the camera is always looking at the hero.  Unchanged : Keep the current camera target.  Object ID :  (not available yet)  If you are selecting a new object ID to focus, the camera will move to its position and will consider it as the new target after it.    Operation : You can select here the kind of operation you want to apply to the modified values. For example, if you choose (+) and you set distance to 5, if the previous distance value was 125 it will become 125 + 5 = 130.   Move : You can modify here the camera position on the three axis (you can choose squares by squares or pixel by pixel).   Target offset : if this option is checked, you will move the camera and the target offset positions at the same time. In 2D games, it's like if you only wanted to move the screen and ignore the hero position.   Moving X+10 squares with target offset OFF:   Moving X+10 squares with target offset ON:    Take account of camera orientation :  (not available yet)  This is simply considering that the axis are modified according to the camera position (see the same option for  Move Object command ).     Rotation : You can here modify the horizontal and the vertical angle of the camera in order to apply rotations.   Target offset : Same as for moves. This time, the target will turn around the camera.   Adding 360\u00b0 to the horizontal angle with target offset OFF:   Adding 360\u00b0 to the horizontal angle with target offset ON:   Adding 360\u00b0 to the vertical angle with target offset ON:   Adding 360\u00b0 to the vertical angle with target offset ON:     Zoom : You can set the distance between the camera and the target to create a zoom effect.   Distance : The distance to update in pixels.   Adding -100 pixels to the distance:     Wait the end of the move before the next command : Wait the end of the move before the next command (same as for the  move object command ). It can be used to execute commands while the camera is moving (display texts, sounds...).   Time : Indicate here the time in seconds for the camera to move to its final position. If 0, the move will be immediate.",
+            "title": "The move camera command"
+        },
+        {
+            "location": "/basics/battle-system/",
+            "text": "Battle system\n\n\nIf you want to create to create a RPG, you may need a battle system. Here, we will see all the features linked to the battle implementation.\n\n\n\n\nNote: if you want to do an action RPG (battles directly on maps), you can do it through object & events\n\n\nBattle system datas\n\n\nA lot of battle system datas can be found in \nSystems Manager > Battle System\n.\n\n\n\n\nElements\n\n\nNot available yet.\n\n\nCommon statistics\n\n\n\n\nYou can manage here all the statistics that you want to have in your game for influencing your battles (HPs, lvl, strength, etc.).\n\n\n\n\nName\n: Name displayed in game UI.\n\n\nScript abbreviation\n: Choose here an abbreviation. This will be used for game scripts, choose something without capital letter if possible.\n\n\nProperties\n:\n\n\nFix\n: If checked, this statistic would be a fix value (not a bar).\n\n\nBar\n: If checked, this statistic would be a bar value (an actual value + max value).\n\n\n\n\n\n\n\n\nCommon battle commands\n\n\n\n\nChoose which battle commands you want to have after selecting a hero to do something.\n\n\n\n\nSkill\n: Choose the corresponding skill.\n\n\n\n\nRender in game: \n\n\n\n\nCommon equipment\n\n\nChoose the name of common equipment so you will be able to equip weapons / armors on these equipment slots.\n\n\nWeapons / Armors kind\n\n\n\n\nCreate a weapon / armor kind and also choose on which equipment you can assign it.\n\n\n\n\nName\n: Name for this kind of weapon / armor.\n\n\nSelection of equipment you can assign.\n\n\n\n\nBattle maps\n\n\n\n\nBattle maps are in fact maps associated with a specific position (representing the center point of the battle). Select a map (by default in the \nBattle Maps\n\u00a0folder in the map selector) and a position to add a new battle map.\n\n\nStatistics associations\n\n\n\n\nStatistic associated to level\n: Choose one of your fix statistic to associate with level. Level is a statistic that is increasing for the character evolution: leveling up will increase other statistics.\n\n\nStatistic associated to exp\n: Choose one of your bar statistic to associate with experience. Experience is something earned generally after finishing a battle. Once experience goes to its maximum value, the character is leveling up and the map experience bar increases too.\n\n\n\n\nFormulas\n\n\n\n\nIs dead\n: Formula in JavaScript defining conditions to consider that a character is dead. \nu\n corresponds to the character.\n\n\nCritical influence\n: Formula in JavaScript defining the new damages value after having a critical hit. \ndamage\n corresponds to the damages done without critical influence.\n\n\n\n\nBattle musics\n\n\n\n\nBattle\n: Battle music used during the battle.\n\n\nLevel up\n: Sound used when a hero is leveling up.\n\n\nVictory\n: Music used during the victory end battle phase.\n\n\n\n\nCurrencies\n\n\nGo to \nSystems Manager > System\n.\n\n\n\n\nCurrencies can be used in the game for trading with NPCs or any other way.\n\n\n\n\nName\n: Name of the currency.\n\n\nIcon\n: Icon associated with the currency.\n\n\n\n\nSkills / Items / Weapons / Armors\n\n\nGo to \nDatas Manager\n.\n\n\nIn \nSkills\n tab:\n\n\n\n\nIn \nItems\n tab:\n\n\n\n\nIn \nWeapons\n tab:\n\n\n\n\nIn \nArmors\n tab:\n\n\n\n\nThese four data have common properties:\n\n\n\n\nName\n: Name of the data.\n\n\nType\n: Select the type of item / armor / weapon.\n\n\nConsumable\n: If checked, the data will disappear after using the data.\n\n\nOne hand\n: \nNot available yet.\n\n\nIcon\n: Icon associated with the data.\n\n\nDescription\n: Description of the data that will be displayed in game.\n\n\nConditions formula\n: \nNot available yet.\n\n\nTarget\n: Target for applying associated effects.\n\n\nNone\n: No target selection.\n\n\nThe user\n: Select the user only.\n\n\nAn enemy\n: Only select one ennemy.\n\n\nAn ally\n: Only select one ally.\n\n\nAll enemies\n: Select all enemies.\n\n\nAll allies\n: Select all allies.\n\n\n\n\n\n\nTarget conditions formula\n: \nNot available yet.\n\n\nAvailable\n: Available kind of the data.\n\n\nBattle only\n: The data can be used only in battle.\n\n\nMain menu only\n: The data can be used only in main menu.\n\n\nAlways\n: The data can be used in battle and main menu.\n\n\nNever\n: The data can never be used.\n\n\n\n\n\n\nSound (main menu)\n: \nNot available yet.\n\n\nUser animation ID\n: \nNot available yet.\n\n\nTarget animation ID\n: \nNot available yet.\n\n\nPrice\n: Price of the data when it can be bought / sold in a shop menu.\n\n\n\n\nThere also are three more common properties that can be listed: \nCosts\n, \nEffects\n, and \nCaracteristics\n.\n\n\nCosts\n\n\n\n\nChoose the cost of using a skill. This is generally used for HP, MP, and TP statistic. A character will not be able to use a skill if he doesn't have enough for the use cost.\n\n\n\n\nApply cost on\n: Select which data will be influenced after using the skill. It can be a \nstatistic\n, a \ncurrency\n, or a \nvariable\n.\n\n\nwith value\n: Select the value required for the selected data.\n\n\n\n\n\n\n\n\nEffects\n\n\n\n\nChoose the effects done for the target(s) data.\n\n\n\n\nDamages on\n: Select which data will be damaged. It can be a \nstatistic\n, a \ncurrency\n, or a \nvariable\n.\n\n\nwith formula\n: Select the value damage for the selected data.\n\n\nElement ID\n: \nNot available yet.\n\n\nVariance\n: The variance damages in percent. This adds random on your damages. For example, if you choose 20% variance, your damages range would be : [damage - (20 * damage / 100) | damage + (20 * damage / 100)]. If not checked, there is no variance (= 0).\n\n\nCritical\n: The critical hit chance in percent. If not checked, there is no chance to do critical hit (= 0).\n\n\nPrecision\n: The precision hit in percent. If not checked, you have 100% chance to hit.\n\n\n\n\n\n\nStatus Add / Remove\n: \nNot available yet.\n\n\nSkill Add / Remove\n: \nNot available yet.\n\n\nPerform skill\n: \nNot available yet.\n\n\nCall common reaction\n: \nNot available yet.\n\n\nSpecial action\n: Execute one of the following special actions:\n\n\nApply weapon(s) effects and properties\n: This will use all the effects of the currently equipped weapon. If the is no weapon equipped, this will apply the next effects following this one.\n\n\nOpen skills choice\n: Open the skills choice for battle command.\n\n\nOpen items choice\n: Open the items choice for battle command.\n\n\nEscape\n: Escape from the battel.\n\n\nEnd turn\n: End the team turn.\n\n\n\n\n\n\nScript\n: \nNot available yet.\n\n\n\n\nCharacteristics\n\n\nChoose the characteristics added to the character when equipped.\n\n\n\n\n\n\n\n\nBuff increase / decrease\n: Select which data will be influenced. This can be:\n\n\n\n\nStatistic value\n: Select a statistic. If bar statistic, this will increase the max value.\n\n\nElement resistance\n: \nNot available yet.\n\n\nStatus resistance\n: \nNot available yet.\n\n\nExperience gain\n: \nNot available yet.\n\n\nCurrency gain\n: \nNot available yet.\n\n\nSkill cost\n: \nNot available yet.\n\n\nVariable\n: \nNot available yet.\n\n\n\n\nAfter selecting the data influence, you can choose how this is influenced according to the base value:\n\n\n\n\n* / +\n: Choose operation by multiplying by or adding a value.\n\n\n% / Fix\n: Choose unit value.\n\n\n\n\n\n\n\n\n\n\nNot available yet.\n\n\n\n\nNot available yet.\n\n\nClasses\n\n\n\n\nEach character has a class. The class defines a lot of attributes that a character can have.\n\n\n\n\nExperience\n: Define experience progression according to level. Note that you can edit the experience column manually by \ndouble clicking\n on the cell.\n\n\nTo next level\n: The table indicates the number of experience to gain for going to the next level.\n\n\nTotal\n: The table indicates the total number of experience that should be accumulated for going to the next level.\n\n\nInitial level\n: The initial level possible.\n\n\nMax level\n: The maximum level possible.\n\n\nBase\n: The number of experience to have at initial level.\n\n\nInflation\n: Inflation value changing experience progression according to base and level.\n\n\nReset\n: Reset to default values.\n\n\n\n\n\n\nStatistics progression\n: Change the statistics progression for level ups.\n\n\nInformations\n:\n\n\nStatistic\n: Select one of the system statistic.\n\n\nMaximum value\n: The maximum possible value. This doesn't always corresponds to the final value because items could add bonus values.\n\n\n\n\n\n\nFix\n:\n\n\nInitial value\n: The initial value at initial level.\n\n\nFinal value\n: The final value at max level.\n\n\nSlider progression\n:\n\n\nSlow\n: The experience increases slowly at the begining and increase faster at te end.\n\n\nLinear\n: The experience increases constantly.\n\n\nFast\n: The experience increases fast at the begining and increase slowly at te end.\n\n\n\n\n\n\nRandom variation\n: The variance applied on the progression function. Note that this will always lead to the max value.\n\n\n\n\n\n\nFormula\n: Use a formula to define the value. \nu\n corresponds to the character.\n\n\n\n\n\n\nCaracteristics\n: \nNot available yet.\n\n\nSkills to learn\n: Defines the list of skills that can be learned according to levels.\n\n\nSkill\n: The corresponding skill to learn.\n\n\nLevel\n: The level for learning this skill.\n\n\n\n\n\n\n\n\nHeroes\n\n\n\n\n\n\nClass\n: Select an existing class.\n\n\nFaceset\n: Select a faceset for battles.\n\n\nBattler\n: Select a battler for battles.\n\n\n\n\nAll the other properties inherites from the class properties. For \nExperience\n, the values by default are the class values. The \nSet to class values\n button updates the values to the class values. For \nStatistics progression\n list, you can add additional progressions. If the statistic already existed, the progression would be replaced. For \nSkills to learn\n list, you can add additional skills to learn. If the skill already existed, the level would be replaced.\n\n\nMonsters\n\n\n\n\nMonsters are exactly like heroes but with extra information for battles:\n\n\n\n\n\n\nRewards\n:\n\n\n\n\n\n\nExperience\n: Choose experience progression that your team can get at the end of a battle.\n\n\nCurrencies\n: Choose currencies progression that your team can get at the end of a battle.\n\n\nLoots\n: The loots that your team can get at the end of a battle.\n\n\nNumber\n: The number of items to loot.\n\n\nProbability\n: The probability to loot.\n\n\nLevel between\n: Choose range level of loot availability.\n\n\nLoot\n: Select \nItem\n, \nWeapon\n, and \nArmor\n.\n\n\n\n\n\n\n\n\n\n\n\n\nActions\n:\n\n\n\n\n\n\nNot available yet.\n\n\nTroops\n\n\n\n\nTroops correspond to a monsters group and some states with reactions.\n\n\n\n\nMonsters list\n:\n\n\nMonster\n: The monster in the group.\n\n\nLevel\n: The level of the monster.\n\n\n\n\n\n\nStates\n: \nNot available yet.\n\n\n\n\nStatus\n\n\nNot available yet.\n\n\nAnimations\n\n\nNot available yet.",
+            "title": "Battle system"
+        },
+        {
+            "location": "/basics/battle-system/#battle-system",
+            "text": "If you want to create to create a RPG, you may need a battle system. Here, we will see all the features linked to the battle implementation.   Note: if you want to do an action RPG (battles directly on maps), you can do it through object & events",
+            "title": "Battle system"
+        },
+        {
+            "location": "/basics/battle-system/#battle-system-datas",
+            "text": "A lot of battle system datas can be found in  Systems Manager > Battle System .",
+            "title": "Battle system datas"
+        },
+        {
+            "location": "/basics/battle-system/#elements",
+            "text": "Not available yet.",
+            "title": "Elements"
+        },
+        {
+            "location": "/basics/battle-system/#common-statistics",
+            "text": "You can manage here all the statistics that you want to have in your game for influencing your battles (HPs, lvl, strength, etc.).   Name : Name displayed in game UI.  Script abbreviation : Choose here an abbreviation. This will be used for game scripts, choose something without capital letter if possible.  Properties :  Fix : If checked, this statistic would be a fix value (not a bar).  Bar : If checked, this statistic would be a bar value (an actual value + max value).",
+            "title": "Common statistics"
+        },
+        {
+            "location": "/basics/battle-system/#common-battle-commands",
+            "text": "Choose which battle commands you want to have after selecting a hero to do something.   Skill : Choose the corresponding skill.   Render in game:",
+            "title": "Common battle commands"
+        },
+        {
+            "location": "/basics/battle-system/#common-equipment",
+            "text": "Choose the name of common equipment so you will be able to equip weapons / armors on these equipment slots.",
+            "title": "Common equipment"
+        },
+        {
+            "location": "/basics/battle-system/#weapons-armors-kind",
+            "text": "Create a weapon / armor kind and also choose on which equipment you can assign it.   Name : Name for this kind of weapon / armor.  Selection of equipment you can assign.",
+            "title": "Weapons / Armors kind"
+        },
+        {
+            "location": "/basics/battle-system/#battle-maps",
+            "text": "Battle maps are in fact maps associated with a specific position (representing the center point of the battle). Select a map (by default in the  Battle Maps \u00a0folder in the map selector) and a position to add a new battle map.",
+            "title": "Battle maps"
+        },
+        {
+            "location": "/basics/battle-system/#statistics-associations",
+            "text": "Statistic associated to level : Choose one of your fix statistic to associate with level. Level is a statistic that is increasing for the character evolution: leveling up will increase other statistics.  Statistic associated to exp : Choose one of your bar statistic to associate with experience. Experience is something earned generally after finishing a battle. Once experience goes to its maximum value, the character is leveling up and the map experience bar increases too.",
+            "title": "Statistics associations"
+        },
+        {
+            "location": "/basics/battle-system/#formulas",
+            "text": "Is dead : Formula in JavaScript defining conditions to consider that a character is dead.  u  corresponds to the character.  Critical influence : Formula in JavaScript defining the new damages value after having a critical hit.  damage  corresponds to the damages done without critical influence.",
+            "title": "Formulas"
+        },
+        {
+            "location": "/basics/battle-system/#battle-musics",
+            "text": "Battle : Battle music used during the battle.  Level up : Sound used when a hero is leveling up.  Victory : Music used during the victory end battle phase.",
+            "title": "Battle musics"
+        },
+        {
+            "location": "/basics/battle-system/#currencies",
+            "text": "Go to  Systems Manager > System .   Currencies can be used in the game for trading with NPCs or any other way.   Name : Name of the currency.  Icon : Icon associated with the currency.",
+            "title": "Currencies"
+        },
+        {
+            "location": "/basics/battle-system/#skills-items-weapons-armors",
+            "text": "Go to  Datas Manager .  In  Skills  tab:   In  Items  tab:   In  Weapons  tab:   In  Armors  tab:   These four data have common properties:   Name : Name of the data.  Type : Select the type of item / armor / weapon.  Consumable : If checked, the data will disappear after using the data.  One hand :  Not available yet.  Icon : Icon associated with the data.  Description : Description of the data that will be displayed in game.  Conditions formula :  Not available yet.  Target : Target for applying associated effects.  None : No target selection.  The user : Select the user only.  An enemy : Only select one ennemy.  An ally : Only select one ally.  All enemies : Select all enemies.  All allies : Select all allies.    Target conditions formula :  Not available yet.  Available : Available kind of the data.  Battle only : The data can be used only in battle.  Main menu only : The data can be used only in main menu.  Always : The data can be used in battle and main menu.  Never : The data can never be used.    Sound (main menu) :  Not available yet.  User animation ID :  Not available yet.  Target animation ID :  Not available yet.  Price : Price of the data when it can be bought / sold in a shop menu.   There also are three more common properties that can be listed:  Costs ,  Effects , and  Caracteristics .",
+            "title": "Skills / Items / Weapons / Armors"
+        },
+        {
+            "location": "/basics/battle-system/#costs",
+            "text": "Choose the cost of using a skill. This is generally used for HP, MP, and TP statistic. A character will not be able to use a skill if he doesn't have enough for the use cost.   Apply cost on : Select which data will be influenced after using the skill. It can be a  statistic , a  currency , or a  variable .  with value : Select the value required for the selected data.",
+            "title": "Costs"
+        },
+        {
+            "location": "/basics/battle-system/#effects",
+            "text": "Choose the effects done for the target(s) data.   Damages on : Select which data will be damaged. It can be a  statistic , a  currency , or a  variable .  with formula : Select the value damage for the selected data.  Element ID :  Not available yet.  Variance : The variance damages in percent. This adds random on your damages. For example, if you choose 20% variance, your damages range would be : [damage - (20 * damage / 100) | damage + (20 * damage / 100)]. If not checked, there is no variance (= 0).  Critical : The critical hit chance in percent. If not checked, there is no chance to do critical hit (= 0).  Precision : The precision hit in percent. If not checked, you have 100% chance to hit.    Status Add / Remove :  Not available yet.  Skill Add / Remove :  Not available yet.  Perform skill :  Not available yet.  Call common reaction :  Not available yet.  Special action : Execute one of the following special actions:  Apply weapon(s) effects and properties : This will use all the effects of the currently equipped weapon. If the is no weapon equipped, this will apply the next effects following this one.  Open skills choice : Open the skills choice for battle command.  Open items choice : Open the items choice for battle command.  Escape : Escape from the battel.  End turn : End the team turn.    Script :  Not available yet.",
+            "title": "Effects"
+        },
+        {
+            "location": "/basics/battle-system/#characteristics",
+            "text": "Choose the characteristics added to the character when equipped.     Buff increase / decrease : Select which data will be influenced. This can be:   Statistic value : Select a statistic. If bar statistic, this will increase the max value.  Element resistance :  Not available yet.  Status resistance :  Not available yet.  Experience gain :  Not available yet.  Currency gain :  Not available yet.  Skill cost :  Not available yet.  Variable :  Not available yet.   After selecting the data influence, you can choose how this is influenced according to the base value:   * / + : Choose operation by multiplying by or adding a value.  % / Fix : Choose unit value.      Not available yet.   Not available yet.",
+            "title": "Characteristics"
+        },
+        {
+            "location": "/basics/battle-system/#classes",
+            "text": "Each character has a class. The class defines a lot of attributes that a character can have.   Experience : Define experience progression according to level. Note that you can edit the experience column manually by  double clicking  on the cell.  To next level : The table indicates the number of experience to gain for going to the next level.  Total : The table indicates the total number of experience that should be accumulated for going to the next level.  Initial level : The initial level possible.  Max level : The maximum level possible.  Base : The number of experience to have at initial level.  Inflation : Inflation value changing experience progression according to base and level.  Reset : Reset to default values.    Statistics progression : Change the statistics progression for level ups.  Informations :  Statistic : Select one of the system statistic.  Maximum value : The maximum possible value. This doesn't always corresponds to the final value because items could add bonus values.    Fix :  Initial value : The initial value at initial level.  Final value : The final value at max level.  Slider progression :  Slow : The experience increases slowly at the begining and increase faster at te end.  Linear : The experience increases constantly.  Fast : The experience increases fast at the begining and increase slowly at te end.    Random variation : The variance applied on the progression function. Note that this will always lead to the max value.    Formula : Use a formula to define the value.  u  corresponds to the character.    Caracteristics :  Not available yet.  Skills to learn : Defines the list of skills that can be learned according to levels.  Skill : The corresponding skill to learn.  Level : The level for learning this skill.",
+            "title": "Classes"
+        },
+        {
+            "location": "/basics/battle-system/#heroes",
+            "text": "Class : Select an existing class.  Faceset : Select a faceset for battles.  Battler : Select a battler for battles.   All the other properties inherites from the class properties. For  Experience , the values by default are the class values. The  Set to class values  button updates the values to the class values. For  Statistics progression  list, you can add additional progressions. If the statistic already existed, the progression would be replaced. For  Skills to learn  list, you can add additional skills to learn. If the skill already existed, the level would be replaced.",
+            "title": "Heroes"
+        },
+        {
+            "location": "/basics/battle-system/#monsters",
+            "text": "Monsters are exactly like heroes but with extra information for battles:    Rewards :    Experience : Choose experience progression that your team can get at the end of a battle.  Currencies : Choose currencies progression that your team can get at the end of a battle.  Loots : The loots that your team can get at the end of a battle.  Number : The number of items to loot.  Probability : The probability to loot.  Level between : Choose range level of loot availability.  Loot : Select  Item ,  Weapon , and  Armor .       Actions :    Not available yet.",
+            "title": "Monsters"
+        },
+        {
+            "location": "/basics/battle-system/#troops",
+            "text": "Troops correspond to a monsters group and some states with reactions.   Monsters list :  Monster : The monster in the group.  Level : The level of the monster.    States :  Not available yet.",
+            "title": "Troops"
+        },
+        {
+            "location": "/basics/battle-system/#status",
+            "text": "Not available yet.",
+            "title": "Status"
+        },
+        {
+            "location": "/basics/battle-system/#animations",
+            "text": "Not available yet.",
+            "title": "Animations"
+        },
+        {
+            "location": "/basics/window-skins/",
+            "text": "Window Skins\n\n\nA WindowSkin is a picture that is cut for being used as a design for window boxes (text dialog for example), arrows (end of message, target selection, up/down), texts in battles (damage numbers with normal, critical, heals, and miss). RPG Paper Maker doesn't have a fix template, you can edit the cutting of each element of your WindowSkin by yourself.\n\n\nHere is the default Window Skin image used:\n\n\n\n\nCreate a Window Skin and / or change default Window Skin\n\n\nGot to \nSystems Manager > System\n.\n\n\n\n\n\n\nOn left: Change default.\n\n\nOn right: Manage all WindowSkins.\n\n\n\n\nEdit WindowSkin\n\n\nTo view a cutting, put your mouse on the widget associated (example: top-left border). You'll see a red rectangle. If you want to change it, there are two ways.\n\n\nEnter\n\n\nClick on the \nEnter...\n button to open a dialog box and edit the rectangle with input numbers.\n\n\n\n\nSelect\n\n\nClick on the \nSelect...\n button and draw the rectangle with your mouse directly on the picture preview.\n\n\n\n\nProperties\n\n\n\n\nPicture\n: The picture used by the WindowSkin.\n\n\nSide borders\n: The side borders used for the window boxes.\n\n\nBorders\n: The borders used for the window boxes.\n\n\n\n\nBackground\n:\n\n\n\n\n\n\nNormal\n: The background image used for the window boxes.\n\n\nSelection\n: The background image used for the window choices / tabs when selected.\n\n\nOption\n:\n\n\nRepeat\n: Repeat the background image for larger windows.\n\n\nStretch\n: Stretch the background image for larger windows.\n\n\n\n\n\n\n\n\n\n\n\n\nArrows\n:\n\n\n\n\nTarget selection\n: The arrows animation used for the battle target selection.\n\n\nEnd of message\n: The arrows animation used for the command show text command.\n\n\nUp / Down\n: The arrows used for the input number.\n\n\n\n\n\n\nTexts\n:\n\n\nNormal damage\n: The texts numbers used for normal damages.\n\n\nHeal damage\n: The texts numbers used for heal damages.\n\n\nCritical damage\n: The texts numbers used for critical damages.\n\n\nMiss\n: The texts numbers used for miss damages.",
+            "title": "Window skins"
+        },
+        {
+            "location": "/basics/window-skins/#window-skins",
+            "text": "A WindowSkin is a picture that is cut for being used as a design for window boxes (text dialog for example), arrows (end of message, target selection, up/down), texts in battles (damage numbers with normal, critical, heals, and miss). RPG Paper Maker doesn't have a fix template, you can edit the cutting of each element of your WindowSkin by yourself.  Here is the default Window Skin image used:",
+            "title": "Window Skins"
+        },
+        {
+            "location": "/basics/window-skins/#create-a-window-skin-and-or-change-default-window-skin",
+            "text": "Got to  Systems Manager > System .    On left: Change default.  On right: Manage all WindowSkins.",
+            "title": "Create a Window Skin and / or change default Window Skin"
+        },
+        {
+            "location": "/basics/window-skins/#edit-windowskin",
+            "text": "To view a cutting, put your mouse on the widget associated (example: top-left border). You'll see a red rectangle. If you want to change it, there are two ways.  Enter  Click on the  Enter...  button to open a dialog box and edit the rectangle with input numbers.   Select  Click on the  Select...  button and draw the rectangle with your mouse directly on the picture preview.",
+            "title": "Edit WindowSkin"
+        },
+        {
+            "location": "/basics/window-skins/#properties",
+            "text": "Picture : The picture used by the WindowSkin.  Side borders : The side borders used for the window boxes.  Borders : The borders used for the window boxes.   Background :    Normal : The background image used for the window boxes.  Selection : The background image used for the window choices / tabs when selected.  Option :  Repeat : Repeat the background image for larger windows.  Stretch : Stretch the background image for larger windows.       Arrows :   Target selection : The arrows animation used for the battle target selection.  End of message : The arrows animation used for the command show text command.  Up / Down : The arrows used for the input number.    Texts :  Normal damage : The texts numbers used for normal damages.  Heal damage : The texts numbers used for heal damages.  Critical damage : The texts numbers used for critical damages.  Miss : The texts numbers used for miss damages.",
+            "title": "Properties"
+        },
+        {
+            "location": "/basics/title-screen-and-game-over/",
+            "text": "Title Screen & Game Over\n\n\nGot to \nSystems datas > Title screen / Game over\n:\n\n\n\n\nTitle Screen\n\n\nIn the first section, you can edit some of the title screen properties.\n\n\n\n\nLogo\n: Picture used for displaying the logo on top-left border.\n\n\nBackground\n: Picture used for title screen background.\n\n\nMusic\n: Music used when player is in title screen.\n\n\n\n\nGame Over\n\n\nNot available yet.",
+            "title": "Title Screen & Game Over"
+        },
+        {
+            "location": "/basics/title-screen-and-game-over/#title-screen-game-over",
+            "text": "Got to  Systems datas > Title screen / Game over :",
+            "title": "Title Screen & Game Over"
+        },
+        {
+            "location": "/basics/title-screen-and-game-over/#title-screen",
+            "text": "In the first section, you can edit some of the title screen properties.   Logo : Picture used for displaying the logo on top-left border.  Background : Picture used for title screen background.  Music : Music used when player is in title screen.",
+            "title": "Title Screen"
+        },
+        {
+            "location": "/basics/title-screen-and-game-over/#game-over",
+            "text": "Not available yet.",
+            "title": "Game Over"
         },
         {
             "location": "/advanced/",
-            "text": "aaa",
+            "text": "Not available yet.",
             "title": "Advanced"
+        },
+        {
+            "location": "/experts/",
+            "text": "Not available yet.",
+            "title": "Experts"
+        },
+        {
+            "location": "/faq/",
+            "text": "Not available yet.",
+            "title": "FAQ"
         }
     ]
 }

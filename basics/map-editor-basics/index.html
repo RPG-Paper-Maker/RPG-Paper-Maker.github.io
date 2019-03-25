@@ -1,188 +1,387 @@
 <!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        
-        
-        
-        <link rel="shortcut icon" href="../../img/favicon.ico">
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Map editor basics - RPG Paper Maker</title>
+  
 
-	<title>Map editor basics - RPG Paper Maker</title>
+  <link rel="shortcut icon" href="../../img/favicon.ico">
 
-        <link href="../../css/bootstrap-custom.min.css" rel="stylesheet">
-        <link href="../../css/font-awesome-4.0.3.css" rel="stylesheet">
-        <link href="../../css/base.css" rel="stylesheet">
-        <link rel="stylesheet" href="../../css/highlight.css">
+  
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
 
-        <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
-        <!--[if lt IE 9]>
-            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-            <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
-        <![endif]-->
+  <link rel="stylesheet" href="../../css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../css/theme_extra.css" type="text/css" />
+  <link rel="stylesheet" href="../../css/highlight.css">
 
-        
-    </head>
+  
+  <script>
+    // Current page data
+    var mkdocs_page_name = "Map editor basics";
+  </script>
+  
+  <script src="../../js/jquery-2.1.1.min.js"></script>
+  <script src="../../js/modernizr-2.8.3.min.js"></script>
+  <script type="text/javascript" src="../../js/highlight.pack.js"></script>
+  <script src="../../js/theme.js"></script> 
 
-    <body>
+  
+</head>
 
-        <div class="navbar navbar-default navbar-fixed-top" role="navigation">
-    <div class="container">
+<body class="wy-body-for-nav" role="document">
 
-        <!-- Collapsed navigation -->
-        <div class="navbar-header">
-            
-            <!-- Expander button -->
-            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-            </button>
-            
+  <div class="wy-grid-for-nav">
 
-            <!-- Main title -->
-            <a class="navbar-brand" href="../..">RPG Paper Maker</a>
-        </div>
-
-        <!-- Expanded navigation -->
-        <div class="navbar-collapse collapse">
-            
-                <!-- Main navigation -->
-                <ul class="nav navbar-nav">
-                
-                
-                    <li >
-                        <a href="../..">Getting started</a>
-                    </li>
-                
-                
-                
-                    <li class="dropdown active">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Basics <b class="caret"></b></a>
-                        <ul class="dropdown-menu">
-                        
-                            
-<li class="active">
-    <a href="./">Map editor basics</a>
-</li>
-
-                        
-                            
-<li >
-    <a href="../manage-your-ressources/">Manage your ressources</a>
-</li>
-
-                        
-                        </ul>
-                    </li>
-                
-                
-                
-                    <li >
-                        <a href="../../advanced/">Advanced</a>
-                    </li>
-                
-                
-                </ul>
-            
-
-            <ul class="nav navbar-nav navbar-right">
-                <li>
-                    <a href="#" data-toggle="modal" data-target="#mkdocs_search_modal">
-                        <i class="fa fa-search"></i> Search
-                    </a>
-                </li>
-                
-                    <li >
-                        <a rel="next" href="../..">
-                            <i class="fa fa-arrow-left"></i> Previous
-                        </a>
-                    </li>
-                    <li >
-                        <a rel="prev" href="../manage-your-ressources/">
-                            Next <i class="fa fa-arrow-right"></i>
-                        </a>
-                    </li>
-                
-                
-                    <li>
-                        <a href="https://github.com/RPG-Paper-Maker/RPG-Paper-Maker">
-                            
-                                <i class="fa fa-github"></i>
-                            
-                            GitHub
-                        </a>
-                    </li>
-                
-            </ul>
-        </div>
-    </div>
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+      <div class="wy-side-nav-search">
+        <a href="../.." class="icon icon-home"> RPG Paper Maker</a>
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+  </form>
 </div>
+      </div>
 
-        <div class="container">
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+        <ul class="current">
+          
+            <li>
+    <li class="toctree-l1 ">
+        <a class="" href="../..">Getting started</a>
+        
+    </li>
+<li>
+          
+            <li>
+    <ul class="subnav">
+    <li><span>Basics</span></li>
+
+        
             
-                <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
-    <ul class="nav bs-sidenav">
-    
-        <li class="main active"><a href="#map-editor-basics">Map editor basics</a></li>
+    <li class="toctree-l1 current">
+        <a class="current" href="./">Map editor basics</a>
         
-            <li><a href="#map-selector">Map selector</a></li>
+            <ul>
+            
+                <li class="toctree-l3"><a href="#map-editor-basics">Map editor basics</a></li>
+                
+                    <li><a class="toctree-l4" href="#manage-maps">Manage maps</a></li>
+                
+                    <li><a class="toctree-l4" href="#move-camera">Move camera</a></li>
+                
+                    <li><a class="toctree-l4" href="#place-remove-elements">Place / Remove elements</a></li>
+                
+                    <li><a class="toctree-l4" href="#undo-redo">Undo / Redo</a></li>
+                
+                    <li><a class="toctree-l4" href="#save-changes">Save changes</a></li>
+                
+                    <li><a class="toctree-l4" href="#show-hide-some-ui-details">Show / Hide some UI details</a></li>
+                
+                    <li><a class="toctree-l4" href="#change-paint-mode">Change paint mode</a></li>
+                
+                    <li><a class="toctree-l4" href="#layers-options">Layers options</a></li>
+                
+                    <li><a class="toctree-l4" href="#lands">Lands</a></li>
+                
+                    <li><a class="toctree-l4" href="#floors">Floors</a></li>
+                
+                    <li><a class="toctree-l4" href="#autotiles">Autotiles</a></li>
+                
+                    <li><a class="toctree-l4" href="#animated-autotiles">Animated autotiles</a></li>
+                
+                    <li><a class="toctree-l4" href="#sprites">Sprites</a></li>
+                
+                    <li><a class="toctree-l4" href="#objects">Objects</a></li>
+                
+                    <li><a class="toctree-l4" href="#the-hero">The hero</a></li>
+                
+            
+            </ul>
         
-    
-    </ul>
-</div></div>
-                <div class="col-md-9" role="main">
+    </li>
 
-<h1 id="map-editor-basics">Map editor basics</h1>
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../manage-your-resources/">Manage your resources</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../tilesets-and-collisions/">Tilesets & Collisions</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../variables-overview/">Variables overview</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../objects-and-events/">Objects & Events</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../event-commands-overview/">Event commands overview</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../control-the-camera/">Control the camera</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../battle-system/">Battle system</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../window-skins/">Window skins</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../title-screen-and-game-over/">Title Screen & Game Over</a>
+        
+    </li>
+
+        
+    </ul>
+<li>
+          
+            <li>
+    <li class="toctree-l1 ">
+        <a class="" href="../../advanced/">Advanced</a>
+        
+    </li>
+<li>
+          
+            <li>
+    <li class="toctree-l1 ">
+        <a class="" href="../../experts/">Experts</a>
+        
+    </li>
+<li>
+          
+            <li>
+    <li class="toctree-l1 ">
+        <a class="" href="../../faq/">FAQ</a>
+        
+    </li>
+<li>
+          
+        </ul>
+      </div>
+      &nbsp;
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="../..">RPG Paper Maker</a>
+      </nav>
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../..">Docs</a> &raquo;</li>
+    
+      
+        
+          <li>Basics &raquo;</li>
+        
+      
+    
+    <li>Map editor basics</li>
+    <li class="wy-breadcrumbs-aside">
+      
+        
+          <a href="https://github.com/RPG-Paper-Maker/RPG-Paper-Maker" class="icon icon-github"> Edit on GitHub</a>
+        
+      
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main">
+            <div class="section">
+              
+                <h1 id="map-editor-basics">Map editor basics</h1>
 <p>After opening a project, you should have this view:</p>
 <p><img alt="Screenshot" src="../img/map-editor.png" /></p>
-<h2 id="map-selector">Map selector</h2>
-<p>Take a look on the map selector <strong>(1)</strong>. You can add, edit, remove, copy, and paste folders or maps here. We recommand you to use folders to sort your maps for each zones of your game. By default, there's also a <code>Battle maps</code> folder that you can use to put all the maps that you will use for battle backgrounds. It is not required to put these maps into this specific folder. Clicking on a map will load this one on the map editor <strong>(5)</strong>. <code>Right clicking</code> will open this context menu:</p>
-<p><img alt="Screenshot" src="../img/new-map.png" /></p></div>
-            
-        </div>
-
-        <footer class="col-md-12">
-            <hr>
-            
-                <p>RPG Paper Maker Copyright (C) 2017-2019 Marie Laporte</p>
-            
-            <p>Documentation built with <a href="http://www.mkdocs.org/">MkDocs</a>.</p>
-        </footer>
-
-        <script src="../../js/jquery-1.10.2.min.js"></script>
-        <script src="../../js/bootstrap-3.0.3.min.js"></script>
-        <script src="../../js/highlight.pack.js"></script>
-        <script>var base_url = '../..';</script>
-        <script data-main="../../mkdocs/js/search.js" src="../../mkdocs/js/require.js"></script>
-        <script src="../../js/base.js"></script>
-
-        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="Search Modal" aria-hidden="true">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
-                        <h4 class="modal-title" id="exampleModalLabel">Search</h4>
-                    </div>
-                    <div class="modal-body">
-                        <p>
-                            From here you can search these documents. Enter
-                            your search terms below.
-                        </p>
-                        <form role="form">
-                            <div class="form-group">
-                                <input type="text" class="form-control" placeholder="Search..." id="mkdocs-search-query">
-                            </div>
-                        </form>
-                        <div id="mkdocs-search-results"></div>
-                    </div>
-                    <div class="modal-footer">
-                    </div>
-                </div>
+<h2 id="manage-maps">Manage maps</h2>
+<p>Take a look at the map selector <strong>(1)</strong>. You can add, edit, remove, copy, and paste folders or maps here. We recommend that you use folders to sort your maps for each zones of your game. By default, there's also a <code>Battle maps</code> folder that you can use to put all the maps that you will use for battle backgrounds. It is not required to put these maps into this specific folder. Clicking on a map will load this one on the map editor <strong>(5)</strong>. <code>Right clicking</code> will open this context menu:</p>
+<p><img alt="Screenshot" src="../img/new-map.png" /></p>
+<p>If you want to create / edit a map, you will get this window:</p>
+<p><img alt="Screenshot" src="../img/map-properties.png" /></p>
+<ul>
+<li><code>Name</code>: The map name.</li>
+<li><code>Tileset</code>: A tileset represents a lot of information applied on a specific set of textures (collisions, dynamic textures,...). We will see how to configure it in a next chapter.</li>
+<li><code>Length</code>: The map length number of squares (X axe).</li>
+<li><code>Width</code>: The map width number of squares (Z axe).</li>
+<li><code>Height</code>: The map height number of squares (Y axe &gt; 0).</li>
+<li><code>Depth</code>: The map depth number of squares (Y axe &lt; 0).</li>
+<li><code>Music</code>: The music that is played in the background when entering the map.</li>
+<li><code>Background sound</code>: The background that is played in the background with the music. This can be wind, rain, etc.</li>
+<li><code>Sky color</code>: The color used for the sky.</li>
+</ul>
+<h2 id="move-camera">Move camera</h2>
+<p>The camera is always looking at the following cursor:</p>
+<p><img alt="Screenshot" src="../img/cursor.png" /></p>
+<p>You can move it by pressing <code>QWSD</code> on keyboard. You can also teleport the cursor on the pointed square by using <code>CTRL + Left click</code>.</p>
+<p>To move the camera position, press the <code>mouse wheel</code> and move the mouse in the direction you want:</p>
+<p><img alt="Screenshot" src="../img/camera-turn.gif" /></p>
+<h2 id="place-remove-elements">Place / Remove elements</h2>
+<p>The map element selection portion <strong>(3)</strong> allows you to select kind of element to place in the map (lands, sprites, objects, reliefs, etc.). You can add or remove something in a specific square by clicking left or right.</p>
+<p>For example with a floor:</p>
+<p><img alt="Screenshot" src="../img/map-editor-add-remove.png" /></p>
+<h2 id="undo-redo">Undo / Redo</h2>
+<p>You can go back / after a change in each map. Press <code>CTRL+Z</code> for undo and <code>CTRL+Y</code> for redo.</p>
+<h2 id="save-changes">Save changes</h2>
+<p>To save your map editor changes, you can use these shortcuts in the toolbar:</p>
+<p><img alt="Screenshot" src="../img/save.png" /></p>
+<ul>
+<li><code>Save</code>: Save the changes on the current opened map.</li>
+<li><code>All</code>: Save the changes on all the modified maps. A map has been changed when you see a <code>*</code> after its name:</li>
+</ul>
+<p><img alt="Screenshot" src="../img/map-save.png" /></p>
+<h2 id="show-hide-some-ui-details">Show / Hide some UI details</h2>
+<ul>
+<li><code>G</code>: Show / Hide grid</li>
+<li><code>I</code>: Show / Hide information about the pointed square:</li>
+</ul>
+<p><img alt="Screenshot" src="../img/square-infos.png" /></p>
+<h2 id="change-paint-mode">Change paint mode</h2>
+<p>Here are the different paint mode <strong>(4)</strong> for drawing your elements in the map:</p>
+<p><img alt="Screenshot" src="../img/paint.png" /></p>
+<ul>
+<li><code>Pencil</code>: Draw squares one by one.</li>
+<li><code>Rectangle</code>: Draw squares after tracing a rectangle <strong>(not available yet)</strong>.</li>
+<li><code>Pin of paint</code>: Fill squares with the same texture as the one pointed.</li>
+</ul>
+<h2 id="layers-options">Layers options</h2>
+<p>You can choose here if you want to be on layer mode or not here:</p>
+<p><img alt="Screenshot" src="../img/layers.png" /></p>
+<ul>
+<li><code>No layer</code>: Replace the selected square by a new one.</li>
+<li><code>Layer</code>: Add a new square on top of the selected one. There is no limit.</li>
+</ul>
+<p>Example of layers used with walls:</p>
+<p><img alt="Screenshot" src="../img/walls-layers.png" /></p>
+<h2 id="lands">Lands</h2>
+<p>Here are the possible lands to place:</p>
+<p><img alt="Screenshot" src="../img/lands.png" /></p>
+<h2 id="floors">Floors</h2>
+<p>The texture selector <strong>(2)</strong> allows you to select a rectangle for a texture. After selecting a rectangle, place your mouse on a square of your map to place your floor.</p>
+<p><img alt="Screenshot" src="../img/add-floor.png" /></p>
+<h2 id="autotiles">Autotiles</h2>
+<p>Autotiles are dynamic floors. This will have borders with automatic changing according to the neighbor squares:</p>
+<p><img alt="Screenshot" src="../img/autotiles-preview.png" /></p>
+<p>In the texture selector <strong>(2)</strong>, you just have to select a square:</p>
+<p><img alt="Screenshot" src="../img/autotile-texture.png" /></p>
+<h2 id="animated-autotiles">Animated autotiles</h2>
+<p><em>Not available yet.</em></p>
+<h2 id="sprites">Sprites</h2>
+<p><img alt="Screenshot" src="../img/sprites.png" /></p>
+<p>Sprites are vertical planes that can be used to simulate a "paper" world. Here are the different types of sprites:</p>
+<p><img alt="Screenshot" src="../img/sprites-preview.png" /></p>
+<ul>
+<li><code>Face Sprite</code>: A sprite that is always facing the camera on the X / Y axe.</li>
+<li><code>Fix Sprite</code>: A flat sprite. </li>
+<li><code>Double Sprite</code>: Two crossing flat sprites.</li>
+<li><code>Quadra Sprite</code>: four crossing flat sprites.</li>
+</ul>
+<p>Another kind of sprites are <code>Walls Sprite</code> that are dynamic (such as autotiles).</p>
+<p><img alt="Screenshot" src="../img/walls-preview.png" /></p>
+<h2 id="objects">Objects</h2>
+<p>All the previous elements were static (it doesn't move). There are objects in order to add some life on your map. This can be NPCs, chests, etc.</p>
+<p><img alt="Screenshot" src="../img/objects.png" /></p>
+<p>We will see later how to manage it because this is one of the biggest topics of the engine.</p>
+<h2 id="the-hero">The hero</h2>
+<p>To define where the game should start, you have to define who is the hero in one of your maps. When you create a new project, the hero is the character at the center of the first map. If you want to change it:</p>
+<ul>
+<li>Create a new object (<code>Double click</code> on a square)</li>
+<li>Remove all the states and events from the lists (by using <code>Del</code> on keyboard) and choose <code>Hero</code> as model in the combo box. You can name it "Hero" if you want. You should have something like this:</li>
+</ul>
+<p><img alt="Screenshot" src="../img/model-hero.png" /></p>
+<ul>
+<li>Click on <code>OK</code>. <code>Right click</code> on your object, and choose <code>Define as Hero</code>.</li>
+</ul>
+<p><img alt="Screenshot" src="../img/define-hero.png" /></p>
+<p>That's it! You will understand later why we are using an object and why this will open a lot of opportunities for customizing your games!</p>
+              
             </div>
-        </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../manage-your-resources/" class="btn btn-neutral float-right" title="Manage your resources"/>Next <span class="icon icon-circle-arrow-right"></span></a>
+      
+      
+        <a href="../.." class="btn btn-neutral" title="Getting started"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+      
+    </div>
+  
 
-    </body>
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+    
+      <p>RPG Paper Maker Copyright (C) 2017-2019 Marie Laporte</p>
+    
+  </div>
+
+  Built with <a href="http://www.mkdocs.org">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+	  
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+<div class="rst-versions" role="note" style="cursor: pointer">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+      
+          <a class="icon icon-github" style="float: left; color: #fcfcfc"> GitHub</a>
+      
+      
+        <span><a href="../.." style="color: #fcfcfc;">&laquo; Previous</a></span>
+      
+      
+        <span style="margin-left: 15px"><a href="../manage-your-resources/" style="color: #fcfcfc">Next &raquo;</a></span>
+      
+    </span>
+</div>
+
+</body>
 </html>
