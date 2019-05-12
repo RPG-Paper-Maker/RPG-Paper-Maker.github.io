@@ -75,6 +75,10 @@
                 
                     <li><a class="toctree-l4" href="#update-general-colors">Update general colors</a></li>
                 
+                    <li><a class="toctree-l4" href="#change-game-name">Change game name</a></li>
+                
+                    <li><a class="toctree-l4" href="#change-game-screen-resolution">Change game screen resolution</a></li>
+                
                     <li><a class="toctree-l4" href="#test-your-game">Test your game</a></li>
                 
                     <li><a class="toctree-l4" href="#deploy-your-game">Deploy your game</a></li>
@@ -223,8 +227,8 @@
                 <h1 id="getting-started">Getting started</h1>
 <p>Welcome to this guide! You will find here all what you need to be a pro Paper Maker!</p>
 <h2 id="license">License</h2>
-<p>First, you should know that RPG Paper Maker is an Open Source project under GNU General Public License v3.0. Feel free to contribute to the github repository <a href="https://github.com/RPG-Paper-Maker/RPG-Paper-Maker">here</a> if you have any skills in programming, project management, etc.</p>
-<p><strong>RPG Paper Maker is free for non-commercial use</strong> so you don't have to pay for it if you only want to share your games freely and have fun! However, if you want to sell your games made with the engine you will have to pay for the license. More details <a href="http://rpg-paper-maker.com/index.php/downloads#content">here</a>. If you want to support us, check out our <a href="https://www.patreon.com/rpgpapermaker/overview">Patreon</a>!</p>
+<p>First, you should know that RPG Paper Maker is an Open Source project under GNU Lesser General Public License v3.0. Feel free to contribute to the github repository <a href="https://github.com/RPG-Paper-Maker/RPG-Paper-Maker">here</a> if you have any skills in programming, project management, etc.</p>
+<p>RPG Paper Maker games are licensed under Creative Commons Attribution-NonCommercial 4.0 license. <strong>You are free to use RPG Paper Maker for your personal or non-profit games</strong>. You can get the author's permission to use RPG Paper Maker for commercial games by paying a fee. More details <a href="http://rpg-paper-maker.com/index.php/downloads#content">here</a>. If you want to support us, check out our <a href="https://www.patreon.com/rpgpapermaker/overview">Patreon</a>!</p>
 <p><strong>The commercial license is not released yet. This is comming out soon.</strong></p>
 <h2 id="community-and-support">Community and support</h2>
 <p>If you are experiencing any issue on RPG Paper Maker, feel free to ask for some help in the <a href="http://rpg-paper-maker.com/index.php/forum">website forums</a>. You can also share your creations and propose your wanted <a href="https://feathub.com/RPG-Paper-Maker/RPG-Paper-Maker">next features</a>.</p>
@@ -248,7 +252,7 @@
 <h2 id="open-an-existing-project">Open an existing project</h2>
 <p>You can open an existing project by clicking here on the main toolbar:</p>
 <p><img alt="Screenshot" src="./img/open-project.png" /></p>
-<p>You can also use <code>CTRL+O</code> or go to <code>File &gt; Open project &gt; Browse...</code>.</p>
+<p>You can also use <code>CTRL+O</code> or go to <code>File &gt; Open project &gt; Browse...</code>. Recent projects can also be opened on the first screen (or go to <code>File &gt; Open project</code>).</p>
 <h2 id="change-general-game-settings">Change general game settings</h2>
 <p>A lot of options are available in the <code>Systems manager</code>. Click here on the main toolbar and go to the <code>System</code> tab:</p>
 <p><img alt="Screenshot" src="./img/system-basic.png" /></p>
@@ -291,6 +295,19 @@
 <h2 id="update-general-colors">Update general colors</h2>
 <p>Go to the <code>Systems manager &gt; System</code> and take a look on the <code>Colors</code> box:</p>
 <p><img alt="Screenshot" src="./img/colors.png" /></p>
+<h2 id="change-game-name">Change game name</h2>
+<p>Go to the <code>Systems manager &gt; System</code> and take a look on the <code>Game name</code> box:</p>
+<p><img alt="Screenshot" src="./img/game-name.png" /></p>
+<p>This will affect the window title when you are launching the game.</p>
+<h2 id="change-game-screen-resolution">Change game screen resolution</h2>
+<p>Go to the <code>Systems manager &gt; System</code> and take a look on the <code>Game native resolution</code> box:</p>
+<p><img alt="Screenshot" src="./img/game-resolution.png" /></p>
+<ul>
+<li><code>Width</code>: The native width of your game window.</li>
+<li><code>Height</code>: The native height of your game window.</li>
+<li><code>Window</code>: Choose a window mode.</li>
+<li><code>Full screen</code>: choose full screen mode. Note that <code>Width</code> and <code>Height</code> have no effect with this option.</li>
+</ul>
 <h2 id="test-your-game">Test your game</h2>
 <p>You can test your opened project by clicking here on the main toolbar:</p>
 <p><img alt="Screenshot" src="./img/play.png" /></p>
@@ -299,8 +316,12 @@
 <p><img alt="Screenshot" src="./img/deploy.png" /></p>
 <ul>
 <li><code>Location</code>: The location of the standalone folder that you want to create. The name of this folder will be <code>yourGameName{OS}</code>.</li>
-<li><code>Deploy a desktop application</code>: Choose here to deploy your game as a desktop application (choose the OS in options: Windows, Linux, or Mac).</li>
+<li><code>Type of export</code>: Choose export options here.<ul>
+<li><code>Deploy a desktop application</code>: Choose here to deploy your game as a desktop application (choose the <code>OS</code> in options: Windows, Linux, or Mac).</li>
 <li><code>Deploy for web browser</code>: <em>(not available yet)</em> Choose here to deploy your game as a web application. This will generate an <code>index.html</code> page and other files.</li>
+</ul>
+</li>
+<li><code>Version</code>: Choose you game version. Having 1 for <code>major</code> and 0 for <code>minor</code> will create a 1.0 version.</li>
 </ul>
               
             </div>
@@ -351,5 +372,5 @@
 
 <!--
 MkDocs version : 0.14.0
-Build Date UTC : 2019-04-15 09:30:53.249015
+Build Date UTC : 2019-05-12 15:51:22.784896
 -->
