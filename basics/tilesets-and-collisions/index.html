@@ -276,7 +276,57 @@
 </ul>
 <p><img alt="Screenshot" src="../img/walls-tileset.png" /></p>
 <h2 id="3d-objects">3D objects</h2>
-<p><em>Not available yet.</em></p>
+<p>You can manage the 3D objects list by clicking here on the main toolbar:</p>
+<p><img alt="Screenshot" src="../img/objects-3d-list.png" /></p>
+<p>The options for your 3D objects are different according to the <code>shape</code> you choose.</p>
+<ul>
+<li>
+<p><code>Box</code>: A simple box.</p>
+<ul>
+<li><code>Texture</code>: The box texture. Box textures have a specific template. You can check it at any time in the Basic Ressource:</li>
+</ul>
+<p><img alt="Screenshot" src="../img/box-template.png" /></p>
+<ul>
+<li><code>Collisions</code>: Choose the kind of collision you want to have with that box.<ul>
+<li><code>None</code>: No collision.</li>
+<li><code>Perfect</code>: Perfect collision with the box faces.</li>
+</ul>
+</li>
+<li><code>Size</code>: The size of the box. You can choose by number of squares and additionnal pixels.<ul>
+<li><code>Width</code>: The box width.</li>
+<li><code>Height</code>: The box height.</li>
+<li><code>Depth</code>: The box depth.</li>
+<li><code>Texture</code>: Select the texture application kind:<ul>
+<li><code>Stretch</code>: Stretch your texture. You can use it if you follow the template with a different size that doesn't take account of size proportions.</li>
+<li><code>Perfect size</code>: Use it if you want to always respect pixels proportions. See the cupboard example which is 2x2x1 size:</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p><img alt="Screenshot" src="../img/box-cupboard.png" /></p>
+<ul>
+<li><code>Sphere</code> <strong>(not available yet)</strong></li>
+<li><code>Cylinder</code> <strong>(not available yet)</strong></li>
+<li><code>Cone</code> <strong>(not available yet)</strong></li>
+<li><code>Capsule</code> <strong>(not available yet)</strong></li>
+<li><code>Custom</code>: Import your own 3D objects models (with <code>.obj</code>).<ul>
+<li><code>Object</code>: Select your associated <code>.obj</code>.</li>
+<li><code>MTL</code> <strong>(not available yet)</strong></li>
+<li><code>Texture</code>: Choose the texture corresponding to the object UVs mapping.</li>
+<li><code>Collisions</code>: Choose the kind of collision you want to have with that custom object.<ul>
+<li><code>None</code>: No collision.</li>
+<li><code>Simplified</code>: Simplified bounding box collision for the object. The collision will represent a single box which is the smallest possible that can contains all the 3D object vertices.</li>
+</ul>
+</li>
+<li><code>Scale</code>: The scale size to multiply with. By default, the value is <code>1.0</code> so the multiplying has no effect on the 3D object size.</li>
+</ul>
+</li>
+</ul>
+<p>Don't forget to add your objects in the tileset:</p>
+<p><img alt="Screenshot" src="../img/objects-3d-tileset.png" /></p>
 <h2 id="reliefs">Reliefs</h2>
 <p><em>Not available yet.</em></p>
               

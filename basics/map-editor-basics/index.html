@@ -71,7 +71,7 @@
                 
                     <li><a class="toctree-l4" href="#manage-maps">Manage maps</a></li>
                 
-                    <li><a class="toctree-l4" href="#move-camera">Move camera</a></li>
+                    <li><a class="toctree-l4" href="#move-cursor-grid-camera">Move cursor / grid / camera</a></li>
                 
                     <li><a class="toctree-l4" href="#place-remove-elements">Place / Remove elements</a></li>
                 
@@ -94,6 +94,8 @@
                     <li><a class="toctree-l4" href="#animated-autotiles">Animated autotiles</a></li>
                 
                     <li><a class="toctree-l4" href="#sprites">Sprites</a></li>
+                
+                    <li><a class="toctree-l4" href="#3d-objects">3D Objects</a></li>
                 
                     <li><a class="toctree-l4" href="#objects">Objects</a></li>
                 
@@ -251,10 +253,22 @@
 <li><code>Background sound</code>: The background that is played in the background with the music. This can be wind, rain, etc.</li>
 <li><code>Sky color</code>: The color used for the sky.</li>
 </ul>
-<h2 id="move-camera">Move camera</h2>
+<h2 id="move-cursor-grid-camera">Move cursor / grid / camera</h2>
 <p>The camera is always looking at the following cursor:</p>
 <p><img alt="Screenshot" src="../img/cursor.png" /></p>
-<p>You can move it by pressing <code>QWSD</code> on keyboard. You can also teleport the cursor on the pointed square by using <code>CTRL + Left click</code>.</p>
+<p>Here are some actions possible with the cursor:</p>
+<ul>
+<li>Move on <code>X</code> and <code>Z</code> axis by using <code>QWSD</code> on keyboard.</li>
+<li>Move on <code>Y</code> axis: <ul>
+<li>Move by square: use <code>CTRL + Arrow Up/Down</code> or <code>CTRL + mouse wheel</code></li>
+<li>Move by pixel: use <code>CTRL + SHIFT + Arrow Up/Down</code> or <code>CTRL + SHIFT + mouse wheel</code></li>
+</ul>
+</li>
+</ul>
+<p><img alt="Screenshot" src="../img/y-axis.png" /></p>
+<ul>
+<li>Teleport the cursor on the pointed element square by using <code>CTRL + Left click</code>.</li>
+</ul>
 <p>To move the camera position, press the <code>mouse wheel</code> and move the mouse in the direction you want:</p>
 <p><img alt="Screenshot" src="../img/camera-turn.gif" /></p>
 <h2 id="place-remove-elements">Place / Remove elements</h2>
@@ -319,6 +333,13 @@
 </ul>
 <p>Another kind of sprites are <code>Walls Sprite</code> that are dynamic (such as autotiles).</p>
 <p><img alt="Screenshot" src="../img/walls-preview.png" /></p>
+<p>In the texture selector <strong>(2)</strong>, you just have to select a wall:</p>
+<p><img alt="Screenshot" src="../img/walls-texture.png" /></p>
+<h2 id="3d-objects">3D Objects</h2>
+<p>There are not only sprites, but also 3D objects available for your maps! </p>
+<p><img alt="Screenshot" src="../img/objects-3d-preview.png" /></p>
+<p>In the texture selector <strong>(2)</strong>, you just have to select an object:</p>
+<p><img alt="Screenshot" src="../img/objects-3d-texture.png" /></p>
 <h2 id="objects">Objects</h2>
 <p>All the previous elements were static (it doesn't move). There are objects in order to add some life on your map. This can be NPCs, chests, etc.</p>
 <p><img alt="Screenshot" src="../img/objects.png" /></p>
