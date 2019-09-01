@@ -921,9 +921,54 @@
             "title": "Game Over"
         },
         {
-            "location": "/advanced/",
-            "text": "Not available yet.",
-            "title": "Advanced"
+            "location": "/advanced/abs/",
+            "text": "Action Battle System\n\n\n/!\\ Be aware that this tutorial will be updated constantly with new coming updates for having the best representation of the engine possibilities. Currently there are only basic possibilities so this won't look really attractive in the first place (no animations etc.).\n\n\nAlso, be aware that you will need to have a look on the \nObjects & Events tutorial\n before reading this.\n\n\nWhat is an Action Battle System?\n\n\nAn Action Battle System is the type of battle used for Action-RPG or simple Action games. One example is \nZelda\n series, except for Zelda 2 which is a platformer, which is using a battle system with sword attack, bombs, arrows, etc.\n\n\n\n\nExample: TLOZ: Minish Cap\n\n\nHow to create my hero and enemies characteristics\n\n\nWe will start with one basic characteristic: HP (health points). There is actually not the command to be able to set statistics values, but there is another way to do: use properties. Go to \nSystems manager > Models\n and select \nHero\n model. You can add a property \nHP\n this way:\n\n\n\n\nYou can do the same things with enemies in your maps:\n\n\n\n\nNOTE: We strongly recommend to use models here!\n\n\nHow to create sword attacks\n\n\nNow, let's say that the Action key will use your sword. We need three things:\n\n\n\n\nCreate an event sword attack that will be sent to nearby enemies. Go to \nSystems manager > Events / States\n and add a new event named \nSword attack\n with a parameter \nPower\n that can be anything as default value. This parameter will be useful to change attack swords power.\n\n\n\n\n\n\n\n\nCreate a dead state so the enemy won't be displayed after he got 0 HP. Go to \nSystems manager > Events / States\n and simply add a new state named \nDead\n.\n\n\n\n\n\n\n\n\nCreate a detection for sword that will indicate the area where your sword attack will be effective. Go to \nSystems manager > System\n and add a new detection named \nSword\n that is like that:\n\n\n\n\n\n\nNow, go back to your \nHero\n model. The event Action keypress is already used for sending Hero action event, but we can use it to send sword event too. Let's do a reaction to this so the Hero will send the event Sword attack with power 5 to enemies that are in the detection sword area:\n\n\n\n\nDone. Now, the enemy should be able to react to sword attack if we want to have something to happen. Let's make him react to sword attack event with any power value by losing HP and dying if HP is lesser than or equal to 0:\n\n\n\n\n\n\nThe dead state is simply an empty object without graphics, but it could have been a dead asset too. So there it is, you have your sword attack!\n\n\nHow to create loots left by enemies in map\n\n\nWhat you can do instead of having the enemies instantly dead is replacing them by loots that they could have dropped! Just add a state loot that will react to hero touch and replace dead state by loot state:\n\n\n\n\nYou can even add random effect with 80% of chance to having a loot for example:\n\n\n\n\nResult:\n\n\n\n\nHow to create projectiles (bullets, arrows)\n\n\nNot available now (requires create / delete objects in map command)\n\n\nHow to create bombs\n\n\nNot available now (requires create / delete objects in map command)\n\n\nHow to create an AI\n\n\nNot available now (requires more move command(pathfinding))\n\n\nHow to create an intrusion system\n\n\nNot available now (requires send detection to a specific object command for better use)",
+            "title": "Action Battle System"
+        },
+        {
+            "location": "/advanced/abs/#action-battle-system",
+            "text": "/!\\ Be aware that this tutorial will be updated constantly with new coming updates for having the best representation of the engine possibilities. Currently there are only basic possibilities so this won't look really attractive in the first place (no animations etc.).  Also, be aware that you will need to have a look on the  Objects & Events tutorial  before reading this.",
+            "title": "Action Battle System"
+        },
+        {
+            "location": "/advanced/abs/#what-is-an-action-battle-system",
+            "text": "An Action Battle System is the type of battle used for Action-RPG or simple Action games. One example is  Zelda  series, except for Zelda 2 which is a platformer, which is using a battle system with sword attack, bombs, arrows, etc.   Example: TLOZ: Minish Cap",
+            "title": "What is an Action Battle System?"
+        },
+        {
+            "location": "/advanced/abs/#how-to-create-my-hero-and-enemies-characteristics",
+            "text": "We will start with one basic characteristic: HP (health points). There is actually not the command to be able to set statistics values, but there is another way to do: use properties. Go to  Systems manager > Models  and select  Hero  model. You can add a property  HP  this way:   You can do the same things with enemies in your maps:   NOTE: We strongly recommend to use models here!",
+            "title": "How to create my hero and enemies characteristics"
+        },
+        {
+            "location": "/advanced/abs/#how-to-create-sword-attacks",
+            "text": "Now, let's say that the Action key will use your sword. We need three things:   Create an event sword attack that will be sent to nearby enemies. Go to  Systems manager > Events / States  and add a new event named  Sword attack  with a parameter  Power  that can be anything as default value. This parameter will be useful to change attack swords power.     Create a dead state so the enemy won't be displayed after he got 0 HP. Go to  Systems manager > Events / States  and simply add a new state named  Dead .     Create a detection for sword that will indicate the area where your sword attack will be effective. Go to  Systems manager > System  and add a new detection named  Sword  that is like that:    Now, go back to your  Hero  model. The event Action keypress is already used for sending Hero action event, but we can use it to send sword event too. Let's do a reaction to this so the Hero will send the event Sword attack with power 5 to enemies that are in the detection sword area:   Done. Now, the enemy should be able to react to sword attack if we want to have something to happen. Let's make him react to sword attack event with any power value by losing HP and dying if HP is lesser than or equal to 0:    The dead state is simply an empty object without graphics, but it could have been a dead asset too. So there it is, you have your sword attack!",
+            "title": "How to create sword attacks"
+        },
+        {
+            "location": "/advanced/abs/#how-to-create-loots-left-by-enemies-in-map",
+            "text": "What you can do instead of having the enemies instantly dead is replacing them by loots that they could have dropped! Just add a state loot that will react to hero touch and replace dead state by loot state:   You can even add random effect with 80% of chance to having a loot for example:   Result:",
+            "title": "How to create loots left by enemies in map"
+        },
+        {
+            "location": "/advanced/abs/#how-to-create-projectiles-bullets-arrows",
+            "text": "Not available now (requires create / delete objects in map command)",
+            "title": "How to create projectiles (bullets, arrows)"
+        },
+        {
+            "location": "/advanced/abs/#how-to-create-bombs",
+            "text": "Not available now (requires create / delete objects in map command)",
+            "title": "How to create bombs"
+        },
+        {
+            "location": "/advanced/abs/#how-to-create-an-ai",
+            "text": "Not available now (requires more move command(pathfinding))",
+            "title": "How to create an AI"
+        },
+        {
+            "location": "/advanced/abs/#how-to-create-an-intrusion-system",
+            "text": "Not available now (requires send detection to a specific object command for better use)",
+            "title": "How to create an intrusion system"
         },
         {
             "location": "/experts/",
