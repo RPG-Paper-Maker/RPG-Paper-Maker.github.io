@@ -127,6 +127,9 @@
                 <li class="toctree-l3"><a href="#the-move-camera-command">The move camera command</a></li>
                 
             
+                <li class="toctree-l3"><a href="#camera-properties">Camera properties</a></li>
+                
+            
             </ul>
         
     </li>
@@ -291,6 +294,19 @@
 <p><code>Wait the end of the move before the next command</code>: Wait the end of the move before the next command (same as for the <a href="../event-commands-overview/#move-object">move object command</a>). It can be used to execute commands while the camera is moving (display texts, sounds...).</p>
 </li>
 <li><code>Time</code>: Indicate here the time in seconds for the camera to move to its final position. If 0, the move will be immediate.</li>
+</ul>
+<h2 id="camera-properties">Camera properties</h2>
+<p>You can control the default properties of the camera when you are going into a new map. You can set the camera ID in <code>map properties</code>. You also have access to the camera properties list in <code>Systems manager &gt; System</code>:</p>
+<p><img alt="Screenshot" src="../img/camera-properties.png" /></p>
+<ul>
+<li><code>Name</code>: The name of the camera properties.</li>
+<li><code>Distance</code>: The distance between the camera and the hero.</li>
+<li><code>Horizontal angle</code>: The horizontal angle between the camera and the hero.</li>
+<li><code>Vertical angle</code>: The vertical angle between the camera and the hero.</li>
+<li><code>Target offset</code>: A position on every axes for adding an offset to the target position.</li>
+<li><code>Field of fiew</code>: The angle used to determine the angle vision limit of the camera. We recommand to keep the default value.</li>
+<li><code>Near</code>: Min distance between camera and elements for being drawn. We recommand to keep the default value.</li>
+<li><code>Far</code>: Max distance between camera and elements for being drawn. We recommand to keep the default value.</li>
 </ul>
               
             </div>

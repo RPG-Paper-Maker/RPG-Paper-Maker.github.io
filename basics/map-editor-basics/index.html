@@ -83,8 +83,6 @@
                 
                     <li><a class="toctree-l4" href="#change-paint-mode">Change paint mode</a></li>
                 
-                    <li><a class="toctree-l4" href="#layers-options">Layers options</a></li>
-                
                     <li><a class="toctree-l4" href="#lands">Lands</a></li>
                 
                     <li><a class="toctree-l4" href="#floors">Floors</a></li>
@@ -102,6 +100,10 @@
                     <li><a class="toctree-l4" href="#objects">Objects</a></li>
                 
                     <li><a class="toctree-l4" href="#the-hero">The hero</a></li>
+                
+                    <li><a class="toctree-l4" href="#transformations">Transformations</a></li>
+                
+                    <li><a class="toctree-l4" href="#layers-options">Layers options</a></li>
                 
             
             </ul>
@@ -253,7 +255,10 @@
 <li><code>Depth</code>: The map depth number of squares (Y axe &lt; 0).</li>
 <li><code>Music</code>: The music that is played in the background when entering the map.</li>
 <li><code>Background sound</code>: The background that is played in the background with the music. This can be wind, rain, etc.</li>
+<li><code>Camera prop. ID</code>: The camera property ID used when entering the map.</li>
 <li><code>Sky color</code>: The color used for the sky.</li>
+<li><code>Map startup reactions</code>: You can configure here particular things happening when entering the map. We will se later how to do that thanks to objects.</li>
+<li><code>Battles</code>: <strong>(not implemented yet)</strong></li>
 </ul>
 <h2 id="move-cursor-grid-camera">Move cursor / grid / camera</h2>
 <p>The camera is always looking at the following cursor:</p>
@@ -301,15 +306,6 @@
 <li><code>Rectangle</code>: Draw squares after tracing a rectangle <strong>(not available yet)</strong>.</li>
 <li><code>Pin of paint</code>: Fill squares with the same texture as the one pointed.</li>
 </ul>
-<h2 id="layers-options">Layers options</h2>
-<p>You can choose here if you want to be on layer mode or not here:</p>
-<p><img alt="Screenshot" src="../img/layers.png" /></p>
-<ul>
-<li><code>No layer</code>: Replace the selected square by a new one.</li>
-<li><code>Layer</code>: Add a new square on top of the selected one. There is no limit.</li>
-</ul>
-<p>Example of layers used with walls:</p>
-<p><img alt="Screenshot" src="../img/walls-layers.png" /></p>
 <h2 id="lands">Lands</h2>
 <p>Here are the possible lands to place:</p>
 <p><img alt="Screenshot" src="../img/lands.png" /></p>
@@ -379,6 +375,34 @@
 <p>That's it! You will understand later why we are using an object and why this will open a lot of opportunities for customizing your games!</p>
 <p><em>Note:</em> You can see who is the hero with a "S" symbol under it.</p>
 <p><img alt="Screenshot" src="../img/hero.png" /></p>
+<h2 id="transformations">Transformations</h2>
+<p>In 3D, transformations are these 3 different action:</p>
+<h3 id="translation">Translation</h3>
+<p><em>Not available yet.</em></p>
+<h3 id="rotation">Rotation</h3>
+<p>Apply rotation to sprites or 3D objects only.</p>
+<p><img alt="Screenshot" src="../img/rotate.png" /></p>
+<p>If you left / right click a map element, this will select the object and apply the current configured transformation. You can choose the axis <code>X</code>, <code>Y</code>, or <code>Z</code> to apply the rotation on by selecting the corresponding tab.</p>
+<p><img alt="Screenshot" src="../img/rotation-panel.png" /></p>
+<ul>
+<li><code>[Selected object]</code>: Display information about the current selected object bellow. New transformations will be applied to this selected object.</li>
+<li><code>+ / =</code>: The operation to apply on transformation (add or apply).</li>
+<li><code>Angle</code>: The angle to add or apply to the selected object.</li>
+<li><code>Apply on left / right click</code>: If checked, you will apply the transformation each time you click on a selected object. If <code>+</code> operation is activated, right click will in fact be a <code>-</code> operation. If not checked, updating <code>angle</code> will immediately update the selected object.</li>
+<li><code>Define as default X/Y/Z rotation</code>: Save current <code>angle</code> input in engine settings so you get this value in the <code>angle</code> input each time you restart the engine.</li>
+<li><code>Reset to default X/Y/Z rotation</code>: Fill current <code>angle</code> input with the saved default rotation value.</li>
+</ul>
+<h3 id="scaling">Scaling</h3>
+<p><em>Not available yet.</em></p>
+<h2 id="layers-options">Layers options</h2>
+<p>You can choose here if you want to be on layer mode or not here:</p>
+<p><img alt="Screenshot" src="../img/layers.png" /></p>
+<ul>
+<li><code>No layer</code>: Replace the selected square by a new one.</li>
+<li><code>Layer</code>: Add a new square on top of the selected one. There is no limit.</li>
+</ul>
+<p>Example of layers used with walls:</p>
+<p><img alt="Screenshot" src="../img/walls-layers.png" /></p>
               
             </div>
           </div>

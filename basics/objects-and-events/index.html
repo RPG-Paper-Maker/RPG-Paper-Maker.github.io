@@ -111,6 +111,10 @@
                 
                     <li><a class="toctree-l4" href="#models">Models</a></li>
                 
+                    <li><a class="toctree-l4" href="#map-startup-reactions">Map startup reactions</a></li>
+                
+                    <li><a class="toctree-l4" href="#detections">Detections</a></li>
+                
             
             </ul>
         
@@ -244,7 +248,7 @@
 <p><img alt="Screenshot" src="../img/common-reactions.png" /></p>
 <p>This way you will be able to call this common reaction instead of always copying it. It's even taking parameters if you have some variations in your reaction.</p>
 <ul>
-<li><code>Blocking hero</code>: If checked, the hero will not be able to move until the reaction is finished.</li>
+<li><code>Block hero when reaction</code>: If checked, the hero will not be able to move until the reaction is finished.</li>
 </ul>
 <h2 id="objects">Objects</h2>
 <p>An object is something that can move or/and react to some events in a map. So basically a tree is not an object (except if you can cut it so it would have a reaction to an axe hit) but only a static element. It can be a NPC, a monster, or anything else. Note that your hero is an object itself so you can perfectly program its reactions.</p>
@@ -252,6 +256,7 @@
 <p><img alt="Screenshot" src="../img/object-map.png" /></p>
 <ul>
 <li><code>Name</code>: Choose a name for your objects. This can help later if you want to execute actions on this object externally.</li>
+<li><code>Only one event per frame</code>: We will see what are events, if checked the object will have only one reaction per frame and not several in the same time.</li>
 <li><code>Model</code>: Choose a model for this object. We will see later how to configure models.</li>
 </ul>
 <h3 id="events_1">Events</h3>
@@ -286,8 +291,28 @@
 <p><img alt="Screenshot" src="../img/state-options.png" /></p>
 <ul>
 <li><code>Graphics</code>: Select the object graphics here (character picture). Choose below the kind of element (Sprite etc.).</li>
-<li><code>Moving</code>: <em>(not available yet)</em> Options linked to the object moves.</li>
-<li><code>Move animation</code>: If checked, all the frames of the character will be drawn for move animation. If not, this will only draw the first frame of the character animation.</li>
+<li>
+<p><code>Moving</code>: Options linked to the object moves when there is no reaction.</p>
+<ul>
+<li><code>Type</code>: The type of moving.<ul>
+<li><code>Fix</code>: The object will not move at all.</li>
+<li><code>Random</code>: The object will move randomly in the map.</li>
+<li><code>Route</code>: The object will loop on a route that you can edit with the <code>Edit route...</code> button. Check out move object command documentation <a href="../event-commands-overview/#move-object">here</a> that is exactly the same.</li>
+</ul>
+</li>
+<li><code>Speed</code>: The speed value when the object is moving that increases/decreases the traveled distance for the same time.</li>
+<li><code>Freq</code>: The frequency value when the object is moving that increases/decreases the number of animation frames displayed for the same time.</li>
+</ul>
+<p>NOTE: You can edit speed and frequency list in <code>Systems manager &gt; System</code>:</p>
+<p><img alt="Screenshot" src="../img/speed-frequency.png" /></p>
+<ul>
+<li><code>Name</code>: The name of the speed / frequency.</li>
+<li><code>Value</code>: The value of the speed / frequency (can only be a number).</li>
+</ul>
+</li>
+<li>
+<p><code>Move animation</code>: If checked, all the frames of the character will be drawn for move animation. If not, this will only draw the first frame of the character animation.</p>
+</li>
 <li><code>Stop animation</code>: <em>(not available yet)</em> If checked, all the frames of the character will be drawn for stopped animation. If not, this will only draw the first frame of the character animation.</li>
 <li><code>Climb animation</code>: <em>(not available yet)</em> If checked, all the frames of the character will be drawn for climbing animation. If not, this will only draw the first frame of the character animation.</li>
 <li><code>Direction fix</code>: <em>(not available yet)</em> If checked, the graphics will not change direction to look at the hero. If not, it will look at the hero.</li>
@@ -296,8 +321,12 @@
 <li><code>Keep position</code>: <em>(not available yet)</em> If checked, the object always keep its position after moving, even after loading save or changing map. If not, the object position is reinitialized after loading save or changing map.</li>
 </ul>
 <h3 id="properties">Properties</h3>
-<p><em>Not available yet.</em></p>
 <p>The object also has a set of properties. It can be HPs, age, gender, etc. It all depends on what you need and your type of game.</p>
+<p><img alt="Screenshot" src="../img/object-properties.png" /></p>
+<ul>
+<li><code>Name</code>: The property name.</li>
+<li><code>Initial value</code>: The initial value of the property when the object is loaded for the first time.</li>
+</ul>
 <h2 id="example-create-a-chest">Example: create a chest</h2>
 <p>Here is a simple way to produce a chest:</p>
 <ul>
@@ -340,6 +369,36 @@
 <li><strong>State</strong>: If there is a state with the same ID, the model reactions for this state ID will be replaced by the current content.</li>
 <li><strong>Property</strong>: If there is a property with the same name, the model reactions for this property name will be replaced by the current content.</li>
 <li><strong>Event</strong>: This has no influence.</li>
+</ul>
+<h2 id="map-startup-reactions">Map startup reactions</h2>
+<p>In map properties, you can see this section:</p>
+<p><img alt="Screenshot" src="../img/map-startup-reactions.png" /></p>
+<p>This simply is an invisible object that will be usefull for cinematics when entering a new map, for example. This is invisible, so there are no state graphics. By default, it is reacting to the event <code>Time</code> with 0 for interval parameter and OFF for repeat parameter. That means that these reactions will be excecuted in high priority when entering the map. This can be used for cinematics and some other stuff.</p>
+<h2 id="detections">Detections</h2>
+<p>It is important to use detections with objects. In fact, you are already using it when you react to <code>Hero Action</code> event. <code>Hero Action</code> event is an event that is sent by the hero itself to the objects that are in front of him. In order to determine where the events are sent, we use what we call <code>detections</code>.</p>
+<p>You can access to detections list in <code>Systems manager &gt; System</code>:</p>
+<p><img alt="Screenshot" src="../img/detections.png" /></p>
+<p>And here is the front detection! You clearly see here that your event can be sent in front. There is an arrow indicating the square position of the object sending the event, and also the orientation. You can add detection boxes by using <code>left click</code> and <code>right click</code> to delete existing detection boxes.</p>
+<ul>
+<li><code>Name</code>: The detection name.</li>
+<li><code>Field</code>: The detection field that you can increase/decrease.<ul>
+<li><code>Left</code>: Number of squares on the left side of the object sending the event.</li>
+<li><code>Right</code>: Number of squares on the right side of the object sending the event.</li>
+<li><code>Top</code>: Number of squares on the top side of the object sending the event.</li>
+<li><code>Bot</code>: Number of squares on the bot side of the object sending the event.</li>
+</ul>
+</li>
+<li><code>New box height</code>: The height that will be applied on the next boxes.<ul>
+<li><code>Square(s)</code>: Number of squares for detection box height.</li>
+<li><code>Pixel(s)</code>: Number of pixels in addition for detection box height.</li>
+</ul>
+</li>
+<li><code>Automatic</code>: A way to automaticaly generate detection boxes adding.<ul>
+<li><code>Circle</code>: Draw a circle with given <code>radius</code>.</li>
+<li><code>Rectangle</code>: Draw a rectangle with given <code>length</code> and <code>width</code>.</li>
+<li><code>Generate</code>: Clicking on this button will generate the selected form and options.</li>
+</ul>
+</li>
 </ul>
               
             </div>
