@@ -190,8 +190,6 @@
                 
                     <li><a class="toctree-l4" href="#modify-team">Modify team</a></li>
                 
-                    <li><a class="toctree-l4" href="#change-windowskin">Change windowskin</a></li>
-                
                     <li><a class="toctree-l4" href="#allow-forbid-saves">Allow / Forbid saves</a></li>
                 
                     <li><a class="toctree-l4" href="#allow-forbid-main-menu">Allow / Forbid main menu</a></li>
@@ -354,20 +352,98 @@
 <p>Now that you are a pro for objects and event, let's see all the event commands that are possible to use.</p>
 <h2 id="show-text">Show text</h2>
 <p><img alt="Screenshot" src="../img/command-show-text.png" /></p>
-<p>Displays a text with the current dialog box options.</p>
+<p>Displays a text in a dialog box with the current dialog box options.</p>
 <ul>
-<li><code>Message</code>: message to display on screen.</li>
+<li><code>Interlocutor</code>: This will display a text inside a small box on top of the text box for indicating the interlocutor's name. If empty, this will not show the box.</li>
+<li><code>Faceset</code>: The faceset to display inside the dialog box on the left.</li>
+<li><code>Message</code>:<ul>
+<li><img alt="Screenshot" src="../img/bold.png" /> : Apply bold effect on the selected text.</li>
+<li><img alt="Screenshot" src="../img/italic.png" /> : Apply italic effect on the selected text.</li>
+<li><img alt="Screenshot" src="../img/text-left.png" /> : Apply left align effect on the selected text.</li>
+<li><img alt="Screenshot" src="../img/text-center.png" /> : Apply center align effect on the selected text.</li>
+<li><img alt="Screenshot" src="../img/text-right.png" /> : Apply right align effect on the selected text.</li>
+<li><code>Font size</code>: Apply the selected font size on the selected text.</li>
+<li><code>Font name</code>: Apply the selected font name on the selected text.</li>
+<li><code>Text color</code>: Apply the selected text color on the selected text.</li>
+<li><code>Back color</code>: Apply the selected back color on the selected text.</li>
+<li><code>Outline color</code>: Apply the selected outline color on the selected text.</li>
+<li><code>Variable</code>: Display the value of the current selected variable.</li>
+<li><code>Parameter</code>: Display the value of the current selected parameter.</li>
+<li><code>Property</code>: Display the value of the current selected property.</li>
+<li><code>Hero name</code>: Display the name of the selected hero instance ID.</li>
+<li><code>Icon</code>: Display the selected icon.</li>
+</ul>
+</li>
 </ul>
 <p>Render in game:</p>
 <p><img alt="Screenshot" src="../img/render-hello-world.png" /></p>
 <h2 id="display-a-choice">Display a choice</h2>
-<p><em>Not available yet.</em></p>
+<p><img alt="Screenshot" src="../img/command-display-choice.png" /></p>
+<ul>
+<li><code>Choices</code>: The list of choices texts.</li>
+<li><code>Options</code>:<ul>
+<li><code>Cancel auto index</code>: The choice index to select when pressing cancel button.</li>
+</ul>
+</li>
+</ul>
+<p>Using adter show text command:</p>
+<p><img alt="Screenshot" src="../img/commands-display-choice.png" /></p>
+<p><img alt="Screenshot" src="../img/render-command-display-choice.png" /></p>
+<p>Using without show text command before:</p>
+<p><img alt="Screenshot" src="../img/commands-display-choice-without-text.png" /></p>
+<p><img alt="Screenshot" src="../img/render-command-display-choice-without-text.png" /></p>
 <h2 id="input-number">Input number</h2>
 <p><em>Not available yet.</em></p>
 <h2 id="set-dialog-box-options">Set dialog box options</h2>
-<p><em>Not available yet.</em></p>
+<p><img alt="Screenshot" src="../img/command-dialog-box-options.png" /></p>
+<p>Set all the dialog box options.</p>
+<ul>
+<li><code>Window skin ID</code>: The window skind ID to display.</li>
+<li><code>Transform</code>:<ul>
+<li><code>X</code>: The x position of the window.</li>
+<li><code>Y</code>: The y position of the window.</li>
+<li><code>Width</code>: The width of the window.</li>
+<li><code>Height</code>: The height of the window.</li>
+</ul>
+</li>
+<li><code>Padding</code>:<ul>
+<li><code>Left</code>: The left padding of the window.</li>
+<li><code>Top</code>: The top padding of the window.</li>
+<li><code>Right</code>: The right padding of the window.</li>
+<li><code>Bottom</code>: The bottom padding of the window.</li>
+</ul>
+</li>
+<li><code>Faceset</code>:<ul>
+<li><code>Position</code>: The position of the faceset. You can choose if it's behind or above the window.</li>
+<li><code>X</code>: The additional x position of the faceset.</li>
+<li><code>Y</code>: The additional y position of the faceset.</li>
+</ul>
+</li>
+<li><code>Text</code>:<ul>
+<li><code>Outline</code>: Select if texts should have outlines.</li>
+<li><code>Color ID</code>:<ul>
+<li><code>Text</code>: The color ID to use for texts.</li>
+<li><code>Outline</code>: The color ID to use for outlines.</li>
+<li><code>Background</code>: The color ID to use for backgrounds.</li>
+</ul>
+</li>
+<li><code>Size ID</code>: The size ID to use for texts.</li>
+<li><code>Font ID</code>: The font ID to use for texts.</li>
+</ul>
+</li>
+</ul>
 <h2 id="change-screen-tone">Change screen tone</h2>
-<p><em>Not available yet.</em></p>
+<p><img alt="Screenshot" src="../img/command-change-screen-tone.png" /></p>
+<p>Change the screen tone (dominant color). The RGB color (0, 0, 0) changes nothing on the screen tone.</p>
+<ul>
+<li><code>Red</code>: The red dominant color.</li>
+<li><code>Green</code>: The green dominant color.</li>
+<li><code>Blue</code>: The blue dominant color.</li>
+<li><code>Grey</code>: The grey dominant color (saturation). If grey = 0, then no changes. If grey = 100, then the screen will only have grey colors.</li>
+<li><code>Adding color ID</code>: You can combine the previous color with an existing color.</li>
+<li><code>Wait the end of the change before the next command</code>: If checked, the command will end only after <code>Time</code> number.</li>
+<li><code>Time</code>: Time to wait for changing the screen tone.</li>
+</ul>
 <h2 id="shake-screen">Shake screen</h2>
 <p><em>Not available yet.</em></p>
 <h2 id="flash-screen">Flash screen</h2>
@@ -409,11 +485,11 @@
 <li><code>Square</code>: Change all the direction moves unit to square.</li>
 <li><code>Step</code>: Change all the direction moves unit to step.</li>
 <li><code>1 to North / South / West / East / North-West / North-East / South-West / South-East</code>: Move the object to 1 square / step in the selected direction.</li>
-<li><code>1 to random</code>: <em>(not available yet)</em> Move the object to 1 square / step in a random direction.</li>
-<li><code>1 to the hero</code>: <em>(not available yet)</em> Move the object to 1 square / step in the hero direction.</li>
-<li><code>1 opposite to the hero</code>: <em>(not available yet)</em> Move the object to 1 square / step in the opposite of the hero direction.</li>
-<li><code>1 in front</code>: <em>(not available yet)</em> Move the object to 1 square / step in front.</li>
-<li><code>1 back</code>: <em>(not available yet)</em> Move the object to 1 square / step back.</li>
+<li><code>1 to random</code>: Move the object to 1 square / step in a random direction.</li>
+<li><code>1 to the hero</code>: Move the object to 1 square / step in the hero direction.</li>
+<li><code>1 opposite to the hero</code>: Move the object to 1 square / step in the opposite of the hero direction.</li>
+<li><code>1 in front</code>: Move the object to 1 square / step in front.</li>
+<li><code>1 back</code>: Move the object to 1 square / step back.</li>
 </ul>
 </li>
 <li><strong>Change direction</strong>: <em>Not available yet.</em></li>
@@ -428,13 +504,63 @@
 <h2 id="create-object-in-map">Create object in map</h2>
 <p><em>Not available yet.</em></p>
 <h2 id="remove-object-from-map">Remove object from map</h2>
-<p><em>Not available yet.</em></p>
+<p><img alt="Screenshot" src="../img/command-remove-object-from-map.png" /></p>
+<p>Remove an object from the map. This removing is effective as long as you don't change map or load the game in saves.</p>
+<ul>
+<li><code>Object ID</code>: The object ID to remove in the map.</li>
+</ul>
 <h2 id="display-a-picture">Display a picture</h2>
-<p><em>Not available yet.</em></p>
+<p><img alt="Screenshot" src="../img/command-display-picture.png" /></p>
+<p>Display a picture on top of the screen.</p>
+<ul>
+<li><code>Image ID</code>: The image ID to display.</li>
+<li><code>Index</code>: The index of the image to display. You can display several images in the same time if they have different index. The more the index is high, the more the image is displayed on top. If two images have the same index, then the ancient image will be removed.</li>
+<li><code>Origin</code>:<ul>
+<li><code>Top / Left</code>: The origin position will be (0, 0) (= top left of the screen).</li>
+<li><code>Center</code>: The origin position will be the center of the screen.</li>
+</ul>
+</li>
+<li><code>Coordinates</code>:<ul>
+<li><code>X</code>: The x position according to the origin.</li>
+<li><code>Y</code>: The y position according to the origin.</li>
+</ul>
+</li>
+<li><code>Effects</code>:<ul>
+<li><code>Zoom</code>: The % zooming of the image.</li>
+<li><code>Opacity</code>: The % opacity of the image.</li>
+<li><code>Angle</code>: The ° angle of the image.</li>
+</ul>
+</li>
+</ul>
 <h2 id="set-move-turn-a-picture">Set / Move / Turn a picture</h2>
-<p><em>Not available yet.</em></p>
+<p><img alt="Screenshot" src="../img/command-set-move-turn-picture.png" /></p>
+<p>Set / Move / Turn a picture that is already displayed on top of the screen.</p>
+<ul>
+<li><code>Image index</code>: Select the index of the image to set / move / turn.</li>
+<li><code>Set</code>: <ul>
+<li><code>Image ID</code>: Change the image ID to display.</li>
+<li><code>Zoom</code>: Change the % zooming of the image.</li>
+<li><code>Opacity</code>: Change the % zooming of the image.</li>
+</ul>
+</li>
+<li><code>Move</code>:<ul>
+<li><code>X</code>: Change the x position according to the origin.</li>
+<li><code>Y</code>: CHange the y position according to the origin.</li>
+</ul>
+</li>
+<li><code>Turn</code>: <ul>
+<li><code>Angle</code>: Change the ° angle of the image.</li>
+</ul>
+</li>
+<li><code>Wait the end of the actions before the next command</code>: If checked, the command will end only after <code>Time</code> number.</li>
+<li><code>Time</code>: Time to wait for updating the picture.</li>
+</ul>
 <h2 id="remove-a-picture">Remove a picture</h2>
-<p><em>Not available yet.</em></p>
+<p><img alt="Screenshot" src="../img/command-remove-picture.png" /></p>
+<p>Remove a picture that is displayed on top of the screen.</p>
+<ul>
+<li><code>Image index</code>: Select the index of the image to remove.</li>
+</ul>
 <h2 id="play-a-video">Play a video</h2>
 <p><em>Not available yet.</em></p>
 <h2 id="start-shop">Start shop</h2>
@@ -450,7 +576,7 @@
 <p>Render in game:</p>
 <p><img alt="Screenshot" src="../img/render-saves-menu.png" /></p>
 <h2 id="title-screen">Title screen</h2>
-<p><em>Not available yet.</em></p>
+<p>Go to the title screen.</p>
 <h2 id="game-over">Game over</h2>
 <p>This will go to the game over screen.</p>
 <p><em>/!\ Today, there is no game over screen, it's only closing the game window.</em></p>
@@ -494,10 +620,11 @@
 <ul>
 <li><strong>Target</strong>:<ul>
 <li><code>All</code>: <em>Not available yet.</em></li>
-<li><code>Detection</code>: Depends on a detection data. <em>Actually it just sends an event to objects in front of the object.</em></li>
-<li><code>Object</code>: <em>Not available yet.</em></li>
-<li><code>Sender</code>: <em>Not available yet.</em></li>
-<li><code>The hero</code>: Simply send to the defined hero.</li>
+<li><code>Detection</code>: Send the event to a specific detection.<ul>
+<li><code>Sender can't receive</code>: The detection is not applied to the sender.</li>
+</ul>
+</li>
+<li><code>Object</code>: Send the event to a specific object.</li>
 </ul>
 </li>
 <li><strong>Event</strong>:<ul>
@@ -563,12 +690,16 @@
 </li>
 <li><code>Move / Remove the character with ID ... in team / reserve / hidden</code>: <em>Not available yet.</em></li>
 </ul>
-<h2 id="change-windowskin">Change windowskin</h2>
-<p><em>Not available yet.</em></p>
 <h2 id="allow-forbid-saves">Allow / Forbid saves</h2>
-<p><em>Not available yet.</em></p>
+<p><img alt="Screenshot" src="../img/command-allow-forbid-saves.png" /></p>
+<ul>
+<li><code>Allow</code>: If checked, the saves menu will be allowed.</li>
+</ul>
 <h2 id="allow-forbid-main-menu">Allow / Forbid main menu</h2>
-<p><em>Not available yet.</em></p>
+<p><img alt="Screenshot" src="../img/command-allow-forbid-main-menu.png" /></p>
+<ul>
+<li><code>Allow</code>: If checked, the main menu will be allowed.</li>
+</ul>
 <h2 id="change-general-options">Change general options</h2>
 <p><em>Not available yet.</em></p>
 <h2 id="start-a-battle">Start a battle</h2>
@@ -626,15 +757,68 @@
 <h2 id="change-equipment">Change equipment</h2>
 <p><em>Not available yet.</em></p>
 <h2 id="condition">Condition</h2>
-<p><img alt="Screenshot" src="../img/command-conditions.png" /></p>
 <p>Create a container for commands that will be executed only if the indicated condition is true.</p>
 <ul>
 <li>
 <p><code>Add "else" when conditions do not apply</code>: Create another container for commands that will be executed only if the indicated condition is false.</p>
 </li>
 <li>
-<p><strong>Variables / Param / Prop</strong>: Compare a variable or a parameter or a property with any other type of value.</p>
+<p><strong>Variables / Param / Prop</strong>:</p>
 </li>
+</ul>
+<p><img alt="Screenshot" src="../img/command-condition-variables-param-prop.png" /></p>
+<ul>
+<li>
+<p><code>This</code>: Compare a variable or a parameter or a property with any other type of value.</p>
+</li>
+<li>
+<p><strong>Heroes</strong>:</p>
+</li>
+</ul>
+<p><img alt="Screenshot" src="../img/command-condition-heroes.png" /></p>
+<ul>
+<li>
+<p><code>Hero(es)</code>: Select <code>all the heroes</code> or <code>none of the heroes</code> or <code>at least one hero</code> or <code>the hero with instance ID</code>.
+ in <code>team</code> or <code>reserve</code> or <code>hidden</code>.</p>
+<ul>
+<li><code>Are named</code>: Check if the selection have this name.</li>
+<li><code>Are in</code>: Check if the selection is in the <code>team</code> or <code>reserve</code> or <code>hidden</code>.</li>
+<li><code>Are able to use the skill ID</code>: Check if the selection is able to use the selected skill ID.</li>
+<li><code>Are equiped with</code>:<ul>
+<li><code>weapon ID</code>: Check if the selection is equiped with the selected weapon ID.</li>
+<li><code>armor ID</code>: Check if the selection is equiped with the selected armor ID.</li>
+</ul>
+</li>
+<li><code>Are under effect of status ID</code>: <em>Not available yet.</em></li>
+<li><code>Have the statistic ID</code>: Compare a selected statistic of the selection with any other type of value.</li>
+</ul>
+</li>
+<li>
+<p><strong>Possessions</strong>:</p>
+</li>
+</ul>
+<p><img alt="Screenshot" src="../img/command-condition-possessions.png" /></p>
+<ul>
+<li><code>Currency ID</code>: Compare a selected currency number with any other type of value.</li>
+<li><code>Item ID</code>: Compare a selected item number in inventory with any other type of value.</li>
+<li><code>Weapon ID</code>: Compare a selected weapon number in inventory with any other type of value.<ul>
+<li><code>Check weapons equiped too</code>: If checked, the equiped weapons will be included in the number of weapons.</li>
+</ul>
+</li>
+<li>
+<p><code>Armor ID</code>: Compare a selected armor number in inventory with any other type of value.</p>
+<ul>
+<li><code>Check armors equiped too</code>: If checked, the equiped armors will be included in the number of armors.</li>
+</ul>
+</li>
+<li>
+<p><strong>Others</strong>:</p>
+</li>
+</ul>
+<p><img alt="Screenshot" src="../img/command-condition-others.png" /></p>
+<ul>
+<li><code>Key ID</code>: Check if selected key is ON or OFF.</li>
+<li><code>Script</code>: Check according to the script return value (for programmers).</li>
 </ul>
 <h2 id="loop">Loop</h2>
 <p>Create a container for commands that will be executed on a loop.</p>
@@ -645,11 +829,16 @@
 <h2 id="jump-to-label">Jump to label</h2>
 <p><em>Not available yet.</em></p>
 <h2 id="stop-the-reaction">Stop the reaction</h2>
-<p><em>Not available yet.</em></p>
+<p>Stop the current reaction.</p>
 <h2 id="comment">Comment</h2>
 <p><em>Not available yet.</em></p>
 <h2 id="call-a-common-reaction">Call a common reaction</h2>
-<p><em>Not available yet.</em></p>
+<p><img alt="Screenshot" src="../img/command-call-common-reaction.png" /></p>
+<p>This will call a common reaction with the corresponding parameters.</p>
+<ul>
+<li><code>Common reaction</code>: The common reaction to call.</li>
+<li><strong>Parameters values</strong>: The parameters to apply with the common reaction.</li>
+</ul>
 <h2 id="change-variables">Change variables</h2>
 <p><img alt="Screenshot" src="../img/command-change-variables.png" /></p>
 <p>This will change one or several variable(s) value.</p>
@@ -663,16 +852,31 @@
 <li><strong>Value</strong>:<ul>
 <li><code>Number</code>: A simple number.</li>
 <li><code>Random</code>: A random number between two selected values.</li>
+<li><code>Message</code>: A simple message.</li>
+<li><code>Switch</code>: A simple switch.</li>
 <li><code>Number of ... in inventory</code>: <em>Not available yet.</em></li>
 <li><code>Total currency ... with ID</code>: <em>Not available yet.</em></li>
 <li><code>An ... with instance ID ... statistic ID</code>: <em>Not available yet.</em></li>
-<li><code>An object in the map ... characteristic</code>: <em>Not available yet.</em></li>
+<li><code>An object in the map ... characteristic</code>: The selected object characteristic:<ul>
+<li><code>X square position</code>: The x square position of the selected object.</li>
+<li><code>Y square position</code>: The y square position of the selected object.</li>
+<li><code>Z square position</code>: The z square position of the selected object.</li>
+<li><code>X square position</code>: The x pixel position of the selected object.</li>
+<li><code>Y square position</code>: The y pixel position of the selected object.</li>
+<li><code>Z square position</code>: The z pixel position of the selected object.</li>
+<li><code>Orientation</code>: The orientation of the selected object.</li>
+</ul>
+</li>
 <li><code>Other characteristics</code>: <em>Not available yet.</em></li>
 </ul>
 </li>
 </ul>
 <h2 id="script">Script</h2>
-<p><em>Not available yet.</em></p>
+<p><img alt="Screenshot" src="../img/command-script.png" /></p>
+<p>Execute a script code (for advanced programmers).</p>
+<ul>
+<li><code>Use dynamic</code>: Non-static code (in variable, or parameter, or property).</li>
+</ul>
               
             </div>
           </div>
