@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <title>JSDoc: Home</title>
+    <title>JSDoc: Class: DatasGame</title>
 
     <script src="scripts/prettify/prettify.js"> </script>
     <script src="scripts/prettify/lang-css.js"> </script>
@@ -17,43 +17,622 @@
 
 <div id="main">
 
-    <h1 class="page-title">Home</h1>
-
-    
-
-
-
-    
-
-
-    <h3> </h3>
-
-
-
-
-
-
-
-
-
+    <h1 class="page-title">Class: DatasGame</h1>
 
     
 
 
 
 
-    <section>
-        <article><p>The game engine can be identified by the files' name beginning.</p>
-<ul>
-<li><strong>System</strong> : All the system datas linked to the game (statistics, weapons, items...).</li>
-<li><strong>Datas</strong> : generally contains lists of system values.</li>
-<li><strong>Window</strong> : dialog box for interactions between PNGs.</li>
-<li><strong>Graphic</strong> : informations that can be drawn inside windows (dialog box).</li>
-<li><strong>Scene</strong> : the game is excecuted thanks to a stack which is containing scenes. For example, if you are in a battle, you will have the local map scene and the battle map scene inside the stack.</li>
-</ul></article>
-    </section>
+<section>
+
+<header>
+    
+        <h2><span class="attribs"><span class="type-signature"></span></span>DatasGame<span class="signature">()</span><span class="type-signature"></span></h2>
+        
+            <div class="class-description">All the global informations of the game.</div>
+        
+    
+</header>
+
+<article>
+    <div class="container-overview">
+    
+        
+
+    
+    <h2>Constructor</h2>
+    
+
+    
+    <h4 class="name" id="DatasGame"><span class="type-signature"></span>new DatasGame<span class="signature">()</span><span class="type-signature"></span></h4>
+    
+
+    
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <h5 class="subsection-title">Properties:</h5>
+
+    
+
+<table class="props">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>settings</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Object</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">All the general settings.</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>pictures</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type"><a href="DatasPictures.html">DatasPictures</a></span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">Pictures datas.</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>commonEvents</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type"><a href="DatasCommonEvents.html">DatasCommonEvents</a></span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">Common events datas.</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>items</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type"><a href="DatasItems.html">DatasItems</a></span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">Items datas.</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>skills</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type"><a href="DatasSkills.html">DatasSkills</a></span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">Skills datas.</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>weapons</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type"><a href="DatasWeapons.html">DatasWeapons</a></span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">Weapons datas.</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>armors</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type"><a href="DatasArmors.html">DatasArmors</a></span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">Armors datas.</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>classes</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type"><a href="DatasClasses.html">DatasClasses</a></span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">Classes datas.</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>specialElements</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type"><a href="DatasSpecialElements.html">DatasSpecialElements</a></span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">Special elements datas.</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>tileset</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type"><a href="DatasTilesets.html">DatasTilesets</a></span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">Tilesets datas.</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>heroes</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type"><a href="DatasHeroes.html">DatasHeroes</a></span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">Heroes datas.</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>monsters</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type"><a href="DatasMonsters.html">DatasMonsters</a></span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">Monsters datas.</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>troops</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type"><a href="DatasTroops.html">DatasTroops</a></span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">Troops datas.</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>system</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type"><a href="DatasSystem.html">DatasSystem</a></span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">System datas.</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>battleSystem</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type"><a href="DatasBattleSystem.html">DatasBattleSystem</a></span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">Battle System datas.</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>keyBoard</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type"><a href="DatasKeyBoard.html">DatasKeyBoard</a></span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">KeyBoard datas.</td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="datas-game.js.html">datas-game.js</a>, <a href="datas-game.js.html#line45">line 45</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+    </div>
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+        <h3 class="subsection-title">Methods</h3>
+
+        
+            
+
+    
+
+    
+    <h4 class="name" id="readSettings"><span class="type-signature"></span>readSettings<span class="signature">()</span><span class="type-signature"></span></h4>
+    
+
+    
+
+
+
+<div class="description">
+    Read the JSON files associated to the settings.
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="datas-game.js.html">datas-game.js</a>, <a href="datas-game.js.html#line70">line 70</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+    
+
+    
+
+    
+</article>
+
+</section>
 
 
 

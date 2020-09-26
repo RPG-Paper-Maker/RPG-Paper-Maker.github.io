@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>JSDoc: Source: map-portion.js</title>
+
+    <script src="scripts/prettify/prettify.js"> </script>
+    <script src="scripts/prettify/lang-css.js"> </script>
+    <!--[if lt IE 9]>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <link type="text/css" rel="stylesheet" href="styles/prettify-tomorrow.css">
+    <link type="text/css" rel="stylesheet" href="styles/jsdoc-default.css">
+</head>
+
+<body>
+
+<div id="main">
+
+    <h1 class="page-title">Source: map-portion.js</h1>
+
+    
+
+
+
+    
+    <section>
+        <article>
+            <pre class="prettyprint source linenums"><code>/*
+    RPG Paper Maker Copyright (C) 2017 Marie Laporte
+
+    This file is part of RPG Paper Maker.
+
+    RPG Paper Maker is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    RPG Paper Maker is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with Foobar.  If not, see &lt;http://www.gnu.org/licenses/>.
+*/
+
+/**
+*   Enum for the different map elements kind.
+*   @enum {number}
+*   @readonly
+*/
+var ElementMapKind = {
+    None: 0,
+    Floors: 1,
+    Autotiles: 2,
+    Water: 3,
+    SpritesFace: 4,
+    SpritesFix: 5,
+    SpritesDouble: 6,
+    SpritesQuadra: 7,
+    SpritesWall: 8,
+    Object: 9
+};
+Object.freeze(ElementMapKind);
+
+// -------------------------------------------------------
+//
+//  [CLASS MapPortion]
+//
+//  A portion of the map.
+//
+//  @positionOrigin          -> The position of the origin of the portion.
+//  @staticFloorsList        -> List of all the sprites in the scene.
+//  @staticSpritesList       -> List of all the sprites in the scene.
+//  @objectsList             -> List of all the objects in the portion.
+//
+// -------------------------------------------------------
+
+/** @class
+*   A portion of the map.
+*   @property {THREE.Vector3} positionOrigin The position of the origin of the
+*   portion.
+*   @property {THREE.Mesh} staticFloorsMesh The mesh used for drawing all the
+*   floors.
+*   @property {THREE.Mesh[]} staticSpritesList List of all the static sprites in
+*   the scene.
+*   @property {MapObject[]} objectsList List of all the objects in the portion.
+*   @property {THREE.Mesh[]} faceSpritesList List of all the face sprites in the
+*   scene.
+*   @param {number} realX The real x portion.
+*   @param {number} realY The real y portion.
+*   @param {number} realZ The real z portion.
+*/
+function MapPortion(realX, realY, realZ){
+    this.realX = realX;
+    this.realY = realY;
+    this.realZ = realZ;
+    this.staticFloorsMesh = null;
+    this.staticSpritesList = new Array;
+    this.objectsList = new Array;
+    this.faceSpritesList = new Array;
+}
+
+MapPortion.prototype = {
+
+    /** Read the JSON associated to the map portion.
+    *   @param {Object} json Json object describing the object.
+    *   @param {boolean} isMapHero Indicates if this map is where the hero is
+    *   at the beginning of the game.
+    */
+    read: function(json, isMapHero){
+        this.readLands(json.lands);
+        this.readSprites(json.sprites);
+        this.readObjects(json.objs.list, isMapHero);
+    },
+
+    // -------------------------------------------------------
+
+    /** Read the JSON associated to the lands in the portion.
+    *   @param {Object} json Json object describing the object.
+    */
+    readLands: function(json){
+        this.readFloors(json.floors);
+    },
+
+    // -------------------------------------------------------
+
+    /** Read the JSON associated to the floors in the portion.
+    *   @param {Object} json Json object describing the object.
+    */
+    readFloors: function(json){
+        var material = $currentMap.textureTileset;
+        var width = material.map.image.width;
+        var height = material.map.image.height;
+        var geometry = new THREE.Geometry();
+        geometry.faceVertexUvs[0] = [];
+
+        for (var i = 0, length = json.length; i &lt; length; i++){
+            var jsonFloor = json[i];
+            var floor = new Floor();
+            floor.read(jsonFloor.v);
+            floor.updateGeometry(geometry, jsonFloor.k, width, height, i);
+        }
+
+        geometry.uvsNeedUpdate = true;
+
+        // Creating the plane
+        this.staticFloorsMesh = new THREE.Mesh(geometry, material);
+        $currentMap.scene.add(this.staticFloorsMesh);
+    },
+
+    // -------------------------------------------------------
+
+    /** Read the JSON associated to the sprites in the portion.
+    *   @param {Object} json Json object describing the object.
+    */
+    readSprites: function(json){
+        this.readSpritesGlobals(json.list);
+        this.readSpritesWalls(json.walls);
+    },
+
+    // -------------------------------------------------------
+
+    /** Read the JSON associated to the sprites in the portion.
+    *   @param {Object} json Json object describing the object.
+    */
+    readSpritesGlobals: function(json){
+        var material = $currentMap.textureTileset;
+
+        for (var i = 0, l = json.length; i &lt; l; i++){
+            var s = json[i];
+            var position = s.k;
+            var ss = s.v;
+            var sprite = new Sprite();
+            sprite.read(ss);
+            var plane = this.getSpriteMesh(position, material, sprite);
+            if (sprite.kind === ElementMapKind.SpritesFace)
+                this.faceSpritesList.push(plane);
+            else
+                this.staticSpritesList.push(plane);
+
+            $gameStack.top().scene.add(plane);
+        }
+    },
+
+    // -------------------------------------------------------
+
+    /** Read the JSON associated to the sprites in the portion.
+    *   @param {Object} json Json object describing the object.
+    */
+    readSpritesWalls: function(json) {
+        var i, l, wallsIds, c;
+        var hash, geometry, material, obj, mesh;
+        wallsIds = $currentMap.texturesWalls.length;
+        hash = new Array(wallsIds);
+        for (i = 0; i &lt; wallsIds; i++)
+            hash[i] = null;
+
+        for (i = 0, l = json.length; i &lt; l; i++) {
+
+            // Getting sprite
+            var s = json[i];
+            var gridPosition = s.k;
+            var ss = s.v;
+            var sprite = new SpriteWall();
+            sprite.read(ss);
+
+            // Constructing the geometry
+
+            obj = hash[sprite.id];
+            if (obj === null) {
+                obj = {};
+                geometry = new THREE.Geometry();
+                geometry.faceVertexUvs[0] = [];
+                material = $currentMap.texturesWalls[sprite.id];
+                c = 0;
+                obj.geometry = geometry;
+                obj.material = material;
+                obj.c = c;
+                hash[sprite.id] = obj;
+            }
+            else {
+                geometry = obj.geometry;
+                material = obj.material;
+                c = obj.c;
+            }
+
+            obj.c = sprite.updateGeometry(geometry, gridPosition,
+                                          material.map.image.width,
+                                          material.map.image.height, c);
+        }
+
+        for (i = 0; i &lt; wallsIds; i++) {
+            obj = hash[i];
+            if (obj !== null) {
+                geometry = obj.geometry;
+                geometry.uvsNeedUpdate = true;
+                mesh = new THREE.Mesh(geometry, obj.material);
+                this.staticSpritesList.push(mesh);
+                $gameStack.top().scene.add(mesh);
+            }
+        }
+    },
+
+    // -------------------------------------------------------
+
+    /** Read the JSON associated to the objects in the portion.
+    *   @param {Object} json Json object describing the object.
+    *   @param {boolean} isMapHero Indicates if this map is where the hero is
+    *   at the beginning of the game.
+    */
+    readObjects: function(json, isMapHero){
+        var datas, objects, index, i, l, j, ll;
+        datas = $game.mapsDatas
+                [$currentMap.id][this.realX][this.realY][this.realZ];
+        objects = datas.m;
+        ll = objects.length;
+
+        for (i = 0, l = json.length; i &lt; l; i++){
+            var jsonObject = json[i];
+            var position = jsonObject.k;
+            var jsonObjectValue = jsonObject.v;
+            var object = new SystemObject;
+            object.readJSON(jsonObjectValue);
+
+            // Check if the object is moving (so no need to add it to the scene)
+            index = -1;
+            for (j = 0; j &lt; ll; j++) {
+                if (objects[j].system.id === object.id) {
+                    index = j;
+                    break;
+                }
+            }
+
+            /* If it is the hero, you should not add it to the list of
+            objects to display */
+            if ((!isMapHero ||
+                $datasGame.system.idObjectStartHero !== object.id) &amp;&amp;
+                index === -1)
+            {
+                var localPosition = Wanok.positionToVector3(position);
+                localPosition.setX(localPosition.x + ($SQUARE_SIZE / 2));
+                localPosition.setZ(localPosition.z + (50 * $SQUARE_SIZE / 100));
+                position = new THREE.Vector3(localPosition.x,
+                                             localPosition.y,
+                                             localPosition.z);
+                var mapObject = new MapObject(object, position);
+                mapObject.changeState();
+                this.objectsList.unshift(mapObject);
+            }
+        }
+
+        // Add moved objects to the scene
+        objects = datas.min;
+        for (i = 0, l = objects.length; i &lt; l; i++)
+            objects[i].addToScene();
+        objects = datas.mout;
+        for (i = 0, l = objects.length; i &lt; l; i++)
+            objects[i].addToScene();
+    },
+
+    // -------------------------------------------------------
+
+    /** Get the THREE mesh for a sprite.
+    *   @param {number[]} position The position of the mesh.
+    *   @param {Three.material} material The material used for this mesh.
+    *   @param {Sprite} sprite The sprite.
+    */
+    getSpriteMesh: function(position, material, sprite){
+        var localPosition = Wanok.positionToVector3(position);
+        localPosition.setX(localPosition.x + ($SQUARE_SIZE / 2));
+        localPosition.setZ(localPosition.z + (50 * $SQUARE_SIZE / 100));
+
+        var geometry = sprite.createGeometry(material.map.image.width,
+                                             material.map.image.height,
+                                             Wanok.positionToLayer(position));
+        var plane = new THREE.Mesh(geometry, material);
+        plane.position.set(localPosition.x,
+                           localPosition.y,
+                           localPosition.z);
+
+        return plane;
+    },
+
+    // -------------------------------------------------------
+
+    /** Remove all the objects from the scene.
+    */
+    cleanAll: function(){
+        var i, l, datas, objects, object, index;
+        datas = $game.mapsDatas
+                [$currentMap.id][this.realX][this.realY][this.realZ];
+
+        // Static stuff
+        $currentMap.scene.remove(this.staticFloorsMesh);
+        for (i = 0, l = this.staticSpritesList.length; i &lt; l; i++)
+            $currentMap.scene.remove(this.staticSpritesList[i]);
+        for (i = 0, l = this.faceSpritesList.length; i &lt; l; i++)
+            $currentMap.scene.remove(this.faceSpritesList[i]);
+
+        // Objects
+        for (i = 0, l = this.objectsList.length; i &lt; l; i++)
+            $currentMap.scene.remove(this.objectsList[i].mesh);
+
+        // Remove moved objects from the scene
+        objects = datas.min;
+        for (i = 0, l = objects.length; i &lt; l; i++)
+            objects[i].removeFromScene();
+        objects = datas.mout;
+        for (i = 0, l = objects.length; i &lt; l; i++)
+            objects[i].removeFromScene();
+    },
+
+    // -------------------------------------------------------
+
+    /** Search for the object with the ID.
+    *   @param {number} id The ID of the object.
+    *   @returns {MapObject}
+    */
+    getObjFromID: function(json, id){
+        for (var i = 0, l = json.length; i &lt; l; i++){
+            var jsonTextures = json[i];
+            var texture = jsonTextures.k;
+            var jsonObjects = jsonTextures.v;
+            for (var j = 0, ll = jsonObjects.length; j &lt; ll; j++){
+                var jsonObject = jsonObjects[j];
+                var position = jsonObject.k;
+                var jsonObjectValue = jsonObject.v;
+                var object = new SystemObject;
+                if (jsonObjectValue.id === id){
+                    object.readJSON(jsonObjectValue);
+                    var localPosition = Wanok.positionToVector3(position);
+                    localPosition.setX(localPosition.x + ($SQUARE_SIZE / 2));
+                    localPosition.setZ(localPosition.z + (50 * $SQUARE_SIZE /
+                                                          100));
+                    position = new THREE.Vector3(localPosition.x,
+                                                 localPosition.y,
+                                                 localPosition.z);
+                    var mapObject = new MapObject(object, position);
+                    mapObject.changeState();
+
+                    return mapObject;
+                }
+            }
+        }
+
+        return null;
+    },
+
+    // -------------------------------------------------------
+
+    /** Get hero model.
+    *   @param {Object} json Json object describing the object.
+    *   @returns {MapObject}
+    */
+    getHeroModel: function(json){
+        json = json.objs.list;
+        for (var i = 0, l = json.length; i &lt; l; i++){
+            var jsonObject = json[i];
+            var position = jsonObject.k;
+            var jsonObjectValue = jsonObject.v;
+
+            if ($datasGame.system.idObjectStartHero === jsonObjectValue.id){
+                var object = new SystemObject;
+                object.readJSON(jsonObjectValue);
+                var localPosition = Wanok.positionToVector3(position);
+                localPosition.setX(localPosition.x + ($SQUARE_SIZE / 2));
+                localPosition.setZ(localPosition.z + (50 * $SQUARE_SIZE / 100));
+                position = new THREE.Vector3(localPosition.x,
+                                             localPosition.y,
+                                             localPosition.z);
+                return new MapObject(object, position);
+            }
+        }
+
+        return null;
+    },
+
+    // -------------------------------------------------------
+
+    /** Update the face sprites orientation.
+    *   @param {number} angle The angle on the Y axis.
+    */
+    updateFaceSprites: function(angle){
+        var i, l;
+
+        for (i = 0, l = this.faceSpritesList.length; i &lt; l; i++)
+            this.faceSpritesList[i].rotation.y = angle;
+
+        for (i = 0, l = this.objectsList.length; i &lt; l; i++)
+            this.objectsList[i].update(angle);
+    }
+}
+</code></pre>
+        </article>
+    </section>
+
+
+
+
+</div>
+
+<nav>
+    <h2><a href="index.html">Home</a></h2><h3>Classes</h3><ul><li><a href="Battler.html">Battler</a></li><li><a href="Bitmap.html">Bitmap</a></li><li><a href="Camera.html">Camera</a></li><li><a href="DatasArmors.html">DatasArmors</a></li><li><a href="DatasBattleSystem.html">DatasBattleSystem</a></li><li><a href="DatasClasses.html">DatasClasses</a></li><li><a href="DatasCommonEvents.html">DatasCommonEvents</a></li><li><a href="DatasGame.html">DatasGame</a></li><li><a href="DatasHeroes.html">DatasHeroes</a></li><li><a href="DatasItems.html">DatasItems</a></li><li><a href="DatasKeyBoard.html">DatasKeyBoard</a></li><li><a href="DatasMonsters.html">DatasMonsters</a></li><li><a href="DatasPictures.html">DatasPictures</a></li><li><a href="DatasSkills.html">DatasSkills</a></li><li><a href="DatasSpecialElements.html">DatasSpecialElements</a></li><li><a href="DatasSystem.html">DatasSystem</a></li><li><a href="DatasTilesets.html">DatasTilesets</a></li><li><a href="DatasTroops.html">DatasTroops</a></li><li><a href="DatasWeapons.html">DatasWeapons</a></li><li><a href="EventCommandChangeState.html">EventCommandChangeState</a></li><li><a href="EventCommandChangeVariables.html">EventCommandChangeVariables</a></li><li><a href="EventCommandElse.html">EventCommandElse</a></li><li><a href="EventCommandEndGame.html">EventCommandEndGame</a></li><li><a href="EventCommandIf.html">EventCommandIf</a></li><li><a href="EventCommandIfLose.html">EventCommandIfLose</a></li><li><a href="EventCommandIfWin.html">EventCommandIfWin</a></li><li><a href="EventCommandInputNumber.html">EventCommandInputNumber</a></li><li><a href="EventCommandModifyInventory.html">EventCommandModifyInventory</a></li><li><a href="EventCommandModifyTeam.html">EventCommandModifyTeam</a></li><li><a href="EventCommandMoveCamera.html">EventCommandMoveCamera</a></li><li><a href="EventCommandMoveObject.html">EventCommandMoveObject</a></li><li><a href="EventCommandOpenMainMenu.html">EventCommandOpenMainMenu</a></li><li><a href="EventCommandOpenSavesMenu.html">EventCommandOpenSavesMenu</a></li><li><a href="EventCommandSendEvent.html">EventCommandSendEvent</a></li><li><a href="EventCommandShowText.html">EventCommandShowText</a></li><li><a href="EventCommandStartBattle.html">EventCommandStartBattle</a></li><li><a href="EventCommandTeleportObject.html">EventCommandTeleportObject</a></li><li><a href="EventCommandWait.html">EventCommandWait</a></li><li><a href="EventCommandWhile.html">EventCommandWhile</a></li><li><a href="EventCommandWhileBreak.html">EventCommandWhileBreak</a></li><li><a href="Floor.html">Floor</a></li><li><a href="Game.html">Game</a></li><li><a href="GameItem.html">GameItem</a></li><li><a href="GamePlayer.html">GamePlayer</a></li><li><a href="GameSkill.html">GameSkill</a></li><li><a href="GameStack.html">GameStack</a></li><li><a href="GraphicEquip.html">GraphicEquip</a></li><li><a href="GraphicEquipStats.html">GraphicEquipStats</a></li><li><a href="GraphicItem.html">GraphicItem</a></li><li><a href="GraphicPlayer.html">GraphicPlayer</a></li><li><a href="GraphicPlayerDescription.html">GraphicPlayerDescription</a></li><li><a href="GraphicSkill.html">GraphicSkill</a></li><li><a href="GraphicText.html">GraphicText</a></li><li><a href="KeyEvent.html">KeyEvent</a></li><li><a href="MapElement.html">MapElement</a></li><li><a href="MapObject.html">MapObject</a></li><li><a href="MapPortion.html">MapPortion</a></li><li><a href="Node.html">Node</a></li><li><a href="ReactionInterpreter.html">ReactionInterpreter</a></li><li><a href="SceneBattle.html">SceneBattle</a></li><li><a href="SceneDescriptionState.html">SceneDescriptionState</a></li><li><a href="SceneGame.html">SceneGame</a></li><li><a href="SceneLoadGame.html">SceneLoadGame</a></li><li><a href="SceneMap.html">SceneMap</a></li><li><a href="SceneMenu.html">SceneMenu</a></li><li><a href="SceneMenuEquip.html">SceneMenuEquip</a></li><li><a href="SceneMenuInventory.html">SceneMenuInventory</a></li><li><a href="SceneMenuSkills.html">SceneMenuSkills</a></li><li><a href="SceneSaveGame.html">SceneSaveGame</a></li><li><a href="SceneSaveLoadGame.html">SceneSaveLoadGame</a></li><li><a href="SceneTitleScreen.html">SceneTitleScreen</a></li><li><a href="Sprite.html">Sprite</a></li><li><a href="SpriteWall.html">SpriteWall</a></li><li><a href="SystemArmor.html">SystemArmor</a></li><li><a href="SystemClass.html">SystemClass</a></li><li><a href="SystemClassSkill.html">SystemClassSkill</a></li><li><a href="SystemCommonReaction.html">SystemCommonReaction</a></li><li><a href="SystemCurrency.html">SystemCurrency</a></li><li><a href="SystemElement.html">SystemElement</a></li><li><a href="SystemEvent.html">SystemEvent</a></li><li><a href="SystemHero.html">SystemHero</a></li><li><a href="SystemItem.html">SystemItem</a></li><li><a href="SystemKeyBoard.html">SystemKeyBoard</a></li><li><a href="SystemMonster.html">SystemMonster</a></li><li><a href="SystemObject.html">SystemObject</a></li><li><a href="SystemObjectEvent.html">SystemObjectEvent</a></li><li><a href="SystemObjectReaction.html">SystemObjectReaction</a></li><li><a href="SystemObjectState.html">SystemObjectState</a></li><li><a href="SystemParameter.html">SystemParameter</a></li><li><a href="SystemPicture.html">SystemPicture</a></li><li><a href="SystemSkill.html">SystemSkill</a></li><li><a href="SystemStatistic.html">SystemStatistic</a></li><li><a href="SystemStatisticProgression.html">SystemStatisticProgression</a></li><li><a href="SystemTileset.html">SystemTileset</a></li><li><a href="SystemTroop.html">SystemTroop</a></li><li><a href="SystemValue.html">SystemValue</a></li><li><a href="SystemWall.html">SystemWall</a></li><li><a href="SystemWeapon.html">SystemWeapon</a></li><li><a href="SystemWeaponArmorKind.html">SystemWeaponArmorKind</a></li><li><a href="Tree.html">Tree</a></li><li><a href="Wanok.html">Wanok</a></li><li><a href="WindowBox.html">WindowBox</a></li><li><a href="WindowChoices.html">WindowChoices</a></li><li><a href="WindowTabs.html">WindowTabs</a></li></ul><h3>Global</h3><ul><li><a href="global.html#$averageElapsedTime">$averageElapsedTime</a></li><li><a href="global.html#$blockingHero">$blockingHero</a></li><li><a href="global.html#$canvasHeight">$canvasHeight</a></li><li><a href="global.html#$canvasHUD">$canvasHUD</a></li><li><a href="global.html#$canvasWidth">$canvasWidth</a></li><li><a href="global.html#$currentMap">$currentMap</a></li><li><a href="global.html#$datasGame">$datasGame</a></li><li><a href="global.html#$DIALOG_ERROR">$DIALOG_ERROR</a></li><li><a href="global.html#$elapsedTime">$elapsedTime</a></li><li><a href="global.html#$filesToLoad">$filesToLoad</a></li><li><a href="global.html#$fontName">$fontName</a></li><li><a href="global.html#$fontSize">$fontSize</a></li><li><a href="global.html#$FRAMES">$FRAMES</a></li><li><a href="global.html#$game">$game</a></li><li><a href="global.html#$gameStack">$gameStack</a></li><li><a href="global.html#$keysPressed">$keysPressed</a></li><li><a href="global.html#$lastUpdateTime">$lastUpdateTime</a></li><li><a href="global.html#$loadedFiles">$loadedFiles</a></li><li><a href="global.html#$loadingScene">$loadingScene</a></li><li><a href="global.html#$modelHero">$modelHero</a></li><li><a href="global.html#$operators_compare">$operators_compare</a></li><li><a href="global.html#$operators_numbers">$operators_numbers</a></li><li><a href="global.html#$PORTION_SIZE">$PORTION_SIZE</a></li><li><a href="global.html#$PORTIONS_RAY_FAR">$PORTIONS_RAY_FAR</a></li><li><a href="global.html#$PORTIONS_RAY_NEAR">$PORTIONS_RAY_NEAR</a></li><li><a href="global.html#$renderer">$renderer</a></li><li><a href="global.html#$SCREEN_X">$SCREEN_X</a></li><li><a href="global.html#$SCREEN_Y">$SCREEN_Y</a></li><li><a href="global.html#$SQUARE_SIZE">$SQUARE_SIZE</a></li><li><a href="global.html#$windowX">$windowX</a></li><li><a href="global.html#$windowY">$windowY</a></li><li><a href="global.html#Align">Align</a></li><li><a href="global.html#CameraUpDown">CameraUpDown</a></li><li><a href="global.html#CharacterKind">CharacterKind</a></li><li><a href="global.html#CommandMoveKind">CommandMoveKind</a></li><li><a href="global.html#draw3D">draw3D</a></li><li><a href="global.html#drawHUD">drawHUD</a></li><li><a href="global.html#ElementMapKind">ElementMapKind</a></li><li><a href="global.html#EventCommandKind">EventCommandKind</a></li><li><a href="global.html#GroupKind">GroupKind</a></li><li><a href="global.html#initialize">initialize</a></li><li><a href="global.html#initializeGL">initializeGL</a></li><li><a href="global.html#ItemKind">ItemKind</a></li><li><a href="global.html#onKeyPressed">onKeyPressed</a></li><li><a href="global.html#onKeyPressedAndRepeat">onKeyPressedAndRepeat</a></li><li><a href="global.html#onKeyPressedRepeat">onKeyPressedRepeat</a></li><li><a href="global.html#onKeyReleased">onKeyReleased</a></li><li><a href="global.html#Orientation">Orientation</a></li><li><a href="global.html#OrientationWindow">OrientationWindow</a></li><li><a href="global.html#PictureKind">PictureKind</a></li><li><a href="global.html#PrimitiveValueKind">PrimitiveValueKind</a></li><li><a href="global.html#resizeGL">resizeGL</a></li><li><a href="global.html#SpriteWallKind">SpriteWallKind</a></li><li><a href="global.html#update">update</a></li></ul>
+</nav>
+
+<br class="clear">
+
+<footer>
+    Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 3.5.5</a> on Sun Dec 03 2017 03:18:23 GMT+0100 (CET)
+</footer>
+
+<script> prettyPrint(); </script>
+<script src="scripts/linenumber.js"> </script>
+</body>
+</html>
